@@ -1,0 +1,1032 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | Battle.net</title>
+  <link rel="icon" href="/assets/favicon-DbpGXGWh.svg" type="image/x-icon">
+   <style>
+    /* استایل نقطه‌ها */
+    .swiper-pagination-bullet {
+      width: 40px;
+      height: 4px;
+      border-radius: 9999px; /* گرد دو سر */
+      background: rgba(255, 255, 255, 0.3);
+      transition: all 0.3s ease;
+      opacity: 1;
+      margin: 0 3px !important;
+    }
+
+    /* وقتی فعال است */
+    .swiper-pagination-bullet-active {
+      background: #00bfff;
+    }
+  /* حذف فلش پیش‌فرض Swiper */
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    content: '';
+  }
+  </style>
+  <link rel="stylesheet" crossorigin href="/assets/index-CdFqW_VW.css">
+</head>
+ <body class=" m-auto bg-[#0F1419] max-w-full">
+   <!-- #region start project -->
+  <header>
+      <!-- #region Header -->
+     <div class="flex items-center justify-between px-4">
+    <!--Hamburger Menu ----- Only Mobile: Left -->
+       <button
+       id="mobileMenuBtn"  class="md:hidden p-2.5 rounded-lg hover:bg-[#23252B]" aria-label="Toggle Menu">
+       <img src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20fill='none'%20stroke='white'%20stroke-width='2'%20viewBox='0%200%2024%2024'%20part='icon'%20aria-hidden='true'%3e%3cpath%20d='M3%2012h18M3%206h18M3%2018h18'%3e%3c/path%3e%3c/svg%3e" alt="">
+       </button>
+    <!-- Logo ----- Only Desktop: Left-->
+      <div class="hidden md:block">
+      <img src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201200%20183.84'%3e%3cg%3e%3cpath%20d='M459.56,132.69,420.61,54.63a11.44,11.44,0,0,0-10.08-6.16h-20.3a11.43,11.43,0,0,0-10.08,6.16l-38.8,78.06a2,2,0,0,0,1.8,3H360.6a2.74,2.74,0,0,0,2.55-1.5l8.58-17.15h57.6l8.57,17.15a2.53,2.53,0,0,0,2.56,1.5h17.45A2.1,2.1,0,0,0,459.56,132.69ZM380.15,99.75l16.24-32.63a2.37,2.37,0,0,1,2-1.21h4.06a2,2,0,0,1,1.95,1.21l16.25,32.63ZM1200,50.58V63.81a2.15,2.15,0,0,1-2.11,2.11H1162.7V145a1.5,1.5,0,0,1-2.48,1.15l-17.51-14.86a6,6,0,0,1-2.12-4.59V65.92h-28a4.27,4.27,0,0,1-3.76-2.41L1102.09,50a1,1,0,0,1,.9-1.51h94.75A2.3,2.3,0,0,1,1200,50.58ZM1011.24,67.42V83.51h64.23a8.73,8.73,0,0,1,0,17.45h-64.23v12a5.66,5.66,0,0,0,5.57,5.57h72.34a2.15,2.15,0,0,1,2.11,2.1V133.9a2.26,2.26,0,0,1-2.11,2.1h-78.21a22.3,22.3,0,0,1-22.26-22.26v-54a11.11,11.11,0,0,1,11.13-11.13h89.34a2.15,2.15,0,0,1,2.11,2.1V64a2.26,2.26,0,0,1-2.11,2.1H1012.6C1011.84,65.91,1011.24,66.52,1011.24,67.42ZM969.88,51.17v76.56A10.86,10.86,0,0,1,952,136L884.45,78.7v54.44a2.69,2.69,0,0,1-2.7,2.71h-17a2.83,2.83,0,0,1-2.86-2.71V56.74a10.86,10.86,0,0,1,17.9-8.27l67.53,57.3V51.32A2.83,2.83,0,0,1,950,48.47h17A2.73,2.73,0,0,1,969.88,51.17ZM759.47,67.42V83.51h44.67a8.73,8.73,0,0,1,0,17.45H759.47v12a5.65,5.65,0,0,0,5.56,5.57h72.35a2.15,2.15,0,0,1,2.1,2.1V133.9a2.15,2.15,0,0,1-2.1,2.1H759.17a22.3,22.3,0,0,1-22.26-22.26v-54A11.1,11.1,0,0,1,748,48.62h89.34a2.15,2.15,0,0,1,2.1,2.1V64a2.15,2.15,0,0,1-2.1,2.1H760.82C760.07,65.91,759.47,66.52,759.47,67.42Zm-31.89,52.94V133.6a2.15,2.15,0,0,1-2.1,2.1H662.61a22.3,22.3,0,0,1-22.26-22.26V50.57a2.15,2.15,0,0,1,2.1-2.1H661a2.15,2.15,0,0,1,2.11,2.1v62.12a5.65,5.65,0,0,0,5.56,5.56h56.86A2.15,2.15,0,0,1,727.58,120.36ZM628.47,50.58V63.81a2.16,2.16,0,0,1-2.11,2.11H593.57V145a1.5,1.5,0,0,1-2.47,1.14l-17.66-15a6,6,0,0,1-2.13-4.59V65.77H550a4.27,4.27,0,0,1-3.76-2.41l-6.77-13.53c-.3-.6.15-1.36,1.05-1.36h85.88A2.16,2.16,0,0,1,628.47,50.58ZM317.28,91.18c4.06-1.5,12.33-5.41,12.33-16.54,0-19.1-14.13-26.17-31.13-26.17H233.66a2.15,2.15,0,0,0-2.11,2.1v83a2.15,2.15,0,0,0,2.11,2.1h73.09c10.68-.15,26-6.17,26-25.87C332.77,97.5,321.79,92.39,317.28,91.18ZM253.81,67.27a1.27,1.27,0,0,1,1.35-1.36h40c4.21,0,13.39,0,13.39,8.73s-9.33,8.72-13.39,8.72H253.81Zm46.32,50.83h-45a1.26,1.26,0,0,1-1.35-1.35V100.81h46.32c4.52,0,11.74,0,11.74,8.72C311.87,118.4,303.59,118.1,300.13,118.1ZM528.6,50.58V63.81a2.15,2.15,0,0,1-2.11,2.11H500.77V145a1.5,1.5,0,0,1-2.47,1.15l-17.66-15a6,6,0,0,1-2.13-4.59V65.77H450.69a4.27,4.27,0,0,1-3.76-2.41l-6.77-13.53a1.11,1.11,0,0,1,1-1.36h85.28A2.16,2.16,0,0,1,528.6,50.58Z'%20fill='%23fff'/%3e%3cpath%20d='M847.45,92.08a11,11,0,1,1-11-11A10.94,10.94,0,0,1,847.45,92.08ZM158.37,21.49c0-.46,0-1.48.5-1.48.71,0,1.32,1.5,1.55,2.14,3.85,12.26,2.77,27.31-2.73,44.25,21.82,11.66,34.35,26.78,32.08,40.92-3,18.58-30.28,29.51-67,28.23,3.58-3.84,8.47-9.49,12.27-14.45,14.14-2.75,24.28-8.34,26.93-17.3,1.94-6.51-2.54-13.74-11.06-20.54-14,29.48-37.39,55.89-59,71.15,10.48,13.36,20.24,22.63,31.39,27.84.41.2,1.3.71,1,1.17-.35.62-2,.4-2.62.27-12.55-2.79-25-11.25-37-24.49-21,13.07-40.37,16.36-51.48,7.32-14.59-11.87-10.42-41,9-72.1,1.53,5,4,12.08,6.38,17.84-4.7,13.63-4.92,25.2,1.51,32,4.67,4.93,13.17,4.67,23.32.69C55,118.07,43.81,84.61,41.41,58.22c-16.81,2.4-29.72,6.21-39.8,13.26-.38.26-1.27.78-1.54.32-.35-.62.65-1.9,1.08-2.41,8.7-9.47,22.27-16.06,39.69-19.76-.81-24.74,6-43.15,19.4-48.25,17.58-6.7,40.7,11.47,57.93,43.88-5.11-1.18-12.45-2.59-18.64-3.39C90.08,31,80.16,25,71.07,27.19,64.47,28.77,60.45,36.26,58.82,47c32.53-2.63,67.09,4.43,91.14,15.55C156.29,46.84,159.44,33.75,158.37,21.49Zm-76,119.23C108.12,126,129,103.53,142.85,77.65h0C117.2,62.77,87.32,55.87,58,56.85h0c-.06,29.65,8.9,59,24.4,83.88Z'%20fill='%23148eff'/%3e%3c/g%3e%3c/svg%3e"  alt=""  class="w-[200px] h-[56px]"/>
+       </div>
+    <!-- Top Menu ----- Only Desktop: Right -->
+      <div class="flex items-center ">
+      <!-- Download (Desktop) -->
+     <a 
+     href="#" class="hidden md:flex items-center gap-2 font-[objectsansbold] text-[16px] text-[#fff] font-bold hover:bg-[#23252B] hover:text-white transition-colors h-[48px] w-[218.7px] rounded-[4px] justify-center">
+              <img src="data:image/svg+xml,%3csvg%20width='24px'%20height='24px'%20viewBox='-0.72%20-0.72%2025.44%2025.44'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20id='SVGRepo_bgCarrier'%20stroke-width='0'%3e%3c/g%3e%3cg%20id='SVGRepo_tracerCarrier'%20stroke-linecap='round'%20stroke-linejoin='round'%20stroke='%2357585C'%20stroke-width='0.9120000000000001'%3e%3c/g%3e%3cg%20id='SVGRepo_iconCarrier'%3e%3cpath%20d='M3%2015C3%2017.8284%203%2019.2426%203.87868%2020.1213C4.75736%2021%206.17157%2021%209%2021H15C17.8284%2021%2019.2426%2021%2020.1213%2020.1213C21%2019.2426%2021%2017.8284%2021%2015'%20stroke='%2357585C'%20stroke-width='1.7759999999999998'%20stroke-linecap='round'%20stroke-linejoin='round'%3e%3c/path%3e%3cpath%20d='M12%203V16M12%2016L16%2011.625M12%2016L8%2011.625'%20stroke='%2357585C'%20stroke-width='1.7759999999999998'%20stroke-linecap='round'%20stroke-linejoin='round'%3e%3c/path%3e%3c/g%3e%3c/svg%3e"  class="w-6 h-6">
+              <span>Download Battle.net</span>
+       </a>
+     <!-- Support (Desktop) -->
+     <a 
+     href="#" class="hidden md:flex items-center gap-2  text-[#fff] hover:bg-[#23252B] transition-colors h-[48px] w-[124.84px] rounded-[4px] justify-center font-[objectsansbold] text-[16px] font-bold">
+      <img src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20fill='%2357585C'%20viewBox='0%200%2024%2024'%3e%3cpath%20d='M11.104%208.068c-.13.046-.248.118-.527.364-.252.223-.456.591-.543%201.048-.052.27-.27.497-.546.497h-1c-.277%200-.503-.225-.474-.5.103-.955.504-1.895%201.24-2.544.323-.285.676-.57%201.179-.75.482-.171%201.018-.217%201.675-.217%201.407%200%203.022.477%203.67%202.047.624%201.509-.02%203.086-1.447%203.75-.128.06-.302.135-.454.202l-.253.112a3.3%203.3%200%200%200-.47.248.5.5%200%200%200-.15.132c-.003.005-.016.024-.016.09v.953a.5.5%200%200%201-.5.5h-1a.5.5%200%200%201-.5-.5v-.952c0-.924.5-1.512%201.047-1.881.252-.17.524-.303.762-.411.136-.062.238-.106.335-.148.112-.049.216-.094.356-.159.463-.215.654-.66.442-1.173-.186-.451-.73-.81-1.822-.81-.594%200-.853.048-1.004.102M11%2016.5a.5.5%200%200%201%20.5-.5h1a.5.5%200%200%201%20.5.5v1a.5.5%200%200%201-.5.5h-1a.5.5%200%200%201-.5-.5z'/%3e%3cpath%20d='M22%2012c0%205.523-4.477%2010-10%2010S2%2017.523%202%2012%206.477%202%2012%202s10%204.477%2010%2010m-2%200a8%208%200%201%200-16%200%208%208%200%200%200%2016%200'/%3e%3c/svg%3e" class="w-6 h-6"> 
+      <span>Support</span>
+      </a>
+    <!-- Account Dropdown (Desktop) -->
+     <div class="relative dropdown hidden md:block">
+       <button 
+       class="flex items-center gap-2 h-[48px] w-[143.31px] rounded-[4px] justify-center font-bold font-[objectsansbold] text-[16px] text-white hover:bg-[#23252B] transition-colors " >
+        <img src="data:image/svg+xml,%3csvg%20width='24px'%20height='24px'%20viewBox='-0.64%20-0.64%2017.28%2017.28'%20xmlns='http://www.w3.org/2000/svg'%20fill='%2357585c'%20stroke='%2357585c'%20stroke-width='0.4'%3e%3cg%20id='SVGRepo_bgCarrier'%20stroke-width='0'%3e%3c/g%3e%3cg%20id='SVGRepo_tracerCarrier'%20stroke-linecap='round'%20stroke-linejoin='round'%3e%3c/g%3e%3cg%20id='SVGRepo_iconCarrier'%3e%3cpath%20d='M16%207.992C16%203.58%2012.416%200%208%200S0%203.58%200%207.992c0%202.43%201.104%204.62%202.832%206.09.016.016.032.016.032.032.144.112.288.224.448.336.08.048.144.111.224.175A7.98%207.98%200%200%200%208.016%2016a7.98%207.98%200%200%200%204.48-1.375c.08-.048.144-.111.224-.16.144-.111.304-.223.448-.335.016-.016.032-.016.032-.032%201.696-1.487%202.8-3.676%202.8-6.106zm-8%207.001c-1.504%200-2.88-.48-4.016-1.279.016-.128.048-.255.08-.383a4.17%204.17%200%200%201%20.416-.991c.176-.304.384-.576.64-.816.24-.24.528-.463.816-.639.304-.176.624-.304.976-.4A4.15%204.15%200%200%201%208%2010.342a4.185%204.185%200%200%201%202.928%201.166c.368.368.656.8.864%201.295.112.288.192.592.24.911A7.03%207.03%200%200%201%208%2014.993zm-2.448-7.4a2.49%202.49%200%200%201-.208-1.024c0-.351.064-.703.208-1.023.144-.32.336-.607.576-.847.24-.24.528-.431.848-.575.32-.144.672-.208%201.024-.208.368%200%20.704.064%201.024.208.32.144.608.336.848.575.24.24.432.528.576.847.144.32.208.672.208%201.023%200%20.368-.064.704-.208%201.023a2.84%202.84%200%200%201-.576.848%202.84%202.84%200%200%201-.848.575%202.715%202.715%200%200%201-2.064%200%202.84%202.84%200%200%201-.848-.575%202.526%202.526%200%200%201-.56-.848zm7.424%205.306c0-.032-.016-.048-.016-.08a5.22%205.22%200%200%200-.688-1.406%204.883%204.883%200%200%200-1.088-1.135%205.207%205.207%200%200%200-1.04-.608%202.82%202.82%200%200%200%20.464-.383%204.2%204.2%200%200%200%20.624-.784%203.624%203.624%200%200%200%20.528-1.934%203.71%203.71%200%200%200-.288-1.47%203.799%203.799%200%200%200-.816-1.199%203.845%203.845%200%200%200-1.2-.8%203.72%203.72%200%200%200-1.472-.287%203.72%203.72%200%200%200-1.472.288%203.631%203.631%200%200%200-1.2.815%203.84%203.84%200%200%200-.8%201.199%203.71%203.71%200%200%200-.288%201.47c0%20.352.048.688.144%201.007.096.336.224.64.4.927.16.288.384.544.624.784.144.144.304.271.48.383a5.12%205.12%200%200%200-1.04.624c-.416.32-.784.703-1.088%201.119a4.999%204.999%200%200%200-.688%201.406c-.016.032-.016.064-.016.08C1.776%2011.636.992%209.91.992%207.992.992%204.14%204.144.991%208%20.991s7.008%203.149%207.008%207.001a6.96%206.96%200%200%201-2.032%204.907z'%3e%3c/path%3e%3c/g%3e%3c/svg%3e" alt="">
+                <span >Account</span>
+        <img src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='14'%20height='14'%20fill='none'%20stroke='%2357585C'%20stroke-linecap='round'%20stroke-linejoin='round'%20stroke-width='2'%20viewBox='0%200%2024%2024'%3e%3cpath%20d='m6%209%206%206%206-6'/%3e%3c/svg%3e" alt="">        
+      </button>
+      <div  class="dropdown-menu absolute right-0 top-12 w-[294px]  border border-[#44464B]  shadow-xl rounded-[4px]  border-[#fffffe1f] z-50  hidden bg-[#1A1C23]" >
+        <div class=" bg-[#1A1C23] px-2 mb-1">
+      <div class="login-wrapper px-4 pt-6 font-[objectsansbold] text-[16px]">
+      <a href="login.html"  class="block  py-2 text-center rounded-sm mb-4 bg-[#0074e0] text-white hover:bg-[#0074e0e6] hover:text-white transition-colors">Login</a>
+      </div>
+      <a href="#" class="flex gap-2 rounded-sm py-3 px-4 mt-2 font-[notosans] text-[14px] text-[#8B8C8F] hover:bg-[#272930]  hover:text-white transition-colors">
+ <img src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20fill='%238B8C8F'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20part='icon'%20aria-hidden='true'%3e%3cpath%20d='M11.675%2013.771a6.5%206.5%200%200%200-.954%202.042%206.8%206.8%200%200%201-3.048-.864c-.335.163-.705.457-1.057.916q-.141.184-.257.375a6.97%206.97%200%200%200%204.159%201.744c.052.71.218%201.388.48%202.016a9%209%200%201%201%208.974-8.282A6.5%206.5%200%200%200%2018%2011.076V11a7%207%200%201%200-12.973%203.651c.762-.995%201.821-1.75%203.002-1.85.853.643%201.874%201.018%202.971%201.018q.343%200%20.675-.048'%3e%3c/path%3e%3cpath%20d='M14.375%208.975a3.375%203.375%200%201%200-6.75%200%203.375%203.375%200%200%200%206.75%200m-2%200a1.375%201.375%200%201%201-2.75%200%201.375%201.375%200%200%201%202.75%200M16.455%2013h1.093a.5.5%200%200%201%20.492.412l.167.936a.55.55%200%200%200%20.288.381q.146.079.282.171a.55.55%200%200%200%20.49.076l1.051-.368a.5.5%200%200%201%20.59.209l.518.837a.5.5%200%200%201-.12.659l-.943.725a.55.55%200%200%200-.205.445v.058a.55.55%200%200%200%20.205.445l.943.726a.5.5%200%200%201%20.12.659l-.516.837a.5.5%200%200%201-.591.209l-1.053-.369a.55.55%200%200%200-.49.076q-.135.093-.282.171a.55.55%200%200%200-.289.382l-.166.935a.5.5%200%200%201-.493.412h-1.093a.5.5%200%200%201-.492-.412l-.167-.935a.55.55%200%200%200-.288-.382%203%203%200%200%201-.282-.171.55.55%200%200%200-.49-.075l-1.05.367a.5.5%200%200%201-.591-.209l-.517-.837a.5.5%200%200%201%20.12-.659l.94-.724a.55.55%200%200%200%20.206-.445v-.06a.55.55%200%200%200-.205-.445l-.942-.725a.5.5%200%200%201-.12-.659l.517-.837a.5.5%200%200%201%20.59-.21l1.052.37a.55.55%200%200%200%20.49-.076q.136-.093.283-.172a.55.55%200%200%200%20.29-.382l.166-.934a.5.5%200%200%201%20.492-.412M17%2019.09a1.58%201.58%200%201%200%200-3.157%201.58%201.58%200%200%200%200%203.158Z'%3e%3c/path%3e%3c/svg%3e" alt="">
+ <span> Account Settings </span>
+      </a>
+       <a href="#" class="flex py-3 px-4 mt-2 rounded-sm gap-2 font-[notosans] text-[14px] text-[#8B8C8F] hover:bg-[#272930] hover:text-white  transition-colors" >
+    <img src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20fill='%2357585c'%20width='24px'%20height='24px'%20viewBox='0%200%2024%2024'%20part='icon'%20aria-hidden='true'%3e%3cpath%20d='M10.55%2020.03%2012%2021.35l1.45-1.31.04-.036C18.616%2015.344%2022%2012.27%2022%208.5%2022%205.42%2019.58%203%2016.5%203c-1.116%200-2.204.745-3.128%201.617A19%2019%200%200%200%2012%206.09c-.39-.459-.856-.986-1.372-1.473C9.704%203.745%208.616%203%207.5%203%204.42%203%202%205.42%202%208.5c0%203.777%203.394%206.855%208.537%2011.518zm1.557-1.472-.002.002-.1.09-.109-.099-.003-.003c-2.615-2.371-4.623-4.198-6.001-5.883C4.536%2011.008%204%209.733%204%208.5%204%206.525%205.525%205%207.5%205c.197%200%20.607.121%201.25.631.609.484%201.193%201.129%201.727%201.756L12%209.175l1.523-1.788c.534-.627%201.118-1.272%201.727-1.756.643-.51%201.053-.631%201.25-.631C18.475%205%2020%206.525%2020%208.5c0%201.233-.537%202.508-1.892%204.167-1.379%201.686-3.386%203.515-6%205.89Z'%3e%3c/path%3e%3c/svg%3e" alt="">
+    <span>Wish List</span>
+  </a>
+      <a href="#" class="flex py-3 px-4 mt-2 gap-2 rounded-sm font-[notosans] text-[14px] text-[#8B8C8F] hover:bg-[#272930] hover:text-white  transition-colors">
+                  <img src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20fill='%2357585c'%20width='24px'%20height='24px'%20viewBox='0%200%2024%2024'%20part='icon'%20aria-hidden='true'%3e%3cpath%20d='M2%202h2v16H2zm3%2020v-2H3v2zm4-2H7v2h2zm2%200h5v2h-5zm10%200h-3v2h3zm1-18h-3v16h3zm-6%200h1v16h-1zm-2%200h-2v16h2zM6%202h4v16H6z'%3e%3c/path%3e%3c/svg%3e" alt="">
+                  <span>Redeem Code</span>
+                </a>
+                <a href="#"  class="flex gap-2 rounded-sm py-3 px-4 mt-2 font-[notosans] text-[14px] text-[#8B8C8F] hover:bg-[#272930] hover:text-white  transition-colors" > <img src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20fill='%2357585c'%20width='24px'%20height='24px'%20viewBox='0%200%2024%2024'%20part='icon'%20aria-hidden='true'%3e%3cpath%20d='M13.5%202a.5.5%200%200%200-.5.5v1a.5.5%200%200%200%20.5.5H15v16h-1.5a.5.5%200%200%200-.5.5v1a.5.5%200%200%200%20.5.5h5a.5.5%200%200%200%20.5-.5v-1a.5.5%200%200%200-.5-.5H17v-3h3a2%202%200%200%200%202-2V9a2%202%200%200%200-2-2h-3V4h1.5a.5.5%200%200%200%20.5-.5v-1a.5.5%200%200%200-.5-.5zM17%209h3v6h-3zM4%207h9v2H4v6h9v2H4a2%202%200%200%201-2-2V9a2%202%200%200%201%202-2'%3e%3c/path%3e%3c/svg%3e" alt="">
+                  <span> Change BattleTag </span>
+                 </a>
+         </div>
+         <div class="bg-[#22242C] py-3 px-2 ">
+         <a href="#" class="flex py-3  px-2 rounded-sm font-[notosans] text-[14px]  text-[#8B8C8F] hover:bg-[#272930] hover:text-white  transition-colors ">
+  <img src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20fill='%2357585c'%20width='24px'%20height='24px'%20viewBox='0%200%2024%2024'%20part='icon'%20aria-hidden='true'%3e%3cpath%20d='M3.114%2020.31%204%2015%2015.585%203.414a2%202%200%200%201%202.828%200l2.172%202.172a2%202%200%200%201%200%202.828L9%2020l-5.31.885a.5.5%200%200%201-.575-.576Zm4.924-2.177%208.34-8.34-2.172-2.172-8.34%208.34-.434%202.606zm9.754-9.754L19.171%207l-2.172-2.172-1.378%201.38z'%3e%3c/path%3e%3c/svg%3e" alt=""> Create Account
+              </a> 
+         </div>
+      </div>
+      </div>
+      </div>
+    <!-- Buttoon Account Dropdown ---- Only Mobile: Right -->
+            <button
+              class="md:hidden hover:bg-[#23252B] p-2.5 rounded-lg"
+              aria-label="Account Menu">
+             <img src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20fill='none'%20stroke='white'%20viewBox='0%200%2024%2024'%20part='icon'%20aria-hidden='true'%3e%3cpath%20stroke-linecap='round'%20stroke-linejoin='round'%20stroke-width='2'%20d='M20%2021v-2a4%204%200%200%200-4-4H8a4%204%200%200%200-4%204v2M16%207a4%204%200%201%201-8%200%204%204%200%200%201%208%200'%3e%3c/path%3e%3c/svg%3e" alt="">
+            </button>  
+       </div>
+      <!-- #region Menu ----- Only Desktop -->‌‌
+      <div style="display: flex ; gap:6px; align-items: center;  justify-content:center; margin:auto; width: 95%;  " class="h-14 font-[notosansbold] bg-[#15171E] text-[14px]  m-auto gap-6">
+      <!-- Menu Desktop-->
+      <div style="width: 1025px;" class="flex items-center flex-wrap flex-row h-14  text-[14px] bg-[#22242b] text-[#ffffffb9] rounded-sm gap-6">
+              <!-- Warcraft Dropdown -->
+              <div class="relative dropdown">
+              <button class="p-2 hover:bg-[#303237] hover:text-white transition-colors flex items-center gap-1 h-14"  >
+                  <span>Warcraft</span>
+                  <svg
+                    class="w-3.5 h-3.5"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+               </button>
+               <div class="dropdown-menu absolute left-0 p-2 w-68 text-[#ffffffb9] bg-[#1A1C23] rounded-md  border border-[#272930]  z-50 hidden">
+
+                <a class="flex items-center gap-2 py-2 px-4 rounded-md hover:bg-[#272930] hover:text-white transition-colors">
+                  <img src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'?%3e%3c!--%20Generator:%20Adobe%20Illustrator%2022.1.0,%20SVG%20Export%20Plug-In%20.%20SVG%20Version:%206.00%20Build%200)%20--%3e%3csvg%20version='1.1'%20id='Layer_1'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20x='0px'%20y='0px'%20viewBox='0%200%20512%20512'%20style='enable-background:new%200%200%20512%20512;'%20xml:space='preserve'%3e%3cstyle%20type='text/css'%3e%20.st0{fill:%232B374C;}%20.st1{fill:%23F4BF2A;}%20%3c/style%3e%3cg%3e%3ccircle%20class='st0'%20cx='255.7'%20cy='256.5'%20r='168'/%3e%3cpath%20class='st1'%20d='M466,256.5c0-42.3-13.2-84-36.8-119.4V85.7c0-1.4-1.4-2.8-2.8-2.8h-51.4c-71.5-49.3-165.9-49.3-237.4,0H86.3%20c-0.7,0-1.4,0-2.1,0.7c-0.7,0.7-0.7,1.4-0.7,2.1v50.7c-50,72.2-50,167.3,0,239.5v50.7c0,1.4,1.4,2.8,2.8,2.8h51.4%20c72.2,49.3,166.6,48.6,238.8-0.7h50.7c1.4,0,2.8-1.4,2.8-3.5l0,0v-50.7C453.5,340.5,466,298.9,466,256.5z%20M73.8,256.5%20c0-100.7,81.2-181.9,181.9-181.9s181.9,81.2,181.9,181.9s-81.2,181.9-181.9,181.9l0,0l0,0C155,438.4,73.8,357.2,73.8,256.5z'/%3e%3cpath%20class='st1'%20d='M134.9,157.9h68.7c-1.4,7.6-2.1,15.3-2.1,23.6c2.8,30.5,22.9,115.2,22.9,115.2L257,164.9L290.4,294%20c0,0,20.1-113.9,20.1-121.5c-0.7-5.6-3.5-11.1-8.3-14.6h72.9c-9.7,9-16.7,20.1-20.8,33.3c-6.2,25-28.5,151.3-28.5,159%20c0.7,8.3,3.5,16,8.3,22.9h-68c1.4-6.2,2.1-12.5,2.1-18.7c0-11.8-10.4-66.6-10.4-66.6s-13.9,56.9-13.9,67.3c0,6.2,1.4,12.5,4.2,18%20h-68.7c0,0,13.2-9.7,13.2-18.7c-1.4-25.7-37.5-159.7-40.3-170.1C150.1,173.9,143.9,164.2,134.9,157.9z'/%3e%3c/g%3e%3c/svg%3e" alt="" class="w-6 h-6" /> 
+                  <div>
+                    <span>World of Warcraft</span>
+                    <br>
+                <sub class="text-[#8E8F93] font-[notosans] text-[10px]">Massively Multiplayer RPG</sub>
+               </div>
+              </a>
+               
+                  <a class="flex items-center gap-2 py-2 px-4 rounded-md hover:bg-[#272930] hover:text-white transition-colors">
+                <img src="/assets/10-5NM3bzrR.svg" alt="" class="w-6 h-6" />
+                  <div> <span> Warcraft III: Reforged</span>
+                       <br>
+                <sub class="text-[#8E8F93] font-[notosans] text-[10px]">Massively Multiplayer RPG</sub>
+               </div>
+                </a>
+                  <a class="flex items-center gap-2 py-2 px-4 rounded-md hover:bg-[#272930] hover:text-white transition-colors">
+                <img src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'?%3e%3c!--%20Generator:%20Adobe%20Illustrator%2026.5.2,%20SVG%20Export%20Plug-In%20.%20SVG%20Version:%206.00%20Build%200)%20--%3e%3csvg%20version='1.1'%20id='Warcraft_Arclight_Rumble_Icon'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20x='0px'%20y='0px'%20viewBox='0%200%2050%2050'%20style='enable-background:new%200%200%2050%2050;'%20xml:space='preserve'%3e%3cstyle%20type='text/css'%3e%20.st0{display:none;}%20.st1{display:inline;}%20.st2{fill:%23FFC345;}%20.st3{fill:%231783FC;}%20.st4{fill:%2365FAFF;}%20.st5{fill:%23CA9A2D;}%20.st6{clip-path:url(%23SVGID_00000025400482822593182210000009539181259378976671_);fill:%23F3C029;}%20.st7{fill:%23CB9B2E;}%20.st8{clip-path:url(%23SVGID_00000157990878754664518300000016158038291974115462_);fill:%23F3C029;}%20%3c/style%3e%3cg%20id='BG_Check'%20class='st0'%3e%3cg%20class='st1'%3e%3crect%20x='-0.9'%20y='0'%20class='st2'%20width='51.8'%20height='50.1'/%3e%3c/g%3e%3c/g%3e%3cg%20id='Color_Icon'%3e%3cg%20id='Color'%3e%3cg%3e%3cpolygon%20id='Bolt_Outer_00000084510211084760089520000005978577460333269168_'%20class='st3'%20points='3,41.2%2024.8,12.8%2026.5,20.6%2045.1,8.7%2022.6,38.9%2021,30.9%20'/%3e%3cpolygon%20id='Bolt_Inner_00000057110097004243105640000016286091061572752517_'%20class='st4'%20points='8.9,36.1%2023.9,17%2025.4,23.7%2039.5,13.8%2023.7,34.9%2022.2,28.2%20'/%3e%3c/g%3e%3c/g%3e%3cg%20id='Gear_Bottom'%3e%3cpath%20class='st5'%20d='M43.8,20.1l3.2-2.8l-2.7-4.8l-6.1,8.5c0,0,2.8,6.5-3.4,13.2c-4.1,4.5-9.9,3.7-9.9,3.7l-2.7,3.2l-1.3-4%20c0,0-0.8-0.4-2.5-1.6c-1.2-1-1.2-0.9-1.2-1l-5.1,3.1l9.1,5.3l0.6,4.3h8l0.7-4.3l8.6-4.9l4.7,0.5l3.2-5.6l-3.2-3%20C43.8,29.8,43.8,20.1,43.8,20.1z%20M25.8,45.4c-1.2,0-2.1-0.9-2.1-2.1s0.9-2.1,2.1-2.1c1.1,0,2.1,0.9,2.1,2.1S26.9,45.4,25.8,45.4z%20M41,35.7c-1.2,0-2.1-0.9-2.1-2.1s0.9-2.1,2.1-2.1s2.1,0.9,2.1,2.1S42.2,35.7,41,35.7z'/%3e%3cg%3e%3cdefs%3e%3crect%20id='SVGID_1_'%20x='25.5'%20y='22'%20transform='matrix(0.7992%200.6011%20-0.6011%200.7992%2027.0023%20-15.4683)'%20width='22.3'%20height='21.3'/%3e%3c/defs%3e%3cclipPath%20id='SVGID_00000075133456212352472110000010580075822202493077_'%3e%3cuse%20xlink:href='%23SVGID_1_'%20style='overflow:visible;'/%3e%3c/clipPath%3e%3cpath%20style='clip-path:url(%23SVGID_00000075133456212352472110000010580075822202493077_);fill:%23F3C029;'%20d='M43.8,20.1l3.2-2.8%20l-2.7-4.8l-6.1,8.5c0,0,2.8,6.5-3.4,13.2c-4.1,4.5-9.9,3.7-9.9,3.7l-2.7,3.2l-1.3-4c0,0-0.8-0.4-2.5-1.6c-1.2-1-1.2-0.9-1.2-1%20l-5.1,3.1l9.1,5.3l0.6,4.3h8l0.7-4.3l8.6-4.9l4.7,0.5l3.2-5.6l-3.2-3C43.8,29.8,43.8,20.1,43.8,20.1z%20M25.8,45.4%20c-1.2,0-2.1-0.9-2.1-2.1s0.9-2.1,2.1-2.1c1.1,0,2.1,0.9,2.1,2.1S26.9,45.4,25.8,45.4z%20M41,35.7c-1.2,0-2.1-0.9-2.1-2.1%20s0.9-2.1,2.1-2.1s2.1,0.9,2.1,2.1S42.2,35.7,41,35.7z'/%3e%3c/g%3e%3c/g%3e%3cg%20id='Gear_Top'%3e%3cpath%20class='st7'%20d='M15.7,17.1c4.1-4.9,9.4-5.2,12.1-4.9c2.7,0.3,5.6,2.3,5.6,2.3l4.7-3l-7.5-4.4L30,2.9h-7.7l-1.2,4.5L13,12.2%20l-4.7-0.7l-3.3,5.7l3,2.8l0.3,9.2l-3.7,2.7l1.5,3.1l7.3-9.2C13.4,25.7,12.4,21,15.7,17.1z%20M25.8,4.9c1.2,0,2.1,0.9,2.1,2.1%20s-0.9,2.1-2.1,2.1c-1.1,0-2.1-0.9-2.1-2.1S24.6,4.9,25.8,4.9z%20M10.3,18.2c-1.1,0-2.1-0.9-2.1-2.1S9.1,14,10.3,14s2.1,0.9,2.1,2.1%20S11.4,18.2,10.3,18.2z'/%3e%3cg%3e%3cdefs%3e%3crect%20id='SVGID_00000055672971664679300050000012021230636705464218_'%20x='5.7'%20y='6.8'%20transform='matrix(0.7992%200.6011%20-0.6011%200.7992%2013.8709%20-6.6585)'%20width='22.3'%20height='21.3'/%3e%3c/defs%3e%3cclipPath%20id='SVGID_00000018927629766040953380000014933339883308610698_'%3e%3cuse%20xlink:href='%23SVGID_00000055672971664679300050000012021230636705464218_'%20style='overflow:visible;'/%3e%3c/clipPath%3e%3cpath%20style='clip-path:url(%23SVGID_00000018927629766040953380000014933339883308610698_);fill:%23F3C029;'%20d='M15.7,17.1%20c4.1-4.9,9.4-5.2,12.1-4.9c2.7,0.3,5.6,2.3,5.6,2.3l4.7-3l-7.5-4.4L30,2.9h-7.7l-1.2,4.5L13,12.2l-4.7-0.7l-3.3,5.7l3,2.8%20l0.3,9.2l-3.7,2.7l1.5,3.1l7.3-9.2C13.4,25.7,12.4,21,15.7,17.1z%20M25.8,4.9c1.2,0,2.1,0.9,2.1,2.1s-0.9,2.1-2.1,2.1%20c-1.1,0-2.1-0.9-2.1-2.1S24.6,4.9,25.8,4.9z%20M10.3,18.2c-1.1,0-2.1-0.9-2.1-2.1S9.1,14,10.3,14s2.1,0.9,2.1,2.1%20S11.4,18.2,10.3,18.2z'/%3e%3c/g%3e%3c/g%3e%3c/g%3e%3c/svg%3e" alt="" class="w-6 h-6" />
+                <div><span>Warcraft Rumble </span> 
+                    <br>
+                <sub class="text-[#8E8F93] font-[notosans] text-[10px]">Action Strategy</sub>
+               </div>
+                </a>
+            <a class="flex items-center gap-2 py-2 px-4 rounded-md hover:bg-[#272930] hover:text-white transition-colors">
+               <img src="data:image/svg+xml,%3csvg%20id='a'%20data-name='Warcraft_Family'%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2048%2048'%20part='icon'%20aria-hidden='true'%3e%3cdefs%3e%3cstyle%3e%20.d,%20.e%20{%20fill:%20%23f8b700;%20}%20.e%20{%20fill-rule:%20evenodd;%20}%20%3c/style%3e%3c/defs%3e%3cpath%20id='b'%20data-name='Border'%20class='d'%20d='M42.2,5.73v36.41H5.79V5.73h36.41M44.2,3.73H3.79v40.41h40.41V3.73h0Z'%3e%3c/path%3e%3cpath%20id='c'%20data-name='W'%20class='e'%20d='M24.98,36.17c1.07-2.92-.34-6.65-.95-8.8-.59,2.14-1.9,5.72-1,8.8h-8.06c1.41-.98,1.22-2.43,1.2-2.69-.12-1.21-.67-3.8-2.2-10.07-.75-3.08-2.63-9.68-2.69-9.81-.32-.72-.94-1.4-1.57-1.81h8.12c0,.05,0,.1,0,.15-.57.71-.5,3.08-.24,4.14.65,2.65,1.17,5.36,1.78,7.9.25,1.03.45,2.2.7,3.17.19-.78.36-1.09.43-1.43.23-1.07.5-2.13.84-3.24.86-3.29,1.72-6.57,2.58-9.86h.08c1.46,5.54,3.25,12.53,3.8,14.22.75-4,1.61-8.3,1.91-9.86.23-.9.66-3.05.39-3.99-.15-.52-.65-.73-.82-1.2h8.43c-2.4,1.64-3.01,5.93-3.96,11.47-.63,3.68-1.6,9.13-1.44,7.94-.28,1.14-.68,3.7.77,4.97,0,0-6.1.09-8.08,0Z'%3e%3c/path%3e%3c/svg%3e" alt="" class="w-6 h-6"/> 
+              <div><span>  Warcraft</span> 
+                    <br>
+                <sub class="text-[#8E8F93] font-[notosans] text-[10px]">Real-time Strategy</sub>
+               </div>
+
+              </a>
+                </div>
+              </div>
+              <!-- Diablo Dropdown -->
+             <div class="relative dropdown">
+              <button class="p-2 hover:bg-[#303237] hover:text-white transition-colors flex items-center gap-1 h-14"  >
+                  <span>Diablo</span>
+                  <svg
+                    class="w-3.5 h-3.5"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                </button>
+                 <div class="dropdown-menu absolute left-0 p-2 w-68 text-[#ffffffb9] bg-[#1A1C23] rounded-md  border border-[#272930]  z-50 hidden">
+                  <a class="flex items-center gap-2 py-2 px-4 rounded-md hover:bg-[#272930] hover:text-white transition-colors">
+                    <img src="/assets/20-BuTCIIC4.svg" alt="" class="w-6 h-6" />
+                       <div><span> Diablo IV</span> 
+                    <br>
+                <sub class="text-[#8E8F93] font-[notosans] text-[10px]"> Action RPG</sub>
+               </div>
+                  </a>
+                   <a class="flex items-center gap-2 py-2 px-4 rounded-md hover:bg-[#272930] hover:text-white transition-colors">
+                    <img src="data:image/svg+xml,%3csvg%20version='1.1'%20id='Layer_1'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20x='0px'%20y='0px'%20viewBox='0%200%20213%20213'%20style='enable-background:new%200%200%20213%20213;'%20xml:space='preserve'%20part='icon'%20aria-hidden='true'%3e%3cstyle%20type='text/css'%3e%20.st0{fill:%23ED1C24;}%20.st1{fill:%23EDE6CA;}%20%3c/style%3e%3cg%20id='Layer_1_00000041290065268955031760000004908605694924825523_'%3e%3cpath%20class='st0'%20d='M190.9,126l15.8-15.8l-15.8-15.8c-3.5,0.5-7.1-0.7-9.6-3.2L128,37.8c-2.5-2.5-3.7-6.1-3.2-9.6L109,12.4%20L93.2,28.3c0.5,3.5-0.7,7.1-3.2,9.6L36.6,91.2c-2.5,2.5-6.1,3.7-9.6,3.2l-15.8,15.8L27.1,126c3.5-0.5,7.1,0.7,9.6,3.2L90,182.5%20c2.5,2.5,3.7,6.1,3.2,9.6L109,208l15.8-15.8c-0.5-3.5,0.7-7.1,3.2-9.6l53.3-53.3C183.9,126.7,187.4,125.5,190.9,126z'%3e%3c/path%3e%3cpath%20d='M99.5,126.3v40.5c0,1.1-12.3,8.3-12.3,8.3h43.4c0,0-9.6-7.2-9.6-8.3c0,0,0-39.8,0-41.4c0,0,0-7.6,0-7.6%20c0-0.6,3.7-3.8,7.4-6.4l0.3-0.2l-0.3-0.2c-3.6-2.7-7.3-5.8-7.3-6.4c0-0.4,0.1-10.1,0.1-10.1c0-1.4,0-39.7,0-39.8%20c0-1.1,9.5-8.3,9.5-8.3H87.3c0,0,12.2,7.2,12.2,8.3c0,0,0,37.8,0,38.6c0,0,0.1,10.8,0.1,11.3s-7.6,6.5-7.6,6.5s7.6,6,7.6,6.6%20C99.6,117.8,99.5,126.3,99.5,126.3z'%3e%3c/path%3e%3cpath%20class='st1'%20d='M174.4,98.7c-0.2-0.5-0.4-1-0.7-1.4l0,0c0,0-3-8.7-17-20.4c-5.9-5-12.6-9-19.8-11.8c-9.2-4-20.1-5.6-37.5-5.6%20l-51.5-0.2h-0.7l0.5,0.4c0.1,0.1,10.8,7.6,15,10.6c0.1,7.1,0,77.7,0,81L47,160.9l61,0.1c17,0,29.3-4.2,39.7-13.7%20c7.8-6.7,13.3-15.7,15.5-25.8c0.4-1.6,0.6-3.3,0.8-5c0.1-1.5,0.2-3,0.2-4.5c0-9.1-2.7-18-7.8-25.6c0,0,0-0.1,0-0.1%20c0.1,0,0.2,0.1,0.3,0.1c1.5,0.7,3,1.4,4.4,2.3l0.3,0.2c0.9,0.5,1.7,1.1,2.6,1.7c3.6,2.5,6.9,5.3,10,8.4l0.6,0.7L174.4,98.7z%20M102.3,150.7c-5.5,0-10.6,0-13.3,0h-1.8c-1.1,0-1.3,0-1.3-1.7c0-1.1,0.1-73.4,0.1-77.4c2-0.3,23.6-1.3,34,3.6%20c4.4,1.9,8.4,4.9,11.4,8.6c4.6,5.6,6.9,13,6.9,22c0,25.7-10.4,36.6-19.9,41.9C114.3,149.9,107.2,150.7,102.3,150.7L102.3,150.7z'%3e%3c/path%3e%3c/g%3e%3c/svg%3e" alt="" class="w-6 h-6" />
+                  
+                  <div><span>  Diablo Immortal</span> 
+                    <br>
+                <sub class="text-[#8E8F93] font-[notosans] text-[10px]"> Action RPG</sub>
+               </div>
+                  </a>
+                   <a class="flex items-center gap-2 py-2 px-4 rounded-md hover:bg-[#272930] hover:text-white transition-colors">
+                    <img src="/assets/20-BuTCIIC4.svg" alt="" class="w-6 h-6" />
+                    
+                   <div><span>Diablo II: Resurrected</span> 
+                    <br>
+                <sub class="text-[#8E8F93] font-[notosans] text-[10px]"> Action RPG</sub>
+               </div>
+                  </a>
+                    <a class="flex items-center gap-2 py-2 px-4 rounded-md hover:bg-[#272930] hover:text-white transition-colors">
+                    <img src="/assets/7-BhxgjwPW.svg" alt="" class="w-6 h-6" />
+                   
+                    <div><span> Diablo III</span> 
+                    <br>
+                <sub class="text-[#8E8F93] font-[notosans] text-[10px]"> Action RPG</sub>
+               </div>
+                  </a>
+                    <a class="flex items-center gap-2 py-2 px-4 rounded-md hover:bg-[#272930] hover:text-white transition-colors">
+                    <img src="/assets/13-BIEvYcok.svg" alt="" class="w-6 h-6" />
+                    
+                  <div><span> Diablo</span> 
+                    <br>
+                <sub class="text-[#8E8F93] font-[notosans] text-[10px]"> Action RPG</sub>
+               </div>
+                  </a>
+                </div>
+              </div>
+              <!-- Overwatch Dropdown -->
+              <div class="relative dropdown">
+              <button class="p-2 hover:bg-[#303237] hover:text-white transition-colors flex items-center gap-1 h-14"  >
+                  <span>Overwatch</span>
+                  <svg
+                    class="w-3.5 h-3.5"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                </button>
+                  <div class="dropdown-menu absolute left-0 p-2 w-68 text-[#ffffffb9] bg-[#1A1C23] rounded-md  border border-[#272930]  z-50 hidden">
+                  <a class="flex items-center gap-2 py-2 px-4 rounded-md hover:bg-[#272930] hover:text-white transition-colors">
+                    <img src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'?%3e%3c!--%20Generator:%20Adobe%20Illustrator%2026.0.3,%20SVG%20Export%20Plug-In%20.%20SVG%20Version:%206.00%20Build%200)%20--%3e%3csvg%20version='1.1'%20id='Layer_1'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20x='0px'%20y='0px'%20viewBox='0%200%20512%20512'%20style='enable-background:new%200%200%20512%20512;'%20xml:space='preserve'%3e%3cstyle%20type='text/css'%3e%20.st0{fill:%23ED6516;}%20.st1{fill:%23FFFFFF;}%20%3c/style%3e%3cg%3e%3cpath%20class='st0'%20d='M149.8,149.9c27.2-27.2,64.7-44,106.1-44s79,16.8,106.1,44l42.5-42.5c-38-38-90.5-61.5-148.6-61.5%20s-110.5,23.5-148.6,61.5L149.8,149.9z'/%3e%3cpath%20class='st1'%20d='M416.8,120.8l-42.7,42.7c20,25.5,31.9,57.6,31.9,92.5c0,28.3-7.8,54.7-21.4,77.3l-77.3-77.3l-42.1-98.9H265%20v133.6l83.4,83.4c-25.5,20-57.6,31.9-92.5,31.9s-67-11.9-92.5-31.9l83.4-83.4V157.6l-42.3,98.4l-77.3,77.3%20c-13.6-22.6-21.4-49-21.4-77.3c0-34.9,11.9-67,31.9-92.5l-42.7-42.7c-30.7,36.5-49.2,83.7-49.2,135.1c0,116,94.1,210.1,210.1,210.1%20S466,372,466,255.9C466,204.5,447.5,157.3,416.8,120.8z'/%3e%3cg%3e%3cg%3e%3cg%3e%3cg%3e%3cpath%20class='st1'%20d='M411,431h-1.5v2.2h-0.8v-5.9h2.4c1.1,0,1.8,0.7,1.8,1.9c0,0.9-0.5,1.6-1.3,1.8l1.4,2.3h-0.9L411,431z%20M409.5,430.3h1.6c0.7,0,1.2-0.5,1.2-1.2c0-0.7-0.4-1.2-1.2-1.2h-1.6V430.3z'/%3e%3c/g%3e%3cpath%20class='st1'%20d='M410.8,435.7c-3.1,0-5.5-2.5-5.5-5.5c0-3.1,2.5-5.5,5.5-5.5s5.5,2.5,5.5,5.5%20C416.3,433.3,413.8,435.7,410.8,435.7z%20M410.8,425.4c-2.7,0-4.8,2.1-4.8,4.8s2.1,4.8,4.8,4.8s4.8-2.1,4.8-4.8%20C415.6,427.6,413.4,425.4,410.8,425.4z'/%3e%3c/g%3e%3c/g%3e%3c/g%3e%3c/g%3e%3c/svg%3e" alt="" class="w-6 h-6" />
+                   
+                     <div><span>  Overwatch 2</span> 
+                    <br>
+                <sub class="text-[#8E8F93] font-[notosans] text-[10px]">Team-Based Action Game</sub>
+                       </div>
+                  </a>
+                </div>
+              </div>
+                <!-- Hearthstone -->
+              <div class="relative dropdown">
+              <button class="p-2 hover:bg-[#303237] hover:text-white transition-colors flex items-center gap-1 h-14"  >
+                  <span>Hearthstone</span>
+                  <svg
+                    class="w-3.5 h-3.5"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                </button>
+                 <div class="dropdown-menu absolute left-0 p-2 w-68 text-[#ffffffb9] bg-[#1A1C23] rounded-md  border border-[#272930]  z-50 hidden">
+                  <a class="flex items-center gap-2 py-2 px-4 rounded-md hover:bg-[#272930] hover:text-white transition-colors">
+                    <img src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'?%3e%3c!--%20Generator:%20Adobe%20Illustrator%2022.1.0,%20SVG%20Export%20Plug-In%20.%20SVG%20Version:%206.00%20Build%200)%20--%3e%3csvg%20version='1.1'%20id='Layer_1'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20x='0px'%20y='0px'%20viewBox='0%200%20512%20512'%20style='enable-background:new%200%200%20512%20512;'%20xml:space='preserve'%3e%3cstyle%20type='text/css'%3e%20.st0{fill:%23593810;}%20.st1{fill:%23FF9C00;}%20.st2{fill:%2339CCFF;}%20%3c/style%3e%3cg%3e%3ccircle%20class='st0'%20cx='256.7'%20cy='256'%20r='138.3'/%3e%3cg%3e%3cpath%20class='st1'%20d='M400.3,311.8L494,256l-93.7-55.8c-4.7-12-10.6-22.6-17.9-33.2l21.3-59.2L345.1,129%20c-10-7.3-21.3-13.3-33.2-17.9L256,18l-55.8,93.7c-12,4.7-22.6,10.6-33.2,17.9l-58.5-21.3l21.3,58.5c-7.3,10-13.3,21.3-17.9,33.2%20L18,256l93.7,55.8c4.7,12,10.6,22.6,17.9,33.2l-21.3,59.2l58.5-21.3c10,7.3,21.3,13.3,33.2,17.9L256,494l55.8-93.7%20c12-4.7,22.6-10.6,33.2-17.9l59.2,21.3L383,345.1C390.3,335.1,396.3,323.8,400.3,311.8z%20M256,384.3%20c-70.5,0-128.3-57.2-128.3-128.3S185.5,127.7,256,127.7S384.3,185.5,384.3,256l0,0C384.3,326.5,326.5,384.3,256,384.3L256,384.3%20L256,384.3z'/%3e%3cpath%20class='st2'%20d='M341.8,252.7c0.7-6-4.7-12-5.3-18.6c0-3.3-1.3-6.6-2.7-10c-1.3-3.3-1.3-6.6-2-9.3h-0.7%20c4-8-7.3-17.3-12.6-23.3c-6.6-6.6-10-15.3-19.9-18.6c-4.7-2-9.3-4.7-14.6-6.6c-4.7-2-10-3.3-14-4.7c-4.7-2-8-6-13.3-5.3%20c-5.3,0.7-8,4-14,2.7c-12-4-20.6,2.7-29.9,9.3c-4.7,3.3-9.3,6-13.3,9.3c-1.3,1.3-2.7,3.3-4,5.3c-1.3,2-4,3.3-5.3,6%20c-2.7,4-6.6,6.6-10.6,9.3c-2,1.3-3.3,4-6,5.3c-3.3,2-4,1.3-4,5.3c0,5.3,2.7,9.3,2.7,14c0,2.7,0,5.3,0,8c0.7,2.7,1.3,4.7,2,7.3%20c1.3,4.7,0,10,2,14c2.7,4,5.3,8.6,8.6,12c3.3,4,6.6,8.6,10,13.3c2,2.7,9.3,6.6,9.3,10.6c5.3,1.3,6.6,7.3,11.3,7.3%20c2.7-0.7,5.3-0.7,7.3,0c2.7,0.7,4.7,1.3,7.3,2c4.7,0,8-4,12.6-5.3c4.7-1.3,10,0,14.6-2c8.6-5.3,14-14.6,14.6-24.6%20c0-5.3-1.3-10.6-4.7-14.6c-2.7-4.7-0.7-10-5.3-12.6c-4.7-2-10-4-16-4c-5.3-2-10.6-1.3-16,0.7c-8.6,6,10.6,19.9,0.7,24.6%20c-11.3,4.7-17.3-8-19.9-16.6c-1.3-5.3-1.3-11.3,0-16.6c0-2.7,0.7-4.7,1.3-7.3c1.3-2,4-3.3,6-4c4-2.7,7.3-6.6,11.3-9.3%20s9.3-4.7,14-6c6-1.3,12-1.3,17.9-1.3c2.7,0,5.3,0.7,8,0.7s4.7-1.3,7.3-1.3c4,0,2.7,1.3,2.7,4.7c0,2,1.3,4,2.7,6c3.3,4,6,8,9.3,12%20c6.6,8,5.3,20.6,4.7,30.6c-0.7,5.3,0,10.6,1.3,16c2,6-2.7,6-6.6,9.3c-2.7,4-5.3,8-7.3,12c-3.3,4-6.6,7.3-10.6,10%20c-3.3,3.3-7.3,6-10.6,8.6c-4.7,2.7-9.3,5.3-14,7.3c-5.3,2-11.3,3.3-16.6,4.7c-2.7,0.7-5.3,1.3-8,2.7c-2,1.3-3.3,4-6,5.3%20c-6.6,4-14,3.3-21.3,6.6c-4,2-17.3,2.7-17.9,7.3h-0.7c2,4,6,7.3,10.6,8c4.7,0.7,9.3,2,13.3,3.3c4.7,2,8.6,2.7,13.3,3.3%20c4.7,0,8.6,2.7,13.3,3.3c5.3,0.7,9.3-3.3,14-4c5.3-0.7,10.6-0.7,16-1.3c5.3-0.7,10-2,15.3-3.3c4.7-2,9.3-2,14-4%20c4.7-2,8.6-4,12.6-6.6c4-2.7,4.7-7.3,8.6-10c4-2.7,7.3-5.3,10.6-8.6c2.7-4,4.7-8.6,5.3-13.3c2-4,4.7-8,7.3-11.3%20c2-4.7,4-9.3,4.7-14c2-4.7,2-9.3,2-14.6c-0.7-2.7-3.3-4-2-7.3C340.4,256.7,341.1,254.7,341.8,252.7z'/%3e%3c/g%3e%3c/g%3e%3c/svg%3e" alt="" class="w-6 h-6" />
+                       <div><span>Hearthstone</span> 
+                    <br>
+                <sub class="text-[#8E8F93] font-[notosans] text-[10px]">Strategy Card Game</sub>
+                       </div>
+                  </a>
+                </div>
+              </div>
+              <!-- StarCraft Dropdown -->
+             <div class="relative dropdown">
+              <button class="p-2 hover:bg-[#303237] hover:text-white transition-colors flex items-center gap-1 h-14"  >
+                  <span>StarCraft</span>
+                  <svg
+                    class="w-3.5 h-3.5"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                </button>
+                  <div class="dropdown-menu absolute left-0 p-2 w-68 text-[#ffffffb9] bg-[#1A1C23] rounded-md  border border-[#272930]  z-50 hidden">
+                  <a class="flex items-center gap-2 py-2 px-4 rounded-md hover:bg-[#272930] hover:text-white transition-colors">
+                    <img src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'?%3e%3c!--%20Generator:%20Adobe%20Illustrator%2022.1.0,%20SVG%20Export%20Plug-In%20.%20SVG%20Version:%206.00%20Build%200)%20--%3e%3csvg%20version='1.1'%20id='Layer_1'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20x='0px'%20y='0px'%20viewBox='0%200%20512%20512'%20style='enable-background:new%200%200%20512%20512;'%20xml:space='preserve'%3e%3cstyle%20type='text/css'%3e%20.st0{fill:%233390FF;}%20.st1{fill:%23CCE1FF;}%20%3c/style%3e%3cg%3e%3cg%3e%3cpath%20class='st0'%20d='M237.6,73.5l-78-30.8h-1.4l-80.8,15c-1.4,0-2.1,1.4-2.1,2.9c0,0.7,0.7,2.1,1.4,2.1%20c9.3,4.3,18.6,8.6,27.9,13.6c15,7.9,42.2,25,47.9,35.1l0,0c2.1,3.6,2.9,7.9,2.9,12.2l0.7,259c0,0,0.7,32.9,77.3,85.1%20c1.4,0.7,5.7,1.4,6.4,0c0,0,0,0,0-0.7V75.7C239,75,239,73.5,237.6,73.5z'/%3e%3cpath%20class='st0'%20d='M273.4,73.5l78-30.8h1.4l80.8,15c1.4,0,2.1,1.4,2.1,2.9c0,0.7-0.7,2.1-1.4,2.1c-9.3,4.3-18.6,8.6-27.9,13.6%20c-15,7.9-42.2,25-47.9,35.1l0,0c-2.1,4.3-2.9,8.6-2.9,12.9l-0.7,259c0,0-0.7,32.9-77.3,85.1c-1.4,0.7-5.7,1.4-6.4,0c0,0,0,0,0-0.7%20v-392C272,75,272,73.5,273.4,73.5z'/%3e%3c/g%3e%3cpath%20class='st1'%20d='M57.3,181h129.5l17.2,15.7c0.7,0.7,0.7,0.7,1.4,0.7l0,0c0.7,0,1.4,0,1.4-0.7l45.8-50.1%20c0.7-0.7,0.7-1.4,0.7-2.9c-0.7-0.7-1.4-1.4-2.1-1.4H83.1c-7.2-0.7-13.6,1.4-19.3,5c-5,4.3-9.3,11.4-9.3,24.3v6.4%20C54.5,178.8,55.9,180.2,57.3,181C57.3,180.2,57.3,180.2,57.3,181L57.3,181L57.3,181z%20M487.3,144.5H302.7l-1.4,0.7l-33.6,31.5%20c-0.7,0.7-0.7,2.9,0,3.6c0.7,0.7,1.4,0.7,1.4,0.7h148.1l7.9,10.7c0.7,0.7,2.1,1.4,3.6,0.7l60.1-42.9c0.7-0.7,1.4-2.1,0-3.6%20C488.7,144.5,488,144.5,487.3,144.5L487.3,144.5L487.3,144.5z%20M425.7,341.2c-5,0.7-10,1.4-15,1.4c-43.6-1.4-79.4-35.1-83-78.7%20c-0.7-5.7-0.7-11.4-0.7-17.2c0-14.3,0.7-29.3,3.6-43.6c0-0.7,0-1.4-0.7-2.1c-0.7-0.7-1.4-0.7-2.1-0.7h-65.8c-0.7,0-2.1,0.7-2.1,1.4%20c-5.7,16.5-8.6,34.3-8.6,52.2c0,14.3,2.1,21.5,7.2,38.6c12.9,39.3,60.1,77.3,98,77.3c57.2,0,71.5-20,72.2-26.5%20C428.6,341.9,427.9,341.2,425.7,341.2L425.7,341.2L425.7,341.2L425.7,341.2z%20M148.2,202.4l-2.1-0.7H71.7c-1.4,0-2.1,1.4-2.1,2.1%20c0,0.7,0,1.4,0.7,1.4c0,0,100.9,116.6,103,119.5c0,0,0,0.7,0.7,0.7l-0.7,0.7h-59.4c-8.6,0-17.2-2.9-24.3-7.9c-2.9-2.1-5-5-7.2-7.9%20c-0.7-0.7-0.7-0.7-1.4-0.7c-0.7,0-1.4,0-2.1,0.7L23,361.9c-0.7,0.7-0.7,2.9,0,3.6c0.7,0.7,0.7,0.7,1.4,0.7h208.2%20c12.2,0,20-12.9,20.7-25c0-5-1.4-10-4.3-13.6C239.8,318.3,148.2,202.4,148.2,202.4z'/%3e%3c/g%3e%3c/svg%3e" alt="" class="w-6 h-6" />
+                   
+                     <div><span> StarCraft II</span> 
+                    <br>
+                <sub class="text-[#8E8F93] font-[notosans] text-[10px]"> Real-time Strategy</sub>
+                       </div>
+                  </a>
+                 <a class="flex items-center gap-2 py-2 px-4 rounded-md hover:bg-[#272930] hover:text-white transition-colors">
+                    <img src="data:image/svg+xml,%3csvg%20version='1.1'%20id='Layer_1'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20x='0px'%20y='0px'%20viewBox='0%200%20512%20512'%20style='enable-background:new%200%200%20512%20512;'%20xml:space='preserve'%20part='icon'%20aria-hidden='true'%3e%3cstyle%20type='text/css'%3e%20.st0{fill:%23CCE1FF;}%20%3c/style%3e%3cg%3e%3cpath%20class='st0'%20d='M58,180.7h129.3l17.1,15.7c0.7,0.7,0.7,0.7,1.4,0.7l0,0c0.7,0,1.4,0,1.4-0.7l45.7-50c0.7-0.7,0.7-1.4,0.7-2.9%20c-0.7-0.7-1.4-1.4-2.1-1.4H83.7c-7.1-0.7-13.6,1.4-19.3,5c-5,4.3-9.3,11.4-9.3,24.3v5.7C55.2,179.3,56.6,180.7,58,180.7L58,180.7%20L58,180.7L58,180.7z%20M487.3,144.3H303l-1.4,0.7L268,176.4c-0.7,0.7-0.7,2.9,0,3.6s1.4,0.7,1.4,0.7h147.8l7.9,10.7%20c0.7,0.7,2.1,1.4,3.6,0.7l60-42.9c0.7-0.7,1.4-2.1,0-3.6C488.7,145,488,144.3,487.3,144.3L487.3,144.3L487.3,144.3z%20M425.8,340.7%20c-5,0.7-10,1.4-15,1.4c-43.6-1.4-79.3-35-82.9-78.6c-0.7-5.7-0.7-10.7-0.7-16.4c0-14.3,0.7-29.3,3.6-43.6c0-0.7,0-1.4-0.7-2.1%20c-0.7-0.7-1.4-0.7-2.1-0.7h-65.7c-0.7,0-2.1,0.7-2.1,1.4c-5.7,16.4-8.6,34.3-8.6,52.1c0,14.3,2.1,21.4,7.1,38.6%20c12.9,39.3,60,77.1,97.9,77.1c57.1,0,71.4-20,72.1-26.4C428.7,342.1,428,340.7,425.8,340.7L425.8,340.7L425.8,340.7L425.8,340.7z%20M148.7,202.9l-2.1-0.7H72.3c-1.4,0-2.1,1.4-2.1,2.1c0,0.7,0,1.4,0.7,1.4c0,0,100.7,116.4,102.9,119.3c0,0,0,0.7,0.7,0.7l-0.7,0.7%20h-59.3c-8.6,0-17.1-2.9-24.3-7.9c-2.9-2.1-5-5-7.1-7.9c-1.4,0-1.4,0-2.1,0s-1.4,0-2.1,0.7L23,362.8c-0.7,0.7-0.7,2.9,0,3.6%20c0.7,0.7,0.7,0.7,1.4,0.7h207.8c12.1,0,20-12.9,20.7-25c0-5-1.4-10-4.3-13.6C240.1,317.9,148.7,202.9,148.7,202.9z'%3e%3c/path%3e%3c/g%3e%3c/svg%3e" alt="" class="w-6 h-6" />
+                   
+                    <div><span> StarCraft</span> 
+                    <br>
+                <sub class="text-[#8E8F93] font-[notosans] text-[10px]"> Real-time Strategy</sub>
+                       </div>
+                  </a>
+                </div>
+              </div>   
+                <!-- Call of Duty Dropdown -->
+         <div class="relative dropdown">
+              <button class="p-2 hover:bg-[#303237] hover:text-white transition-colors flex items-center gap-1 h-14"  >
+                  <span> call of Duty</span>
+                  <svg
+                    class="w-3.5 h-3.5"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                </button>
+                <div class="dropdown-menu absolute left-0 p-2 h-[532px] overflow-y-auto w-68 text-[#ffffffb9] bg-[#1A1C23] rounded-md  border border-[#272930]  z-50 hidden">
+                  <a class="flex items-center gap-2 py-2 px-4 rounded-md hover:bg-[#272930] hover:text-white transition-colors">
+                    <img src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'?%3e%3csvg%20id='Layer_1'%20xmlns='http://www.w3.org/2000/svg'%20version='1.1'%20viewBox='0%200%20974.84%20243.53'%3e%3c!--%20Generator:%20Adobe%20Illustrator%2029.5.0,%20SVG%20Export%20Plug-In%20.%20SVG%20Version:%202.1.0%20Build%20137)%20--%3e%3cdefs%3e%3cstyle%3e%20.st0%20{%20fill:%20%23f36d21;%20}%20.st1%20{%20fill:%20%23fff;%20}%20%3c/style%3e%3c/defs%3e%3cpath%20class='st1'%20d='M276.96,2.7c34.56,5.39,33.71,56.27,30.1,82.29-2.59,18.68-11.45,32.36-31.82,32.82l-.09,6.39c18.06,1.53,28.71,8.06,33.42,25.99,3.91,14.87,3.77,52.13-1.33,66.65-4.22,12-17.98,26.64-31.48,26.64H0V2.7h276.96ZM222.99,94.03v-31.43l-1.78-1.78H84.21v33.21h138.77ZM84.21,147.41v37.96h139.37c.89,0,2.69-2.88,2.93-4.18.58-3.05.3-29.98-.56-31.4-.76-.61-2.99-2.37-3.56-2.37H84.21Z'/%3e%3cpath%20class='st1'%20d='M362.06.64l251.19-.36c20.13,2.12,29.11,18.24,32.24,36.56.11,51.2,5.01,107.63,1.5,158.59-1.47,21.39-9.05,45.57-33.74,48.1h-247.99c-22.42-1.95-31.17-22.29-33.74-42.18,2.82-51.39-3.81-106.87-.06-157.78,1.4-19.09,10.11-38.94,30.6-42.94ZM561.61,73.87h-144.11l-1.78,1.78v92.52l1.78,1.78h144.11v-96.07Z'/%3e%3cpath%20class='st0'%20d='M967.6,72.18l-113.87,158.74c-4.78,5.5-17.48,12.62-24.53,12.62h-79.69l122.22-171.35h95.86Z'/%3e%3cpath%20class='st0'%20d='M974.84,35.25v29.74h-238.93c-1.01,0-7.43-3.41-8.93-4.32-14.31-8.5-41.86-40.74-53.69-54.65-1.55-1.84-2.98-3.94-4.18-6.02h274.18c23.15,0,31.54,8.14,31.54,35.25Z'/%3e%3c/svg%3e" alt="" class="w-6 h-6" />
+                    <div><span>Black Ops 7</span> 
+                    <br>
+                <sub class="text-[#8E8F93] font-[notosans] text-[10px]"> Real-time Strategy</sub>
+                       </div>
+                  </a>
+                  <a class="flex items-center gap-2 py-2 px-4 rounded-md hover:bg-[#272930] hover:text-white transition-colors">
+                    <img src="data:image/svg+xml,%3csvg%20id='Layer_1'%20data-name='Layer%201'%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201026.14%20248.76'%20part='icon'%20aria-hidden='true'%3e%3cdefs%3e%3cstyle%3e%20.cls-1%20{%20fill:%20%23f96800;%20}%20.cls-1,%20.cls-2%20{%20stroke-width:%200px;%20}%20.cls-2%20{%20fill:%20%23fff;%20}%20%3c/style%3e%3c/defs%3e%3cpath%20class='cls-2'%20d='M286.12,126.77h-2.59v-7.96h.71c11.13,0,19.49-3.98,25.06-11.93,5.57-7.96,8.35-20.44,8.35-37.46v-21.21c0-14.8-3.69-26.52-11.06-35.14-7.38-8.62-17.57-12.93-30.59-12.93H0v248.61h277.65c13.18,0,23.65-4.47,31.41-13.42,7.77-8.95,11.65-21.71,11.65-38.29v-22.87c0-31.6-11.53-47.4-34.59-47.4ZM86.82,60.48h140c2.51,0,3.77,1.77,3.77,5.3v24.2c0,3.54-1.26,5.3-3.77,5.3H86.82v-34.81ZM233.65,183.12c0,3.54-1.26,5.3-3.77,5.3H86.82v-38.12h143.06c2.51,0,3.77,1.77,3.77,5.3v27.51Z'%3e%3c/path%3e%3cpath%20class='cls-1'%20d='M1016.48,103.78c-6.44-7.97-16.58-11.96-30.42-11.96l-165.3.05c-11.69,0-16.51,5.54-22.6,11.87-3.3,3.43-16.77,18.31-16.77,18.31v-42.05c0-1.7.24-4.3,2.19-6.43,3.83-4.19,8.52-9.41,11.86-13,1.88-2.02,2.95-2.83,4.91-2.83h162.24c9.3,0,12.1-1.69,21.88-12.37,14.8-16.16,39.88-45.06,39.88-45.06l-250.62.04c-12.71,0-15.4,2.07-24.49,11.99-4.64,5.05-16.15,16.9-29.1,31.55-10.66,12.06-9.84,16.35-9.84,24.24l.1,126.1c0,17.25,3.5,30.63,10.5,40.13,7,9.5,16.86,14.25,29.57,14.25h235.6c12.87,0,22.77-4.75,29.69-14.25,6.92-9.5,10.38-22.87,10.38-40.13v-52.61c0-17.25-3.22-29.86-9.66-37.83ZM952.03,186.36c0,1.53-.32,2.73-.96,3.6-.65.88-1.53,1.31-2.65,1.31h-163.56c-1.13,0-2.01-.44-2.65-1.31-.65-.87-.97-2.07-.97-3.6,0,0,.11-1.49.15-5.43.05-4.14-.54-5.35,1.62-7.72,3.04-3.34,9.68-10.59,14.06-15.04,4.89-4.97,7.09-6.93,10.21-6.93l141.86-.24c1.93,0,2.9,1.31,2.9,3.93v31.43Z'%3e%3c/path%3e%3cpath%20class='cls-2'%20d='M649.24,14.1c-6.68-9.4-16.22-14.1-28.64-14.1h-244.7c-12.26,0-21.77,4.7-28.52,14.1-6.75,9.4-10.13,22.85-10.13,40.34v139.72c0,17.27,3.38,30.67,10.13,40.18,6.75,9.51,16.26,14.27,28.52,14.27h244.7c12.42,0,21.96-4.76,28.64-14.27,6.67-9.51,10.01-22.9,10.01-40.18V54.45c0-17.49-3.34-30.94-10.01-40.34ZM573.1,168.91c0,1.53-.35,2.74-1.05,3.61-.7.88-1.59,1.31-2.68,1.31h-142.49c-1.09,0-1.98-.44-2.68-1.31-.7-.87-1.05-2.07-1.05-3.61v-89.21c0-1.53.35-2.73,1.05-3.61.7-.87,1.59-1.31,2.68-1.31h142.49c1.08,0,1.98.44,2.68,1.31.7.88,1.05,2.08,1.05,3.61v89.21Z'%3e%3c/path%3e%3c/svg%3e" alt="" class="w-6 h-6" />
+                   
+                      <div><span> Black Ops 6</span> 
+                    <br>
+                <sub class="text-[#8E8F93] font-[notosans] text-[10px]"> Real-time Strategy</sub>
+                       </div>
+                  </a>
+                  <a class="flex items-center gap-2 py-2 px-4 rounded-md hover:bg-[#272930] hover:text-white transition-colors">
+                    <img src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'?%3e%3csvg%20id='Artwork'%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20264.81%20159.8'%3e%3cdefs%3e%3cstyle%3e.cls-1{fill:%23fff;}%3c/style%3e%3c/defs%3e%3cpath%20class='cls-1'%20d='M127.38,0l-13.92,101.31h-2.32L102.19,0H63.23l-8.95,101.31h-2.32L38.04,0H0L26.83,159.8h45.78l8.52-101.42h3.14l8.52,101.42h45.78L165.42,0h-38.04Z'/%3e%3cpolygon%20class='cls-1'%20points='264.38%2031.24%20264.38%200%20173.95%200%20168.26%2033.88%20219.76%2033.88%20168.72%20128.36%20168.72%20159.78%20264.81%20159.8%20264.81%20125.92%20213.28%20125.92%20264.38%2031.24'/%3e%3c/svg%3e" alt="" class="w-6 h-6" />
+                  
+                     <div><span>   Warzone</span> 
+                    <br>
+                <sub class="text-[#8E8F93] font-[notosans] text-[10px]"> Real-time Strategy</sub>
+                       </div>
+                  </a>
+                  <a class="flex items-center gap-2 py-2 px-4 rounded-md hover:bg-[#272930] hover:text-white transition-colors">
+                    <img src="data:image/svg+xml,%3csvg%20version='1.1'%20id='COD_x5F_MW3_x5F_ICON'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20x='0px'%20y='0px'%20viewBox='0%200%201728%20504'%20style='enable-background:new%200%200%201728%20504;'%20xml:space='preserve'%20part='icon'%20aria-hidden='true'%3e%3cstyle%20type='text/css'%3e%20.st0{fill:%23D80000;}%20.st1{fill-rule:evenodd;clip-rule:evenodd;fill:%23FFFFFF;}%20%3c/style%3e%3cpath%20id='III_00000154409082969091041530000012956753807431131806_'%20class='st0'%20d='M1236.77,91.25h88.07v321.62h-102.19V116.3%20L1236.77,91.25z%20M1481.97,91.25v321.38h88.6l13.61-24.48V91.25H1481.97z%20M1352.3,412.87h102.19V91.25H1352.3V412.87z'%3e%3c/path%3e%3cpath%20id='MW'%20class='st1'%20d='M608.92,339.73l102.75-99.94V91.13H594.3L427.81,260.24L261.15,91.31H143.82v321.6h102.67l0.11-173.55%20H263L427.71,399.4l164.75-160.26h16.4L608.92,339.73z%20M1074.01,91.41l-0.11,173.55h-16.4L892.72,104.66L608.8,380.14l0,32.7h117.35%20l166.68-168.98l166.51,169.17h117.38V91.41H1074.01z'%3e%3c/path%3e%3c/svg%3e" alt="" class="w-6 h-6" />
+                 
+                     <div><span>   Modern Warfare III</span> 
+                    <br>
+                <sub class="text-[#8E8F93] font-[notosans] text-[10px]"> Real-time Strategy</sub>
+                       </div>
+                  </a>
+                   <a class="flex items-center gap-2 py-2 px-4 rounded-md hover:bg-[#272930] hover:text-white transition-colors">
+                    <img src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'?%3e%3csvg%20version='1.1'%20id='MW2CR'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20x='0px'%20y='0px'%20width='512px'%20height='512px'%20viewBox='0%200%20512%20512'%20enable-background='new%200%200%20512%20512'%20xml:space='preserve'%3e%3cpath%20id='_x32_'%20fill='%2360BA46'%20d='M372.7,351.2H269.9v-28.6l102.8-60.4v39.5l-25.9,15.8c0,0-3.2,1.8-2,4.7c1.2,2.9,3.9,3,3.9,3h24%20M493.5,230.1v-40.6l-48.7-29.3h-55V178h17.3c4.8,0,6.2,1.1,6.2,1.1l20.2,11.8c4.8,2.7,4.8,5.3,4.8,5.3v21.3c0,7-4.3,8.8-4.3,8.8%20l-44.3,25.5V292L493.5,230.1z%20M373.1,178v-17.8h-55.2l-48,28.4v19h54.6v-11.9c0,0,0.3-3.5,5.1-5.6l18.9-10.8c0,0,1.4-1.3,4.8-1.2%20H373.1z%20M389.7,351.2h103.3v-26H389.7V351.2z'/%3e%3cpath%20id='MW'%20fill='%23FFFFFF'%20d='M185.5,235.4v115.7H156v-73.6l-52.1,58.7l0,0.2c0,0-2.6,3.1-4.1,3.1s-4.1-3.1-4.1-3.1L43.1,272v79.1%20H18.5V235.4h24.6l58.9,69.4l57.8-69.4H185.5z%20M352.7,235.4l-27.6,73.8l-27.6-73.8h-27.8l-27.6,73.8l-27.6-73.8H187l41.4,110.7%20l2.1,5.7l23.3,0v0l2.2-5.7l27.7-74.1l27.7,74.1l2.1,5.7l23.3,0v0l2.2-5.7l41.3-110.7H352.7z'/%3e%3c/svg%3e" alt="" class="w-6 h-6" />
+                  
+                       <div><span>   Modern Warfare II</span> 
+                    <br>
+                <sub class="text-[#8E8F93] font-[notosans] text-[10px]"> Real-time Strategy</sub>
+                       </div>
+                  </a>
+                  <a class="flex items-center gap-2 py-2 px-4 rounded-md hover:bg-[#272930] hover:text-white transition-colors">
+                    <img src="data:image/svg+xml,%3csvg%20width='48'%20height='48'%20viewBox='0%200%2048%2048'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%20part='icon'%20aria-hidden='true'%3e%3cpath%20d='M29.9611%2032.5969L46%205.28787H43.0195L29.9052%2027.6418L28.4522%2025.1642L40.0948%205.28787H37.2261L26.9992%2022.7239L25.3971%2020.0228L34.0593%205.28787H31.265L24.0559%2017.5825L18.1693%207.61641L16.7909%205.28787H16.7536H16.735H16.7163H13.8848H10.6808H7.90517H4.7011H2L3.37849%207.61641L24.0559%2042.7121L25.3971%2040.4022L6.07959%207.61641H9.28366L26.9992%2037.6824L28.3776%2035.3167L12.0593%207.61641H15.2447L29.9611%2032.5969Z'%20fill='%23B49B58'%3e%3c/path%3e%3c/svg%3e" alt="" class="w-6 h-6" />
+                   
+                      <div><span> Vanguard</span> 
+                    <br>
+                <sub class="text-[#8E8F93] font-[notosans] text-[10px]"> Real-time Strategy</sub>
+                       </div>
+                  </a>
+                   <a class="flex items-center gap-2 py-2 px-4 rounded-md hover:bg-[#272930] hover:text-white transition-colors">
+                    <img src="data:image/svg+xml,%3csvg%20width='48'%20height='48'%20viewBox='0%200%2048%2048'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%20part='icon'%20aria-hidden='true'%3e%3cpath%20d='M30.7989%2023.6568C30.3177%2023.2156%2029.5997%2023.0007%2028.6032%2023.0007H18.9644V35.2879H21.9257V30.9127H28.6025C29.5997%2030.9127%2030.3177%2030.6985%2030.7982%2030.2572C31.2844%2029.8111%2031.5303%2029.1237%2031.5303%2028.2151V25.709C31.5311%2024.7939%2031.2851%2024.1023%2030.7989%2023.6568ZM28.5484%2027.727C28.5484%2028.1455%2028.4518%2028.2569%2028.4411%2028.2668C28.4041%2028.303%2028.2378%2028.3725%2027.866%2028.3725H21.9264V25.5189H27.866C28.2378%2025.5189%2028.4041%2025.5891%2028.4404%2025.6231C28.4518%2025.6345%2028.5484%2025.7459%2028.5484%2026.1651V27.727ZM45.2322%2030.4154C45.181%2029.4585%2044.95%2028.7875%2044.5299%2028.3697C44.0508%2027.893%2043.2525%2027.6625%2042.0889%2027.6625H35.5088V25.5926H42.4301V26.8389L45.1142%2026.0799V25.4444C45.1142%2024.9209%2044.8739%2024.169%2044.3785%2023.6959C43.8894%2023.2277%2043.0883%2023%2041.929%2023H35.9147C34.7262%2023%2033.9194%2023.2341%2033.4467%2023.7186C32.9783%2024.1988%2032.7508%2025.0046%2032.7508%2026.1856V27.1631C32.7508%2028.3442%2032.9783%2029.1514%2033.4467%2029.6309C33.9201%2030.114%2034.7276%2030.3495%2035.9147%2030.3495H42.4728V32.6619H35.1356V31.4496L32.3122%2032.1001C32.3122%2033.2833%2032.5454%2034.0912%2033.0238%2034.5722C33.5377%2035.0893%2034.3033%2035.2389%2035.0063%2035.2758C35.3723%2035.295%2035.7384%2035.2865%2036.1045%2035.2865H42.0896C43.2689%2035.2865%2044.0728%2035.0538%2044.5455%2034.575C45.0154%2034.0983%2045.2436%2033.2883%2045.2436%2032.1001V31.1482C45.24%2030.8637%2045.2428%2030.4126%2045.2322%2030.4154ZM13.995%2023.0007H6.1852C4.99031%2023.0007%204.17784%2023.2376%203.70158%2023.7242C3.2296%2024.208%203%2025.0138%203%2026.1864V32.1015C3%2033.2755%203.2296%2034.0813%203.70158%2034.5636C4.17784%2035.051%204.99031%2035.2879%206.1852%2035.2879H13.995C15.1729%2035.2879%2015.9761%2035.0559%2016.4545%2034.5785C16.9279%2034.1026%2017.1582%2033.2918%2017.1582%2032.1015V26.1864C17.1582%2025.0039%2016.9279%2024.1967%2016.4552%2023.7171C15.9789%2023.2341%2015.1743%2023.0007%2013.995%2023.0007ZM14.2289%2032.6626H5.95134V25.5926H14.2289V32.6626Z'%20fill='%23FB0A33'%3e%3c/path%3e%3cpath%20d='M9.1253%2016.6318C9.18359%2016.5921%209.23761%2016.5474%209.28737%2016.4999C9.53473%2016.2559%209.66055%2015.9026%209.66055%2015.4472V14.6513C9.66055%2014.0931%209.51057%2013.6732%209.21415%2013.4001C8.92058%2013.1312%208.48271%2013%207.87567%2013H2V20.4906H7.46481C8.18275%2020.4906%208.71373%2020.3629%209.08905%2020.1019C9.36769%2019.9068%209.69964%2019.528%209.69964%2018.8272V17.9526C9.69964%2017.4795%209.56956%2017.095%209.31438%2016.8084C9.2568%2016.7439%209.19425%2016.685%209.1253%2016.6318ZM3.80549%2014.5676H7.45202C7.71502%2014.5676%207.78966%2014.6145%207.79037%2014.6145C7.7925%2014.6166%207.82947%2014.6655%207.82947%2014.8386V15.5245C7.82947%2015.6813%207.79677%2015.7444%207.78468%2015.7558C7.78397%2015.7565%207.71787%2015.809%207.45202%2015.809H3.80549V14.5676ZM7.88775%2018.4186C7.88775%2018.7421%207.81952%2018.8244%207.8117%2018.8322C7.78753%2018.8591%207.68304%2018.9031%207.45202%2018.9031H3.80549V17.3511H7.45202C7.73137%2017.3511%207.80103%2017.4171%207.80814%2017.4256C7.81596%2017.4341%207.88775%2017.5199%207.88775%2017.8483V18.4186ZM22.3111%2013L18.1968%2020.4906H20.0784L20.9577%2018.8081H25.2184L26.0969%2020.4906H28.1128L23.9275%2013H22.3111ZM21.7808%2017.2851L23.0909%2014.8038L24.4059%2017.2851H21.7808ZM39.9566%2016.5971L45.4349%2013H42.5681L38.7034%2015.6402V13H36.8979V20.4906H38.7034V17.7001L42.8752%2020.4906H46L39.9566%2016.5971ZM36.0385%2014.9422C36.0385%2014.2172%2035.8992%2013.7235%2035.6127%2013.4341C35.3248%2013.1419%2034.8337%2013%2034.1101%2013H30.2538C29.5309%2013%2029.0376%2013.1426%2028.7455%2013.4362C28.454%2013.7285%2028.3126%2014.2215%2028.3126%2014.9422V18.5484C28.3126%2019.2698%2028.454%2019.7621%2028.7455%2020.0551C29.0383%2020.348%2029.5309%2020.4906%2030.2538%2020.4906H34.1101C34.833%2020.4906%2035.3248%2020.3488%2035.6127%2020.0572C35.8992%2019.7671%2036.0385%2019.2734%2036.0385%2018.5484L34.233%2018.1725V18.8911H30.1117V14.5804H34.233V15.277L36.0385%2014.9422ZM12.4377%2013H10.633V20.4906H17.6488V18.8904H12.4377V13Z'%20fill='white'%3e%3c/path%3e%3c/svg%3e" alt="" class="w-6 h-6" />
+                   
+                     <div><span> Black Ops Cold War</span> 
+                    <br>
+                <sub class="text-[#8E8F93] font-[notosans] text-[10px]"> Real-time Strategy</sub>
+                       </div>
+                  </a>
+                   <a class="flex items-center gap-2 py-2 px-4 rounded-md hover:bg-[#272930] hover:text-white transition-colors">
+                    <img src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='80'%20height='80'%20viewBox='0%200%2080%2080'%20part='icon'%20aria-hidden='true'%3e%3cg%20fill='%23FFF'%20fill-rule='evenodd'%20transform='translate(6%2029)'%3e%3cpolygon%20points='29.389%200%2018.509%2011.259%207.686%200%200%200%200%2021.103%206.726%2021.103%206.726%208.139%2018.509%2020.226%2030.434%207.993%2030.434%2012.944%2037.188%206.011%2037.188%200'%3e%3c/polygon%3e%3cpolygon%20points='61.284%200%2061.284%2013.062%2049.378%20.853%2037.571%2012.964%2037.571%208.2%2030.813%2015.133%2030.813%2021.103%2038.335%2021.103%2049.378%209.845%2060.308%2021.103%2068%2021.103%2068%200'%3e%3c/polygon%3e%3c/g%3e%3c/svg%3e" alt="" class="w-6 h-6" />
+                   
+                     <div><span> Modern Warfare</span> 
+                    <br>
+                <sub class="text-[#8E8F93] font-[notosans] text-[10px]"> Real-time Strategy</sub>
+                       </div>
+                  </a>
+                   <a class="flex items-center gap-2 py-2 px-4 rounded-md hover:bg-[#272930] hover:text-white transition-colors">
+                    <img src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'?%3e%3csvg%20version='1.1'%20id='MW2CR'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20x='0px'%20y='0px'%20width='512px'%20height='512px'%20viewBox='0%200%20512%20512'%20enable-background='new%200%200%20512%20512'%20xml:space='preserve'%3e%3cpath%20id='_x32_'%20fill='%2360BA46'%20d='M372.7,351.2H269.9v-28.6l102.8-60.4v39.5l-25.9,15.8c0,0-3.2,1.8-2,4.7c1.2,2.9,3.9,3,3.9,3h24%20M493.5,230.1v-40.6l-48.7-29.3h-55V178h17.3c4.8,0,6.2,1.1,6.2,1.1l20.2,11.8c4.8,2.7,4.8,5.3,4.8,5.3v21.3c0,7-4.3,8.8-4.3,8.8%20l-44.3,25.5V292L493.5,230.1z%20M373.1,178v-17.8h-55.2l-48,28.4v19h54.6v-11.9c0,0,0.3-3.5,5.1-5.6l18.9-10.8c0,0,1.4-1.3,4.8-1.2%20H373.1z%20M389.7,351.2h103.3v-26H389.7V351.2z'/%3e%3cpath%20id='MW'%20fill='%23FFFFFF'%20d='M185.5,235.4v115.7H156v-73.6l-52.1,58.7l0,0.2c0,0-2.6,3.1-4.1,3.1s-4.1-3.1-4.1-3.1L43.1,272v79.1%20H18.5V235.4h24.6l58.9,69.4l57.8-69.4H185.5z%20M352.7,235.4l-27.6,73.8l-27.6-73.8h-27.8l-27.6,73.8l-27.6-73.8H187l41.4,110.7%20l2.1,5.7l23.3,0v0l2.2-5.7l27.7-74.1l27.7,74.1l2.1,5.7l23.3,0v0l2.2-5.7l41.3-110.7H352.7z'/%3e%3c/svg%3e" alt="" class="w-6 h-6" />
+                   
+                      <div><span>  Modern Warfare 2</span> 
+                    <br>
+                <sub class="text-[#8E8F93] font-[notosans] text-[10px]"> Real-time Strategy</sub>
+                       </div>
+                  </a>
+                  <a class="flex items-center gap-2 py-2 px-4 rounded-md hover:bg-[#272930] hover:text-white transition-colors">
+                    <img src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'?%3e%3c!--%20Generator:%20Adobe%20Illustrator%2022.1.0,%20SVG%20Export%20Plug-In%20.%20SVG%20Version:%206.00%20Build%200)%20--%3e%3csvg%20version='1.1'%20id='Layer_1'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20x='0px'%20y='0px'%20viewBox='0%200%20512%20512'%20style='enable-background:new%200%200%20512%20512;'%20xml:space='preserve'%3e%3cstyle%20type='text/css'%3e%20.st0{fill:%23FF6B00;}%20%3c/style%3e%3cg%20id='Layer_2'%3e%3cpath%20class='st0'%20d='M159.4,61v368.3L69,389v-93.4l13.2-31V155L69,124V61.4L159.4,61z%20M249.5,61h-77v375l77,35V61z%20M443,123.6V61%20h-90.4v369.1L443,389v-93.4l-13.2-31V155L443,123.6z%20M339.6,61h-77v410l77-35V61z'/%3e%3c/g%3e%3c/svg%3e" alt="" class="w-6 h-6" />
+                    
+                      <div><span> Black Ops 4</span> 
+                    <br>
+                <sub class="text-[#8E8F93] font-[notosans] text-[10px]"> Real-time Strategy</sub>
+                       </div>
+                  </a>
+                </div>
+              </div>
+              <!-- More Dropdown -->
+            <div class="relative dropdown">
+              <button class="p-2 hover:bg-[#303237] hover:text-white transition-colors flex items-center gap-1 h-14"  >  <span>More</span>
+                  <svg
+                    class="w-3.5 h-3.5"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                </button>
+                <div class="dropdown-menu absolute left-0 p-2 w-[527.99px] h-[359.95px] text-[#ffffffb9] bg-[#1A1C23] rounded-md  border border-[#272930]  z-50 hidden ">
+      <div class="md:flex">
+           <div class="w-[263.99px] h-[359.95px]">
+                  <a 
+                  class="flex items-center gap-2 py-2 px-4 w-[263.99px] h-[56px] rounded-md hover:bg-[#272930] hover:text-white transition-colors">
+                    <img src="/assets/more1-BWS8MtL_.svg" alt="" class="w-7 h-7" />
+                    
+                      <div><span>Avowed</span> 
+                    <br>
+                <sub class="text-[#8E8F93] font-[notosans] text-[10px]">First-person Fantasy RPG</sub>
+                       </div>
+                  </a>
+                  <a 
+                  class="flex items-center gap-2 py-2 px-4 w-[263.99px] h-[56px] rounded-md hover:bg-[#272930] hover:text-white transition-colors">
+                    <img src="/assets/12-CqYYNErp.svg" alt="" class="w-7 h-7" />
+                       <div><span> Bilzzard Arcade Collection</span> 
+                    <br>
+                <sub class="text-[#8E8F93] font-[notosans] text-[10px]"> Bundle</sub>
+                       </div>
+                  </a>
+                  <a 
+                class="flex items-center gap-2 py-2 px-4 w-[263.99px] h-[56px] rounded-md hover:bg-[#272930] hover:text-white transition-colors">
+                    <img src="/assets/more2-CWg2gYFv.svg" alt="" class="w-7 h-7" />
+                  
+                        <div><span>  Crash Bandicoot 4</span> 
+                    <br>
+                <sub class="text-[#8E8F93] font-[notosans] text-[10px]">Platformer</sub>
+                       </div>
+                  </a>
+                  <a 
+                 class="flex items-center gap-2 py-2 px-4 w-[263.99px] h-[56px] rounded-md hover:bg-[#272930] hover:text-white transition-colors">
+                    <img src="/assets/more4-CIYl2AqN.svg" alt="" class="w-7 h-7" />
+                   
+                    <div><span> DOOM: The dark Ages</span> 
+                    <br>
+                <sub class="text-[#8E8F93] font-[notosans] text-[10px]">Action Shooter</sub>
+                       </div>
+                  </a>
+                  <a 
+                  class="flex items-center gap-2 py-2 px-4 w-[263.99px] h-[56px] rounded-md hover:bg-[#272930] hover:text-white transition-colors">
+                    <img src="data:image/svg+xml,%3csvg%20version='1.1'%20id='Layer_1'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20x='0px'%20y='0px'%20viewBox='0%200%20512%20512'%20style='enable-background:new%200%200%20512%20512;'%20xml:space='preserve'%20part='icon'%20aria-hidden='true'%3e%3cstyle%20type='text/css'%3e%20.st0{fill:%23418AF2;}%20.st1{fill:%23FFFFFF;}%20.st2{fill:%2336AEEA;}%20%3c/style%3e%3cg%3e%3cg%3e%3cpolygon%20class='st0'%20points='422.6,352.8%20256,449.6%2089.4,352.8%2089.4,160.6%20256,63.8%20422.6,160.6%20'%3e%3c/polygon%3e%3cpolygon%20class='st1'%20points='256,46%2069.5,150.6%2069.5,360.6%20256,466%20442.5,360.6%20442.5,150.6%20'%3e%3c/polygon%3e%3c/g%3e%3cpath%20class='st2'%20d='M104.4,239.6c12.1-99.7,98.9-126.7,98.9-126.7c-116,123.9,22.8,212.1,22.8,212.1l-94,20.6%20C132.8,345.7,99.4,305.8,104.4,239.6z'%3e%3c/path%3e%3cpath%20class='st2'%20d='M315.8,397.7c-99.7,36.3-158-27.1-158-27.1c163,41.3,174.4-123.9,174.4-123.9l62.6,71.9%20C394.8,318.6,377,369.9,315.8,397.7z'%3e%3c/path%3e%3cpath%20class='st2'%20d='M404.8,284.5c-49.8-163-190.1-85.4-190.1-85.4l29.9-94.7c0,0,59.8-7.8,113.9,38.4%20C424.7,200.5,404.8,284.5,404.8,284.5z'%3e%3c/path%3e%3c/g%3e%3c/svg%3e" alt="" class="w-7 h-7" />
+                    
+                      <div><span>Heros of the storm</span> 
+                    <br>
+                <sub class="text-[#8E8F93] font-[notosans] text-[10px]">MOBA</sub>
+                       </div>
+                  </a>
+                  <a 
+                  class="flex items-center gap-2 py-2 px-4 w-[263.99px] h-[56px] rounded-md hover:bg-[#272930] hover:text-white transition-colors">
+                    <img src="/assets/more6-jycdosF6.svg" alt="" class="w-7 h-7" />
+                    
+                      <div><span> Sea of thieves</span> 
+                    <br>
+                <sub class="text-[#8E8F93] font-[notosans] text-[10px]">Action Adventure</sub>
+                       </div>
+                  </a>
+          </div>
+          <div class="w-[263.99px] ">        
+                  <a 
+                  class="flex items-center gap-2 py-2 px-4 w-[263.99px] h-[56px] rounded-md hover:bg-[#272930] hover:text-white transition-colors">
+                    <img src="/assets/more7-BAutp_Bx.svg" alt="" class="w-7 h-7" />
+                   
+                      <div><span>The Outer Worlds 2</span> 
+                    <br>
+                <sub class="text-[#8E8F93] font-[notosans] text-[10px]">Action RPG</sub>
+                       </div>
+                  </a>
+                  <a 
+                 class="flex items-center gap-2 py-2 px-4 w-[263.99px] h-[56px] rounded-md hover:bg-[#272930] hover:text-white transition-colors">
+                    <img src="/assets/more8-4Qu5UxIS.svg" alt="" class="w-7 h-7" />
+                   
+                      <div><span>Tony Hawk’s Pro Skater 3 + 4</span> 
+                    <br>
+                <sub class="text-[#8E8F93] font-[notosans] text-[10px]">Extreme Action Sports</sub>
+                       </div>
+                  </a>
+          </div>    
+
+      </div> 
+             </div>
+              </div>
+        </div>
+           <!-- Search Bar -->
+       <div class="relative flex h-14 w-14 items-center bg-[#22242b] text-[#8B8C8F] rounded-sm  hover:bg-[#303237] focus:text-white bg-fuchsia-500  ">
+       <label for="search-shop">
+        <svg
+                  class="absolute m-auto w-6 h-6 "
+                  fill="none"
+                  stroke="white"
+                  viewBox="0 0 24 24">
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                  />
+                </svg>   
+       </label>      
+               
+      
+              </div>
+          <!-- Battle.net Balance Dropdown -->
+      <div style="min-width: 181px;" class="w-[100px] dropdown text-[#ffffffb9] h-14">
+                <button
+                  class="flex items-center gap-2 p-4 font-[notosansbold] text-[14px] bg-[#22242b] text-[#ffffffb9] rounded-sm hover:bg-[#303237] hover:text-white transition-colors h-14" >
+                  <span>Battle.net Balance</span>
+                  <svg
+                    class="w-3 h-3"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                </button>
+                <div  class="dropdown-menu absolute right-0 top-13 w-[294px] bg-[#1A1C23] text-[#ffffffb9] rounded-md  border border-[#272930]  z-50  hidden" >
+                 <a href="#" class="flex gap-2 rounded-sm p-4 m-2 font-[notosans] text-[14px] text-[#8B8C8F] hover:bg-[#272930]  hover:text-white transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="20" height="20" viewBox="0 0 24 24" part="icon" aria-hidden="true"><path d="M12 20a8 8 0 1 1 0-16 8 8 0 0 1 0 16m0 2c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10"></path><path d="M11.5 7a.5.5 0 0 0-.5.5V11H7.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5H11v3.5a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5V13h3.5a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5H13V7.5a.5.5 0 0 0-.5-.5z"></path></svg>
+                    <span>Add Balance</span>
+                  </a>
+                  <a href="#" class="flex gap-2 rounded-sm p-4 m-2 font-[notosans] text-[14px] text-[#8B8C8F] hover:bg-[#272930]  hover:text-white transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="20" height="20" viewBox="0 0 24 24" part="icon" aria-hidden="true"><path d="M16.066 7.245a2.75 2.75 0 0 0 1.006-3.756c-.325-.563-.803-1.1-1.489-1.34-.711-.247-1.485-.119-2.268.333-.295.17-.528.432-.708.688-.186.265-.35.574-.49.895a9 9 0 0 0-.535 1.715 9 9 0 0 0-1.557-1.494 5 5 0 0 0-.87-.53c-.285-.132-.618-.242-.958-.242-.904 0-1.638.276-2.13.846-.475.55-.62 1.254-.62 1.904 0 .659.23 1.263.616 1.736H5a2 2 0 0 0-2 2v3.53a.5.5 0 0 0 .5.5H4V19a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-4.97h.5a.5.5 0 0 0 .5-.5V10a2 2 0 0 0-2-2h-4.242zm-.293-3.006a1.25 1.25 0 0 1-.457 1.707l-2.383 1.376a4.3 4.3 0 0 1 .062-.933 7.5 7.5 0 0 1 .498-1.725 3.7 3.7 0 0 1 .342-.632c.118-.168.2-.234.23-.25.517-.299.833-.283 1.025-.216.217.076.456.28.683.673M6.947 6.264c0-.454.104-.75.255-.924.132-.153.398-.326.995-.326.034 0 .139.016.325.102.177.083.386.21.612.377.453.334.923.79 1.293 1.244.253.311.422.578.52.777h-2.75c-.69 0-1.25-.56-1.25-1.25M18 19h-5v-4.899h5zm1-6.97h-6V10h6zm-8 0H5V10h6zM11 19H6v-4.899h5z"></path>
+                    </svg>
+                    <span>Gift Balance</span>
+                  </a>
+                  <a href="#" class="flex gap-2 rounded-sm p-4 m-2 font-[notosans] text-[14px] text-[#8B8C8F] hover:bg-[#272930]  hover:text-white transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="20" height="20" viewBox="0 0 24 24" part="icon" aria-hidden="true"><path d="M5.001 12a7 7 0 1 1 2.725 5.544.53.53 0 0 0-.695.032l-.713.713a.48.48 0 0 0 .027.712A9 9 0 1 0 3.001 12H1.208a.5.5 0 0 0-.354.854l2.793 2.792a.5.5 0 0 0 .707 0l2.793-2.792A.5.5 0 0 0 6.794 12H5Z"></path><path d="M12.001 7a1 1 0 0 0-1 1v4.036a1 1 0 0 0 .5.91l3.465 2a1 1 0 0 0 1-1.732l-2.965-1.712V8a1 1 0 0 0-1-1"></path></svg>
+        <span>Balance History</span>
+         <svg
+            class="w-3 h-3 ml-auto"
+              fill="none"
+            stroke="currentColor"
+          viewBox="0 0 24 24" >
+         <path   stroke-linecap="round" stroke-linejoin="round"    stroke-width="2"
+   d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"  />
+    </svg>
+         </a>
+      <a href="#" class="flex gap-2 rounded-sm p-4 m-2 font-[notosans] text-[14px] text-[#8B8C8F] hover:bg-[#272930]  hover:text-white transition-colors">
+        <svg 
+        xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="20" height="20" viewBox="0 0 24 24" part="icon" aria-hidden="true"><path d="M11.104 8.068c-.13.046-.248.118-.527.364-.252.223-.456.591-.543 1.048-.052.27-.27.497-.546.497h-1c-.277 0-.503-.225-.474-.5.103-.955.504-1.895 1.24-2.544.323-.285.676-.57 1.179-.75.482-.171 1.018-.217 1.675-.217 1.407 0 3.022.477 3.67 2.047.624 1.509-.02 3.086-1.447 3.75-.128.06-.302.135-.454.202l-.253.112a3.3 3.3 0 0 0-.47.248.5.5 0 0 0-.15.132c-.003.005-.016.024-.016.09v.953a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-.952c0-.924.5-1.512 1.047-1.881.252-.17.524-.303.762-.411.136-.062.238-.106.335-.148.112-.049.216-.094.356-.159.463-.215.654-.66.442-1.173-.186-.451-.73-.81-1.822-.81-.594 0-.853.048-1.004.102M11 16.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5z"></path>
+          <path d="M22 12c0 5.523-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2s10 4.477 10 10m-2 0a8 8 0 1 0-16 0 8 8 0 0 0 16 0"></path>
+        </svg>
+                    <span>Balance Help</span>
+                    <svg
+                      class="w-3 h-3 ml-auto "
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                      />
+                    </svg>
+                  </a>
+                </div>
+               </div>   
+  </div>
+  </header>
+<!--#region Banner (swiper) -->
+  <div class="swiper mySwiper mt-8 h-[440px] md:h-[400px] w-[358px] md:w-[95%] bg-[#15171E]">
+    <div class="swiper-wrapper">
+<!--slide1 -->      
+     <div class="swiper-slide bg-[url(/src/css/images/baner/image2-mobile.png)]  md:bg-[url(/src/css/images/baner/image2.png)] bg-center bg-cover md:border-b-[40px] border-[#15171E] relative">
+      <div class="md:h-[360px] md:w-[270px] md:mx-[100px] flex flex-col justify-center items-center  gap-2 md:gap-3 mt-[100px] md:mt-0  ">
+      <!-- Logo -->
+       <div>
+        <img src="/assets/image2-i-C7QMz7Ce.png" class="h-[150px]"  alt=""></div>
+     <!-- Heading -->
+      <h2 class="text-white text-[16px] md:text-[20px] font-[objectsansbold] text-center leading-6">Last Chance! Control your fate with the Mega Bundle</h2>
+     <!-- Button -->
+  <button class=" w-[280px] h-[56px] bg-[#0074E0] text-[16px] md:text-[20px] font-[objectsansbold] text-white text-center px-8 py-1 rounded-sm transition-colors shadow-sm border-[3px] border-[#0074E0] hover:border-[#47A6FF]" >
+  Buy Now 
+  </button>
+       </div>
+     </div>
+<!--slide2 -->    
+      <div class="swiper-slide bg-[url(/src/css/images/baner/image1-mobile.png)]  md:bg-[url(/src/css/images/baner/image1.png)] bg-center bg-cover md:border-b-[40px] border-[#15171E] relative">
+      <div class="md:h-[360px] md:w-[270px] md:mx-[100px] flex flex-col gap-2 md:gap-3 justify-center items-center mt-[100px] md:mt-0">
+ <!-- Logo -->
+<div>
+ <img src="/assets/image1-i-DaqJj5ja.png" class="h-[150px]"  alt="">
+  </div>
+ <!-- Heading -->
+      <h2 class="text-white text-[16px] md:text-[20px] font-[objectsansbold] text-center leading-6">
+       The Universe needs a hero, but you’ll have to do
+      </h2>
+     <!-- Button -->
+  <button class=" w-[280px] h-[56px] bg-[#0074E0] text-[16px] md:text-[20px] font-[objectsansbold] text-white text-center px-8 py-2  rounded-sm transition-colors shadow-sm border-[3px] border-[#0074E0] hover:border-[#47A6FF]" >
+  Buy Now 
+  </button>
+       </div>
+     </div>
+<!--slide3 -->         
+      <div class="swiper-slide bg-[url(/src/css/images/baner/image3-mobile.png)]  md:bg-[url(/src/css/images/baner/image3.png)] bg-center bg-cover md:border-b-[40px] border-[#15171E] relative">
+      <div class="md:h-[360px] md:w-[288px] md:mx-[100px] flex flex-col gap-2 md:gap-3 justify-center items-center mt-[100px] md:mt-0">
+      <!-- Logo -->
+       <div >
+                   <img src="/assets/image3-i-BqqIyd7Q.png" class="h-[150px]"  alt="">
+                  </div>
+     <!-- Heading -->
+      <h2 class="text-white text-[16px] md:text-[20px] font-[objectsansbold] text-center leading-6">
+      Grab the Epic Edition and unlock the Beta November 11
+      </h2>
+     <!-- Button -->
+  <button class=" w-[280px] h-[56px] bg-[#0074E0] text-[16px] md:text-[20px] font-[objectsansbold] text-white text-center px-8 py-2 rounded-sm transition-colors shadow-sm border-[3px] border-[#0074E0] hover:border-[#47A6FF]" >
+  Pre-purchase
+  </button>
+       </div>
+     </div>
+<!--slide4 -->    
+     <div class="swiper-slide bg-[url(/src/css/images/baner/image4-mobile.png)]  md:bg-[url(/src/css/images/baner/image4.png)] bg-center bg-cover md:border-b-[40px] border-[#15171E] relative">
+      <div class="md:h-[360px] md:w-[260px] md:mx-[100px] flex flex-col gap-2 md:gap-3 justify-center items-center mt-[100px] md:mt-0">
+      <!-- Logo -->
+       <div >
+                   <img src="/assets/image4-i-D54kscA-.png" class="h-[150px]"  alt="">
+                  </div>
+     <!-- Heading -->
+      <h2 class="text-white text-[16px] md:text-[20px] font-[objectsansbold] text-center leading-6">
+      Get the Reznov Challenge Pack and more
+      </h2>
+     <!-- Button -->
+  <button class=" w-[280px] h-[56px] bg-[#0074E0] text-[16px] md:text-[20px] font-[objectsansbold] text-white text-center px-8 py-2 rounded-sm transition-colors shadow-sm border-[3px] border-[#0074E0] hover:border-[#47A6FF]" >
+  Pre-purchase Now
+  </button>
+       </div>
+     </div>
+<!--slide5 -->    
+      <div class="swiper-slide bg-[url(/src/css/images/baner/image5-mobile.png)]  md:bg-[url(/src/css/images/baner/image5.png)] bg-center bg-cover md:border-b-[40px] border-[#15171E] relative">
+      <div class="md:h-[360px] md:w-[260px] md:mx-[100px] flex flex-col gap-2 md:gap-3 justify-center items-center mt-[100px] md:mt-0">
+      <!-- Logo -->
+       <div>
+                   <img src="/assets/image5-i-PEQKnbnp.png" class="h-[150px]"  alt="">
+                  </div>
+     <!-- Heading -->
+      <h2 class="text-white text-[16px] md:text-[20px] font-[objectsansbold] text-center leading-6">
+     Unleash chaos in the new season, now live
+      </h2>
+     <!-- Button -->
+  <button class=" w-[280px] h-[80px] bg-[#0074E0] text-[16px] md:text-[20px] font-[objectsansbold] text-white text-center px-8 py-2 rounded-sm transition-colors shadow-sm border-[3px] border-[#0074E0] hover:border-[#47A6FF]" >
+  Purchase Battle
+  <br>
+   Pass Now
+  </button>
+       </div>
+     </div>
+<!--slide6 -->    
+      <div class="swiper-slide bg-[url(/src/css/images/baner/image6-mobile.png)]  md:bg-[url(/src/css/images/baner/image6.png)] bg-center bg-cover md:border-b-[40px] border-[#15171E] relative">
+      <div class="md:h-[360px] md:w-[320px] md:mx-[100px] flex flex-col gap-2 md:gap-3 justify-center items-center mt-[100px] md:mt-0">
+      <!-- Logo -->
+       <div >
+                   <img src="/assets/image6-i-D5soaNzg.png" class="w-[320px] h-[53.8px]"  alt="">
+                  </div>
+     <!-- Heading -->
+      <h2 class="text-white text-[16px] md:w-[260px] md:text-[20px] font-[objectsansbold] text-center leading-6">
+      Season 06 is live. Get the new BlackCell Pack.
+      </h2>
+     <!-- Button -->
+  <button class=" w-[280px] h-[56px] bg-[#0074E0] text-[16px] md:text-[20px] font-[objectsansbold] text-white text-center px-8 py-2 rounded-sm transition-colors shadow-sm border-[3px] border-[#0074E0] hover:border-[#47A6FF]" >
+  Pre-purchase
+  </button>
+       </div>
+     </div>
+<!--slide7 -->    
+     <div class="swiper-slide bg-[url(/src/css/images/baner/image7-mobile.png)]  md:bg-[url(/src/css/images/baner/image7.png)] bg-center bg-cover md:border-b-[40px] border-[#15171E] relative">
+      <div class="md:h-[360px] md:w-[270px] md:mx-[100px] flex flex-col gap-2 md:gap-3 justify-center items-center mt-[100px] md:mt-0">
+      <!-- Logo -->
+       <div >
+        <img src="/assets/image7-i-Dk3QfcED.png" class="h-[150px]"  alt="">
+                  </div>
+     <!-- Heading -->
+      <h2 class="text-white text-[16px] md:text-[20px] font-[objectsansbold] text-center leading-6">
+     Trick or treat with the Premium Battle Pass
+      </h2>
+     <!-- Button -->
+  <button class=" w-[280px] h-[56px] bg-[#0074E0] text-[16px] md:text-[20px] font-[objectsansbold] text-white text-center px-8 py-2 rounded-sm transition-colors shadow-sm border-[3px] border-[#0074E0] hover:border-[#47A6FF]" > Buy Now</button>
+       </div>
+     </div>    
+     </div>
+<!-- Navigation -->    
+ <!-- دکمه‌های آیکون‌دار سفارشی -->
+<div class="swiper-button-prev !flex !items-center !justify-center !w-10 !h-20 !bg-[#15171E] !border-1 !p-2 rounded-sm !shadow-md !border-[#696B6F] hover:!border-3 !text-white transition">
+<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" part="icon" aria-hidden="true"><path d="M14.646 5.353a.5.5 0 0 1 .707 0l.704.704a.5.5 0 0 1 0 .706L10.83 12l5.227 5.236a.5.5 0 0 1 0 .707l-.703.703a.5.5 0 0 1-.708 0l-6.293-6.293a.5.5 0 0 1 0-.707z"></path></svg>
+</div>
+
+<div class="swiper-button-next !flex !items-center !justify-center !w-10 !h-20 !bg-[#15171E] !border-1 !p-2 rounded-sm !shadow-md !border-[#696B6F] hover:!border-3 !text-white transition">
+ <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" part="icon" aria-hidden="true"><path d="M9.354 5.354a.5.5 0 0 0-.707 0l-.704.703a.5.5 0 0 0 0 .707L13.17 12l-5.227 5.236a.5.5 0 0 0 0 .707l.704.703a.5.5 0 0 0 .707 0l6.293-6.292a.5.5 0 0 0 0-.707L9.354 5.353Z"></path></svg>
+</div> 
+  <!-- Pagination + Button -->
+      <div class="absolute bottom-0 left-[400px] right-[300px] flex items-center gap-3 z-20">
+        <button id="toggleBtn"
+          class="text-[#85868A] btn btn-sm btn-ghost btn-neutral  flex items-center justify-center relative shadow-none bg-none border-none outline-none focus:shadow-none focus:bg-transparent">
+
+          <!-- Pause icon -->
+          <svg  id="pauseIcon" width="24px" height="24px" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M7 1H2V15H7V1Z" fill="#85868A"></path> <path d="M14 1H9V15H14V1Z" fill="#85868A"></path> </g></svg>
+
+          <!-- Play icon (مخفی در شروع) -->
+          <svg id="playIcon" class="hidden" fill="#85868A" width="24px" height="24px" viewBox="0 0 34 34" version="1.1" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>play</title> <path d="M5.92 24.096q0 1.088 0.928 1.728 0.512 0.288 1.088 0.288 0.448 0 0.896-0.224l16.16-8.064q0.48-0.256 0.8-0.736t0.288-1.088-0.288-1.056-0.8-0.736l-16.16-8.064q-0.448-0.224-0.896-0.224-0.544 0-1.088 0.288-0.928 0.608-0.928 1.728v16.16z"></path> </g></svg>
+        </button>
+        <div class="swiper-pagination !static !flex !items-center"></div>
+        
+      </div>
+    </div>
+<!--#region Recommended -->    
+  <div class="font-[objectsansbold] text-[24px] leading-[28px] text-[#ffffff] ml-6 pt-[64px]"> Recommended</div>
+<!--#region Cards Recommended -->
+<div class="md:w-full md:h-[942.35px] grid p-6 gap-6 grid-cols-1 md:grid-cols-5 bg-[#15171E] box-border">
+<!---------Card1---------->
+  <div class="w-full md:w-[259.4px] rounded-sm shadow-md flex flex-col bg-[#23252B] hover:bg-[#313339] transition-colors ">
+<!--Image Card-->
+  <img src="/assets/card-1-BB4oWJpH.png" class="w-[358px] h-[201px] md:w-[290.25px] md:h-[163.27px] transition-opacity ">
+<!--Caption Card-->
+ <div class="px-6 pt-6 relative transform transition-transform duration-300 hover:-translate-y-1">
+   <!--Line 1 Card -->
+  <div class="flex flex-wrap items-center">
+ <img src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'?%3e%3c!--%20Generator:%20Adobe%20Illustrator%2022.1.0,%20SVG%20Export%20Plug-In%20.%20SVG%20Version:%206.00%20Build%200)%20--%3e%3csvg%20version='1.1'%20id='Layer_1'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20x='0px'%20y='0px'%20viewBox='0%200%20512%20512'%20style='enable-background:new%200%200%20512%20512;'%20xml:space='preserve'%3e%3cstyle%20type='text/css'%3e%20.st0{fill:%232B374C;}%20.st1{fill:%23F4BF2A;}%20%3c/style%3e%3cg%3e%3ccircle%20class='st0'%20cx='255.7'%20cy='256.5'%20r='168'/%3e%3cpath%20class='st1'%20d='M466,256.5c0-42.3-13.2-84-36.8-119.4V85.7c0-1.4-1.4-2.8-2.8-2.8h-51.4c-71.5-49.3-165.9-49.3-237.4,0H86.3%20c-0.7,0-1.4,0-2.1,0.7c-0.7,0.7-0.7,1.4-0.7,2.1v50.7c-50,72.2-50,167.3,0,239.5v50.7c0,1.4,1.4,2.8,2.8,2.8h51.4%20c72.2,49.3,166.6,48.6,238.8-0.7h50.7c1.4,0,2.8-1.4,2.8-3.5l0,0v-50.7C453.5,340.5,466,298.9,466,256.5z%20M73.8,256.5%20c0-100.7,81.2-181.9,181.9-181.9s181.9,81.2,181.9,181.9s-81.2,181.9-181.9,181.9l0,0l0,0C155,438.4,73.8,357.2,73.8,256.5z'/%3e%3cpath%20class='st1'%20d='M134.9,157.9h68.7c-1.4,7.6-2.1,15.3-2.1,23.6c2.8,30.5,22.9,115.2,22.9,115.2L257,164.9L290.4,294%20c0,0,20.1-113.9,20.1-121.5c-0.7-5.6-3.5-11.1-8.3-14.6h72.9c-9.7,9-16.7,20.1-20.8,33.3c-6.2,25-28.5,151.3-28.5,159%20c0.7,8.3,3.5,16,8.3,22.9h-68c1.4-6.2,2.1-12.5,2.1-18.7c0-11.8-10.4-66.6-10.4-66.6s-13.9,56.9-13.9,67.3c0,6.2,1.4,12.5,4.2,18%20h-68.7c0,0,13.2-9.7,13.2-18.7c-1.4-25.7-37.5-159.7-40.3-170.1C150.1,173.9,143.9,164.2,134.9,157.9z'/%3e%3c/g%3e%3c/svg%3e" alt="" class=" w-6 h-6 ">
+      <!--Only desktop -->
+  <div class="uppercase font-[objectsansbold] text-[#C6C6C8] text-[12px] hidden md:block my-auto"> World of Warcraft</div>
+  </div>
+   <!--Line 2 Card-->
+  <div class="text-[16px] text-[#C6C6C8] font-[objectsansbold] md:text-[18px] hover:text-white ">World of Warcrafts<sup class="text-[10px]">®</sup>: Midnight</div>
+   <!--Line 3 Card--> 
+  <div class="font-[notosans] mt-[4px] text-[#ffb400] text-[12px] md:text-[14px]">Coming 2026. Pre-purchase the Epic Edition now and dive into Beta on November 11!</div>
+   <!--Line 4 Card-->
+  <div class="font-[notosans] mt-[4px] text-[12px] text-[#C6C6C8]">Massively Multiplayer RPG</div>
+   <!--Price Card-->
+  <div class="font-[objectsansbold] text-[16px] text-[#C6C6C8] pt-[40px] ">From €49.99</div>
+</div>
+ </div>
+<!---------Card2----------> 
+ <div class="w-full md:w-[259.4px] rounded-sm shadow-md flex flex-col bg-[#23252B] hover:bg-[#313339] transition-colors ">
+<!--Image Card-->
+  <img src="/assets/card-2-CrZW3RVv.png" class="w-[358px] h-[201px] md:w-[290.25px] md:h-[163.27px] transition-opacity ">
+<!--Caption Card-->
+ <div class="px-6 pt-6 relative transform transition-transform duration-300 hover:-translate-y-1">
+   <!--Line 1 Card -->
+  <div class="flex flex-wrap items-center">
+ <img src="/assets/20-BuTCIIC4.svg" alt="" class=" w-6 h-6 ">
+      <!--Only desktop -->
+  <div class="uppercase font-[objectsansbold] text-[#C6C6C8] text-[12px] hidden md:block my-auto">  Diablo IV </div>
+  </div>
+   <!--Line 2 Card-->
+  <div class="text-[16px] text-[#C6C6C8] font-[objectsansbold] md:text-[18px] hover:text-white ">Diablo<sup class="text-[10px]">®</sup> IV Expansion Bundle</div>
+   <!--Line 4 Card-->
+  <div class="font-[notosans] mt-[4px] text-[12px] text-[#C6C6C8]">Action RPG</div>
+   <!--Price Card-->
+  <div class="font-[objectsansbold] text-[16px] text-[#C6C6C8] mt-[103px] ">€69.99</div>
+</div>
+
+
+
+ </div> 
+<!---------Card3---------->
+ <div class="w-full md:w-[259.4px] rounded-sm shadow-md flex flex-col bg-[#23252B] hover:bg-[#313339] transition-colors ">
+<!--Image Card-->
+  <img src="/assets/card-3-D_rf72vh.png" class="w-[358px] h-[201px] md:w-[290.25px] md:h-[163.27px] transition-opacity ">
+<!--Caption Card-->
+ <div class="relative transform transition-transform duration-300 hover:-translate-y-1 px-6 pt-6">
+   <!--Line 1 Card -->
+  <div class="flex flex-wrap items-center ">
+ <img src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'?%3e%3csvg%20id='Layer_1'%20xmlns='http://www.w3.org/2000/svg'%20version='1.1'%20viewBox='0%200%20974.84%20243.53'%3e%3c!--%20Generator:%20Adobe%20Illustrator%2029.5.0,%20SVG%20Export%20Plug-In%20.%20SVG%20Version:%202.1.0%20Build%20137)%20--%3e%3cdefs%3e%3cstyle%3e%20.st0%20{%20fill:%20%23f36d21;%20}%20.st1%20{%20fill:%20%23fff;%20}%20%3c/style%3e%3c/defs%3e%3cpath%20class='st1'%20d='M276.96,2.7c34.56,5.39,33.71,56.27,30.1,82.29-2.59,18.68-11.45,32.36-31.82,32.82l-.09,6.39c18.06,1.53,28.71,8.06,33.42,25.99,3.91,14.87,3.77,52.13-1.33,66.65-4.22,12-17.98,26.64-31.48,26.64H0V2.7h276.96ZM222.99,94.03v-31.43l-1.78-1.78H84.21v33.21h138.77ZM84.21,147.41v37.96h139.37c.89,0,2.69-2.88,2.93-4.18.58-3.05.3-29.98-.56-31.4-.76-.61-2.99-2.37-3.56-2.37H84.21Z'/%3e%3cpath%20class='st1'%20d='M362.06.64l251.19-.36c20.13,2.12,29.11,18.24,32.24,36.56.11,51.2,5.01,107.63,1.5,158.59-1.47,21.39-9.05,45.57-33.74,48.1h-247.99c-22.42-1.95-31.17-22.29-33.74-42.18,2.82-51.39-3.81-106.87-.06-157.78,1.4-19.09,10.11-38.94,30.6-42.94ZM561.61,73.87h-144.11l-1.78,1.78v92.52l1.78,1.78h144.11v-96.07Z'/%3e%3cpath%20class='st0'%20d='M967.6,72.18l-113.87,158.74c-4.78,5.5-17.48,12.62-24.53,12.62h-79.69l122.22-171.35h95.86Z'/%3e%3cpath%20class='st0'%20d='M974.84,35.25v29.74h-238.93c-1.01,0-7.43-3.41-8.93-4.32-14.31-8.5-41.86-40.74-53.69-54.65-1.55-1.84-2.98-3.94-4.18-6.02h274.18c23.15,0,31.54,8.14,31.54,35.25Z'/%3e%3c/svg%3e" alt="" class=" w-6 h-6 mr-1 ">
+      <!--Only desktop -->
+  <div class="uppercase font-[objectsansbold] text-[#C6C6C8] text-[12px] hidden md:block my-auto">Call of Duty Black Ops 7</div>
+  </div>
+   <!--Line 2 Card-->
+  <div class="text-[16px] text-[#C6C6C8] font-[objectsansbold] md:text-[18px] hover:text-white ">Call of Duty<sup class="text-[10px]">®</sup>: Black Ops 7 - Vault Edition</div>
+   <!--Line 3 Card--> 
+  <div class="font-[notosans] mt-[4px] text-[#ffb400] text-[12px] md:text-[14px]">Available November 14th - Pre-Purchase Now!</div>
+   <!--Line 4 Card-->
+  <div class="font-[notosans] mt-[4px] text-[12px] text-[#C6C6C8]">Action Shooter</div>
+   <!--Price Card-->
+  <div class="font-[objectsansbold] text-[16px] text-[#C6C6C8] pt-[60px] ">€109.99</div>
+</div>
+ </div>
+ <!---------Card4---------->
+<div class="w-full md:w-[259.4px] rounded-sm shadow-md flex flex-col bg-[#23252B] hover:bg-[#313339] transition-colors ">
+<!--Image Card-->
+  <img src="/assets/card-4-I5kBc4Uk.png" class="w-[358px] h-[201px] md:w-[290.25px] md:h-[163.27px] transition-opacity ">
+<!--Caption Card-->
+ <div class="px-6 pt-6 relative transform transition-transform duration-300 hover:-translate-y-1">
+   <!--Line 1 Card -->
+  <div class="flex flex-wrap items-center ">
+ <img src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'?%3e%3c!--%20Generator:%20Adobe%20Illustrator%2026.0.3,%20SVG%20Export%20Plug-In%20.%20SVG%20Version:%206.00%20Build%200)%20--%3e%3csvg%20version='1.1'%20id='Layer_1'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20x='0px'%20y='0px'%20viewBox='0%200%20512%20512'%20style='enable-background:new%200%200%20512%20512;'%20xml:space='preserve'%3e%3cstyle%20type='text/css'%3e%20.st0{fill:%23ED6516;}%20.st1{fill:%23FFFFFF;}%20%3c/style%3e%3cg%3e%3cpath%20class='st0'%20d='M149.8,149.9c27.2-27.2,64.7-44,106.1-44s79,16.8,106.1,44l42.5-42.5c-38-38-90.5-61.5-148.6-61.5%20s-110.5,23.5-148.6,61.5L149.8,149.9z'/%3e%3cpath%20class='st1'%20d='M416.8,120.8l-42.7,42.7c20,25.5,31.9,57.6,31.9,92.5c0,28.3-7.8,54.7-21.4,77.3l-77.3-77.3l-42.1-98.9H265%20v133.6l83.4,83.4c-25.5,20-57.6,31.9-92.5,31.9s-67-11.9-92.5-31.9l83.4-83.4V157.6l-42.3,98.4l-77.3,77.3%20c-13.6-22.6-21.4-49-21.4-77.3c0-34.9,11.9-67,31.9-92.5l-42.7-42.7c-30.7,36.5-49.2,83.7-49.2,135.1c0,116,94.1,210.1,210.1,210.1%20S466,372,466,255.9C466,204.5,447.5,157.3,416.8,120.8z'/%3e%3cg%3e%3cg%3e%3cg%3e%3cg%3e%3cpath%20class='st1'%20d='M411,431h-1.5v2.2h-0.8v-5.9h2.4c1.1,0,1.8,0.7,1.8,1.9c0,0.9-0.5,1.6-1.3,1.8l1.4,2.3h-0.9L411,431z%20M409.5,430.3h1.6c0.7,0,1.2-0.5,1.2-1.2c0-0.7-0.4-1.2-1.2-1.2h-1.6V430.3z'/%3e%3c/g%3e%3cpath%20class='st1'%20d='M410.8,435.7c-3.1,0-5.5-2.5-5.5-5.5c0-3.1,2.5-5.5,5.5-5.5s5.5,2.5,5.5,5.5%20C416.3,433.3,413.8,435.7,410.8,435.7z%20M410.8,425.4c-2.7,0-4.8,2.1-4.8,4.8s2.1,4.8,4.8,4.8s4.8-2.1,4.8-4.8%20C415.6,427.6,413.4,425.4,410.8,425.4z'/%3e%3c/g%3e%3c/g%3e%3c/g%3e%3c/g%3e%3c/svg%3e" alt="" class=" w-6 h-6 mr-1 ">
+      <!--Only desktop -->
+  <div class="uppercase font-[objectsansbold] text-[#C6C6C8] text-[12px] hidden md:block my-auto"> Overwatch 2 </div>
+  </div>
+   <!--Line 2 Card-->
+  <div class="text-[16px] text-[#C6C6C8] font-[objectsansbold] md:text-[18px] hover:text-white ">Overwatch<sup class="text-[10px]">®</sup>2</div>
+   <!--Line 4 Card-->
+  <div class="font-[notosans] mt-[4px] text-[12px] text-[#C6C6C8]">Team-Based Action Game</div>
+   <!--Price Card-->
+  <div class="font-[objectsansbold] text-[16px] text-[#C6C6C8] pt-[132px] ">Play For Free</div>
+</div>
+</div>
+ <!---------Card5---------->
+<div class="w-full md:w-[259.4px] rounded-sm shadow-md flex flex-col bg-[#23252B] hover:bg-[#313339] transition-colors ">
+<!--Image Card-->
+  <img src="/assets/card-5-D2LhDGrC.png" class="w-[358px] h-[201px] md:w-[290.25px] md:h-[163.27px] transition-opacity ">
+<!--Caption Card-->
+ <div class="px-6 pt-6 relative transform transition-transform duration-300 hover:-translate-y-1">
+   <!--Line 1 Card -->
+  <div class="flex flex-wrap items-center mt-2 ">
+ <img src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'?%3e%3c!--%20Generator:%20Adobe%20Illustrator%2022.1.0,%20SVG%20Export%20Plug-In%20.%20SVG%20Version:%206.00%20Build%200)%20--%3e%3csvg%20version='1.1'%20id='Layer_1'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20x='0px'%20y='0px'%20viewBox='0%200%20512%20512'%20style='enable-background:new%200%200%20512%20512;'%20xml:space='preserve'%3e%3cstyle%20type='text/css'%3e%20.st0{fill:%23593810;}%20.st1{fill:%23FF9C00;}%20.st2{fill:%2339CCFF;}%20%3c/style%3e%3cg%3e%3ccircle%20class='st0'%20cx='256.7'%20cy='256'%20r='138.3'/%3e%3cg%3e%3cpath%20class='st1'%20d='M400.3,311.8L494,256l-93.7-55.8c-4.7-12-10.6-22.6-17.9-33.2l21.3-59.2L345.1,129%20c-10-7.3-21.3-13.3-33.2-17.9L256,18l-55.8,93.7c-12,4.7-22.6,10.6-33.2,17.9l-58.5-21.3l21.3,58.5c-7.3,10-13.3,21.3-17.9,33.2%20L18,256l93.7,55.8c4.7,12,10.6,22.6,17.9,33.2l-21.3,59.2l58.5-21.3c10,7.3,21.3,13.3,33.2,17.9L256,494l55.8-93.7%20c12-4.7,22.6-10.6,33.2-17.9l59.2,21.3L383,345.1C390.3,335.1,396.3,323.8,400.3,311.8z%20M256,384.3%20c-70.5,0-128.3-57.2-128.3-128.3S185.5,127.7,256,127.7S384.3,185.5,384.3,256l0,0C384.3,326.5,326.5,384.3,256,384.3L256,384.3%20L256,384.3z'/%3e%3cpath%20class='st2'%20d='M341.8,252.7c0.7-6-4.7-12-5.3-18.6c0-3.3-1.3-6.6-2.7-10c-1.3-3.3-1.3-6.6-2-9.3h-0.7%20c4-8-7.3-17.3-12.6-23.3c-6.6-6.6-10-15.3-19.9-18.6c-4.7-2-9.3-4.7-14.6-6.6c-4.7-2-10-3.3-14-4.7c-4.7-2-8-6-13.3-5.3%20c-5.3,0.7-8,4-14,2.7c-12-4-20.6,2.7-29.9,9.3c-4.7,3.3-9.3,6-13.3,9.3c-1.3,1.3-2.7,3.3-4,5.3c-1.3,2-4,3.3-5.3,6%20c-2.7,4-6.6,6.6-10.6,9.3c-2,1.3-3.3,4-6,5.3c-3.3,2-4,1.3-4,5.3c0,5.3,2.7,9.3,2.7,14c0,2.7,0,5.3,0,8c0.7,2.7,1.3,4.7,2,7.3%20c1.3,4.7,0,10,2,14c2.7,4,5.3,8.6,8.6,12c3.3,4,6.6,8.6,10,13.3c2,2.7,9.3,6.6,9.3,10.6c5.3,1.3,6.6,7.3,11.3,7.3%20c2.7-0.7,5.3-0.7,7.3,0c2.7,0.7,4.7,1.3,7.3,2c4.7,0,8-4,12.6-5.3c4.7-1.3,10,0,14.6-2c8.6-5.3,14-14.6,14.6-24.6%20c0-5.3-1.3-10.6-4.7-14.6c-2.7-4.7-0.7-10-5.3-12.6c-4.7-2-10-4-16-4c-5.3-2-10.6-1.3-16,0.7c-8.6,6,10.6,19.9,0.7,24.6%20c-11.3,4.7-17.3-8-19.9-16.6c-1.3-5.3-1.3-11.3,0-16.6c0-2.7,0.7-4.7,1.3-7.3c1.3-2,4-3.3,6-4c4-2.7,7.3-6.6,11.3-9.3%20s9.3-4.7,14-6c6-1.3,12-1.3,17.9-1.3c2.7,0,5.3,0.7,8,0.7s4.7-1.3,7.3-1.3c4,0,2.7,1.3,2.7,4.7c0,2,1.3,4,2.7,6c3.3,4,6,8,9.3,12%20c6.6,8,5.3,20.6,4.7,30.6c-0.7,5.3,0,10.6,1.3,16c2,6-2.7,6-6.6,9.3c-2.7,4-5.3,8-7.3,12c-3.3,4-6.6,7.3-10.6,10%20c-3.3,3.3-7.3,6-10.6,8.6c-4.7,2.7-9.3,5.3-14,7.3c-5.3,2-11.3,3.3-16.6,4.7c-2.7,0.7-5.3,1.3-8,2.7c-2,1.3-3.3,4-6,5.3%20c-6.6,4-14,3.3-21.3,6.6c-4,2-17.3,2.7-17.9,7.3h-0.7c2,4,6,7.3,10.6,8c4.7,0.7,9.3,2,13.3,3.3c4.7,2,8.6,2.7,13.3,3.3%20c4.7,0,8.6,2.7,13.3,3.3c5.3,0.7,9.3-3.3,14-4c5.3-0.7,10.6-0.7,16-1.3c5.3-0.7,10-2,15.3-3.3c4.7-2,9.3-2,14-4%20c4.7-2,8.6-4,12.6-6.6c4-2.7,4.7-7.3,8.6-10c4-2.7,7.3-5.3,10.6-8.6c2.7-4,4.7-8.6,5.3-13.3c2-4,4.7-8,7.3-11.3%20c2-4.7,4-9.3,4.7-14c2-4.7,2-9.3,2-14.6c-0.7-2.7-3.3-4-2-7.3C340.4,256.7,341.1,254.7,341.8,252.7z'/%3e%3c/g%3e%3c/g%3e%3c/svg%3e" alt="" class=" w-6 h-6 mr-1 ">
+      <!--Only desktop -->
+  <div class="uppercase font-[objectsansbold] text-[#C6C6C8] text-[12px] hidden md:block mt-2 my-auto">Hearthstone</div>
+  </div>
+   <!--Line 2 Card-->
+  <div class="text-[16px] text-[#C6C6C8] font-[objectsansbold] mt-2 md:text-[18px] hover:text-white ">Hearthstone<sup class="text-[10px]">®</sup></div>
+   <!--Line 4 Card-->
+  <div class="font-[notosans] mt-[4px] text-[12px] text-[#C6C6C8]">Strategy Card Game</div>
+   <!--Price Card-->
+  <div class="font-[objectsansbold] text-[16px] text-[#C6C6C8] pt-[116px] ">Play For Free</div>
+</div>
+</div>
+ <!---------Card6---------->
+<div class="w-full md:w-[259.4px] rounded-sm shadow-md flex flex-col bg-[#23252B] hover:bg-[#313339] transition-colors ">
+<!--Image Card-->
+  <img src="/assets/card-6-CK0bOgKT.png" class="w-[358px] h-[201px] md:w-[290.25px] md:h-[163.27px] transition-opacity ">
+<!--Caption Card-->
+ <div class="pt-6 px-6 relative transform transition-transform duration-300 hover:-translate-y-1">
+   <!--Line 1 Card -->
+  <div class="flex flex-wrap items-center ">
+ <img src="data:image/svg+xml,%3csvg%20id='Artwork'%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20264.81%20159.8'%20part='icon'%20aria-hidden='true'%3e%3cdefs%3e%3cstyle%3e.cls-1{fill:%23fff;}%3c/style%3e%3c/defs%3e%3cpath%20class='cls-1'%20d='M127.38,0l-13.92,101.31h-2.32L102.19,0H63.23l-8.95,101.31h-2.32L38.04,0H0L26.83,159.8h45.78l8.52-101.42h3.14l8.52,101.42h45.78L165.42,0h-38.04Z'%3e%3c/path%3e%3cpolygon%20class='cls-1'%20points='264.38%2031.24%20264.38%200%20173.95%200%20168.26%2033.88%20219.76%2033.88%20168.72%20128.36%20168.72%20159.78%20264.81%20159.8%20264.81%20125.92%20213.28%20125.92%20264.38%2031.24'%3e%3c/polygon%3e%3c/svg%3e" alt="" class=" w-6 h-6 mr-1 ">
+      <!--Only desktop -->
+  <div class="uppercase font-[objectsansbold] text-[#C6C6C8] text-[12px] hidden md:block my-auto">Call of Duty: Warzone</div>
+  </div>
+   <!--Line 2 Card-->
+  <div class="text-[16px] text-[#C6C6C8] font-[objectsansbold] mt-2 md:text-[18px] hover:text-white ">Call of Duty<sup class="text-[10px]">®</sup>: Warzone</div>
+   <!--Line 3 Card--> 
+  <div class="font-[notosans] mt-[4px] text-[#ffb400] text-[12px] md:text-[14px]">Free for everyone</div>
+   <!--Line 4 Card-->
+  <div class="font-[notosans] mt-[4px] text-[12px] text-[#C6C6C8]">Action Shooter</div>
+   <!--Price Card-->
+  <div class="font-[objectsansbold] text-[16px] text-[#C6C6C8] pt-[100px] ">Play For Free</div>
+</div>
+</div>
+ <!---------Card7---------->
+<div class="w-full md:w-[259.4px] rounded-sm shadow-md flex flex-col bg-[#23252B] hover:bg-[#313339] transition-colors ">
+<!--Image Card-->
+  <img src="/assets/card-7-BpYOupJq.png" class="w-[358px] h-[201px] md:w-[290.25px] md:h-[163.27px] transition-opacity ">
+<!--Caption Card-->
+ <div class="px-6 pt-6 relative transform transition-transform duration-300 hover:-translate-y-1">
+   <!--Line 1 Card -->
+  <div class="flex flex-wrap items-center mt-1">
+ <img src="data:image/svg+xml,%3csvg%20version='1.1'%20id='Layer_1'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20x='0px'%20y='0px'%20viewBox='0%200%20213%20213'%20style='enable-background:new%200%200%20213%20213;'%20xml:space='preserve'%20part='icon'%20aria-hidden='true'%3e%3cstyle%20type='text/css'%3e%20.st0{fill:%23ED1C24;}%20.st1{fill:%23EDE6CA;}%20%3c/style%3e%3cg%20id='Layer_1_00000041290065268955031760000004908605694924825523_'%3e%3cpath%20class='st0'%20d='M190.9,126l15.8-15.8l-15.8-15.8c-3.5,0.5-7.1-0.7-9.6-3.2L128,37.8c-2.5-2.5-3.7-6.1-3.2-9.6L109,12.4%20L93.2,28.3c0.5,3.5-0.7,7.1-3.2,9.6L36.6,91.2c-2.5,2.5-6.1,3.7-9.6,3.2l-15.8,15.8L27.1,126c3.5-0.5,7.1,0.7,9.6,3.2L90,182.5%20c2.5,2.5,3.7,6.1,3.2,9.6L109,208l15.8-15.8c-0.5-3.5,0.7-7.1,3.2-9.6l53.3-53.3C183.9,126.7,187.4,125.5,190.9,126z'%3e%3c/path%3e%3cpath%20d='M99.5,126.3v40.5c0,1.1-12.3,8.3-12.3,8.3h43.4c0,0-9.6-7.2-9.6-8.3c0,0,0-39.8,0-41.4c0,0,0-7.6,0-7.6%20c0-0.6,3.7-3.8,7.4-6.4l0.3-0.2l-0.3-0.2c-3.6-2.7-7.3-5.8-7.3-6.4c0-0.4,0.1-10.1,0.1-10.1c0-1.4,0-39.7,0-39.8%20c0-1.1,9.5-8.3,9.5-8.3H87.3c0,0,12.2,7.2,12.2,8.3c0,0,0,37.8,0,38.6c0,0,0.1,10.8,0.1,11.3s-7.6,6.5-7.6,6.5s7.6,6,7.6,6.6%20C99.6,117.8,99.5,126.3,99.5,126.3z'%3e%3c/path%3e%3cpath%20class='st1'%20d='M174.4,98.7c-0.2-0.5-0.4-1-0.7-1.4l0,0c0,0-3-8.7-17-20.4c-5.9-5-12.6-9-19.8-11.8c-9.2-4-20.1-5.6-37.5-5.6%20l-51.5-0.2h-0.7l0.5,0.4c0.1,0.1,10.8,7.6,15,10.6c0.1,7.1,0,77.7,0,81L47,160.9l61,0.1c17,0,29.3-4.2,39.7-13.7%20c7.8-6.7,13.3-15.7,15.5-25.8c0.4-1.6,0.6-3.3,0.8-5c0.1-1.5,0.2-3,0.2-4.5c0-9.1-2.7-18-7.8-25.6c0,0,0-0.1,0-0.1%20c0.1,0,0.2,0.1,0.3,0.1c1.5,0.7,3,1.4,4.4,2.3l0.3,0.2c0.9,0.5,1.7,1.1,2.6,1.7c3.6,2.5,6.9,5.3,10,8.4l0.6,0.7L174.4,98.7z%20M102.3,150.7c-5.5,0-10.6,0-13.3,0h-1.8c-1.1,0-1.3,0-1.3-1.7c0-1.1,0.1-73.4,0.1-77.4c2-0.3,23.6-1.3,34,3.6%20c4.4,1.9,8.4,4.9,11.4,8.6c4.6,5.6,6.9,13,6.9,22c0,25.7-10.4,36.6-19.9,41.9C114.3,149.9,107.2,150.7,102.3,150.7L102.3,150.7z'%3e%3c/path%3e%3c/g%3e%3c/svg%3e" alt="" class=" w-6 h-6 mr-1 ">
+      <!--Only desktop -->
+  <div class="uppercase font-[objectsansbold] text-[#C6C6C8] text-[12px] hidden md:block my-auto">Diablo Immortal</div>
+  </div>
+   <!--Line 2 Card-->
+  <div class="text-[16px] text-[#C6C6C8] font-[objectsansbold] mt-2 md:text-[18px] hover:text-white ">Diablo Immortal<sup class="text-[10px]">™</sup></div>
+   <!--Line 4 Card-->
+  <div class="font-[notosans] mt-[4px] text-[12px] text-[#C6C6C8]">Action RPG</div>
+   <!--Price Card-->
+  <div class="font-[objectsansbold] text-[16px] text-[#C6C6C8] pt-[120px] ">Play For Free</div>
+</div>
+</div>
+ <!---------Card8---------->
+<div class="w-full md:w-[259.4px] rounded-sm shadow-md flex flex-col bg-[#23252B] hover:bg-[#313339] transition-colors ">
+<!--Image Card-->
+  <img src="/assets/card-8-CScgIcNY.jpg" class="object-center w-[358px] h-[201px] md:w-[290.25px] md:h-[163.27px] transition-opacity ">
+<!--Caption Card-->
+ <div class="px-6 pt-6 relative transform transition-transform duration-300 hover:-translate-y-1">
+   <!--Line 1 Card -->
+  <div class="flex flex-wrap items-center mt-1">
+ <img src="/assets/r8-p6VRrDpM.svg" alt="" class=" w-6 h-6 mr-1 ">
+      <!--Only desktop -->
+  <div class="uppercase font-[objectsansbold] text-[#C6C6C8] text-[12px] hidden md:block my-auto">Diablo II: Resurrected</div>
+  </div>
+   <!--Line 2 Card-->
+  <div class="text-[16px] text-[#C6C6C8] font-[objectsansbold] mt-2 md:text-[18px] hover:text-white ">Diablo II: Resurrected<sup class="text-[10px]">™</sup></div>
+   <!--Line 3 Card--> 
+  <div class="font-[notosans] mt-[4px] text-[#ffb400] text-[12px] md:text-[14px]">  Evil is Resurrected</div>
+   <!--Line 4 Card-->
+  <div class="font-[notosans] mt-[4px] text-[12px] text-[#C6C6C8]">Action RPG</div>
+   <!--Price Card-->
+  <div class="font-[objectsansbold] text-[16px] text-[#C6C6C8] pt-[98px] ">€39.99</div>
+</div>
+</div>
+ <!---------Card9---------->
+<div class="w-full md:w-[259.4px] rounded-sm shadow-md flex flex-col bg-[#23252B] hover:bg-[#313339] transition-colors ">
+<!--Image Card-->
+  <img src="/assets/card-9-C5eEmQ2Z.webp" class="object-top text-top w-[358px] h-[201px] md:w-[290.25px] md:h-[163.27px] transition-opacity ">
+<!--Caption Card-->
+ <div class="px-6 pt-6 relative transform transition-transform duration-300 hover:-translate-y-1">
+   <!--Line 1 Card -->
+  <div class="flex flex-wrap items-center mt-1">
+ <img src="/assets/r9-0TCf2chF.svg" alt="" class=" w-6 h-6 mr-1 ">
+      <!--Only desktop -->
+  <div class="uppercase font-[objectsansbold] text-[#C6C6C8] text-[12px] hidden md:block my-auto"> Warcraft III </div>
+  </div>
+   <!--Line 2 Card-->
+  <div class="text-[16px] text-[#C6C6C8] font-[objectsansbold] mt-2 md:text-[18px] hover:text-white ">Warcraft<sup class="text-[10px]">®</sup> III: Reforged</div>
+   <!--Line 3 Card--> 
+  <div class="font-[notosans] mt-[4px] text-[#ffb400] text-[12px] md:text-[14px]">A major new update is live with graphical improvements, improved functionality, UI features, and more! </div>
+   <!--Line 4 Card-->
+  <div class="font-[notosans] mt-[4px] text-[12px] text-[#C6C6C8]">Real-time Strategy</div>
+   <!--Price Card-->
+  <div class="font-[objectsansbold] text-[16px] text-[#C6C6C8] pt-[35px] ">€29.99</div>
+</div>
+</div>
+ <!---------Card10---------->
+<div class="w-full md:w-[259.4px] rounded-sm shadow-md flex flex-col bg-[#23252B] hover:bg-[#313339] transition-colors ">
+<!--Image Card-->
+  <img src="/assets/card-10-CXkC2pFL.jpg" class="object-cover absolute top-[50%] w-[358px] h-[201px] md:w-[290.25px] md:h-[163.27px] transition-opacity ">
+<!--Caption Card-->
+ <div class="relative transform transition-transform duration-300 hover:-translate-y-1 px-6 pt-6 ">
+   <!--Line 1 Card -->
+  <div class="flex flex-wrap items-center mt-1">
+ <img src="data:image/svg+xml,%3csvg%20version='1.1'%20id='Layer_1'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20x='0px'%20y='0px'%20viewBox='0%200%20512%20512'%20style='enable-background:new%200%200%20512%20512;'%20xml:space='preserve'%20part='icon'%20aria-hidden='true'%3e%3cstyle%20type='text/css'%3e%20.st0{fill:%233390FF;}%20.st1{fill:%23CCE1FF;}%20%3c/style%3e%3cg%3e%3cg%3e%3cpath%20class='st0'%20d='M237.6,73.5l-78-30.8h-1.4l-80.8,15c-1.4,0-2.1,1.4-2.1,2.9c0,0.7,0.7,2.1,1.4,2.1%20c9.3,4.3,18.6,8.6,27.9,13.6c15,7.9,42.2,25,47.9,35.1l0,0c2.1,3.6,2.9,7.9,2.9,12.2l0.7,259c0,0,0.7,32.9,77.3,85.1%20c1.4,0.7,5.7,1.4,6.4,0c0,0,0,0,0-0.7V75.7C239,75,239,73.5,237.6,73.5z'%3e%3c/path%3e%3cpath%20class='st0'%20d='M273.4,73.5l78-30.8h1.4l80.8,15c1.4,0,2.1,1.4,2.1,2.9c0,0.7-0.7,2.1-1.4,2.1c-9.3,4.3-18.6,8.6-27.9,13.6%20c-15,7.9-42.2,25-47.9,35.1l0,0c-2.1,4.3-2.9,8.6-2.9,12.9l-0.7,259c0,0-0.7,32.9-77.3,85.1c-1.4,0.7-5.7,1.4-6.4,0c0,0,0,0,0-0.7%20v-392C272,75,272,73.5,273.4,73.5z'%3e%3c/path%3e%3c/g%3e%3cpath%20class='st1'%20d='M57.3,181h129.5l17.2,15.7c0.7,0.7,0.7,0.7,1.4,0.7l0,0c0.7,0,1.4,0,1.4-0.7l45.8-50.1%20c0.7-0.7,0.7-1.4,0.7-2.9c-0.7-0.7-1.4-1.4-2.1-1.4H83.1c-7.2-0.7-13.6,1.4-19.3,5c-5,4.3-9.3,11.4-9.3,24.3v6.4%20C54.5,178.8,55.9,180.2,57.3,181C57.3,180.2,57.3,180.2,57.3,181L57.3,181L57.3,181z%20M487.3,144.5H302.7l-1.4,0.7l-33.6,31.5%20c-0.7,0.7-0.7,2.9,0,3.6c0.7,0.7,1.4,0.7,1.4,0.7h148.1l7.9,10.7c0.7,0.7,2.1,1.4,3.6,0.7l60.1-42.9c0.7-0.7,1.4-2.1,0-3.6%20C488.7,144.5,488,144.5,487.3,144.5L487.3,144.5L487.3,144.5z%20M425.7,341.2c-5,0.7-10,1.4-15,1.4c-43.6-1.4-79.4-35.1-83-78.7%20c-0.7-5.7-0.7-11.4-0.7-17.2c0-14.3,0.7-29.3,3.6-43.6c0-0.7,0-1.4-0.7-2.1c-0.7-0.7-1.4-0.7-2.1-0.7h-65.8c-0.7,0-2.1,0.7-2.1,1.4%20c-5.7,16.5-8.6,34.3-8.6,52.2c0,14.3,2.1,21.5,7.2,38.6c12.9,39.3,60.1,77.3,98,77.3c57.2,0,71.5-20,72.2-26.5%20C428.6,341.9,427.9,341.2,425.7,341.2L425.7,341.2L425.7,341.2L425.7,341.2z%20M148.2,202.4l-2.1-0.7H71.7c-1.4,0-2.1,1.4-2.1,2.1%20c0,0.7,0,1.4,0.7,1.4c0,0,100.9,116.6,103,119.5c0,0,0,0.7,0.7,0.7l-0.7,0.7h-59.4c-8.6,0-17.2-2.9-24.3-7.9c-2.9-2.1-5-5-7.2-7.9%20c-0.7-0.7-0.7-0.7-1.4-0.7c-0.7,0-1.4,0-2.1,0.7L23,361.9c-0.7,0.7-0.7,2.9,0,3.6c0.7,0.7,0.7,0.7,1.4,0.7h208.2%20c12.2,0,20-12.9,20.7-25c0-5-1.4-10-4.3-13.6C239.8,318.3,148.2,202.4,148.2,202.4z'%3e%3c/path%3e%3c/g%3e%3c/svg%3e" alt="" class=" w-6 h-6 mr-1 ">
+      <!--Only desktop -->
+  <div class="uppercase font-[objectsansbold] text-[#C6C6C8] text-[12px] hidden md:block my-auto"> StarCraft II </div>
+  </div>
+   <!--Line 2 Card-->
+  <div class="text-[16px] text-[#C6C6C8] font-[objectsansbold] mt-2 md:text-[18px] hover:text-white "> StarCraft II <sup class="text-[10px]">®</sup> II: Campaign Collection</div>
+   <!--Line 3 Card--> 
+  <div class="font-[notosans] mt-[4px] text-[#ffb400] text-[12px] md:text-[14px]">Evil is Resurrected</div>
+   <!--Line 4 Card-->
+  <div class="font-[notosans] mt-[4px] text-[12px] text-[#C6C6C8]">Action RPG</div>
+   <!--Price Card-->
+  <div class="font-[objectsansbold] text-[16px] text-[#C6C6C8] pt-[70px] ">€39.99</div>
+</div>
+  </div>
+</div>
+<!--#region Just Released-->
+<div  class="font-[objectsansbold] text-[24px] leading-[28px] text-[#ffffff] ml-6 pt-[64px]">Just Released</div>
+<!--#region Just Released swiper-->
+<div class="w-full md:h-[540px] bg-pink  relative"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--#region script swiper -->
+<script src="./swiper/swiper-bundle.min.js"></script>
+<script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      centeredSlides: true,
+      loop: true,
+      autoplay: {
+        delay: 2700,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+</script>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const toggleBtn = document.getElementById("toggleBtn");
+      const playIcon = document.getElementById("playIcon");
+      const pauseIcon = document.getElementById("pauseIcon");
+
+      let isPlaying = true;
+
+      toggleBtn.addEventListener("click", () => {
+        if (isPlaying) {
+          swiper.autoplay.stop();
+          playIcon.classList.remove("hidden");
+          pauseIcon.classList.add("hidden");
+          toggleBtn.classList.remove("btn-neutral");
+          toggleBtn.classList.add("btn-success");
+        } else {
+          swiper.autoplay.start();
+          playIcon.classList.add("hidden");
+          pauseIcon.classList.remove("hidden");
+          toggleBtn.classList.remove("btn-success");
+          toggleBtn.classList.add("btn-neutral");
+        }
+        isPlaying = !isPlaying;
+      });
+
+    });
+</script>
+</body>
+
+</html>

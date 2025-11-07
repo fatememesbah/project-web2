@@ -3,9 +3,2551 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Accueil | Battle.net</title>
+  <title>Home | Battle.net</title>
+  <link rel="icon" href="./src/css/images/favicon.svg" type="image/x-icon">
+  <link rel="stylesheet" href="./swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./src/css/output.css">
 </head>
-<body>
-  
+ <body id="app" class="bg-main">
+ 
+   <!-- #region start project -->
+  <!------------------#region Top-Header--------Desktop------------------>
+  <header id="topHeader" class=" w-full bg-main px-2">
+ <div class="flex justify-between items-center py-2 px-2 bg-main">
+<!---------#region Hamburger Menu ----- Only Mobile: Left-------------->
+      <label for="mobile-drawer" class=" md:hidden hover:bg-[#23252B] rounded-lg w-6 h-6">
+        <img src="./src/css/images/header/hamburgermenu.svg" class="w-6 h-6" alt="">
+      </label>
+       <!------- mobile-drawer------>
+  <input id="mobile-drawer" type="checkbox" class="md:hidden drawer-toggle w-6 h-6" />
+  <div class="md:hidden drawer-side z-50 font-[notosans] text-[16px] text-[#ffffff] bg-main w-[80%]">
+    <label for="mobile-drawer" class="drawer-overlay"></label>
+    <div class="menu w-72 min-h-full  flex flex-col gap-1 px-0">
+      <div class="flex justify-center items-center mb-4 w-10 h-10  bg-[#353E52] rounded-lg">
+        <label for="mobile-drawer" class="w-10 h-10 btn btn-ghost text-center ">✕</label>
+      </div>
+         <!-- Warcraft  -->
+        <div class="collapse collapse-arrow border-0">
+        <input type="radio" name="accordion" />
+      <div class="collapse-title hover:bg-[#23252B] focus:bg-[#272930]  hover:text-white transition-colors flex items-center gap-1 h-14 border-0">Warcraft
+      </div>
+ <div class="collapse-content p-0 text-[#ffffffb9] bg-main rounded-md ">
+<ul>
+               <li> <a class="flex items-center gap-2 py-2 px-4 rounded-md hover:bg-[#272930] hover:text-white transition-colors">
+                  <img src="./src/css/images/icons/1.svg" alt="" class="w-6 h-6" /> 
+                  <div>
+                    <span>World of Warcraft</span>
+                    <br>
+                <sub class="text-[#8E8F93] font-[notosans] text-[10px]">Massively Multiplayer RPG</sub>
+               </div>
+              </a></li>
+               
+                 <li> <a class="flex items-center gap-2 py-2 px-4 rounded-md hover:bg-[#272930] hover:text-white transition-colors">
+                <img src="./src/css/images/icons/10.svg" alt="" class="w-6 h-6" />
+                  <div> <span> Warcraft III: Reforged</span>
+                       <br>
+                <sub class="text-[#8E8F93] font-[notosans] text-[10px]">Massively Multiplayer RPG</sub>
+               </div>
+                </a></li>
+                 <li> <a class="flex items-center gap-2 py-2 px-4 rounded-md hover:bg-[#272930] hover:text-white transition-colors">
+                <img src="./src/css/images/icons/11.svg" alt="" class="w-6 h-6" />
+                <div><span>Warcraft Rumble </span> 
+                    <br>
+                <sub class="text-[#8E8F93] font-[notosans] text-[10px]">Action Strategy</sub>
+               </div>
+                </a></li>
+           <li> <a class="flex items-center gap-2 py-2 px-4 rounded-md hover:bg-[#272930] hover:text-white transition-colors">
+               <img src="./src/css/images/icons/23.svg" alt="" class="w-6 h-6"/> 
+              <div><span>  Warcraft</span> 
+                    <br>
+                <sub class="text-[#8E8F93] font-[notosans] text-[10px]">Real-time Strategy</sub>
+               </div>
+
+              </a></li>
+</ul>
+</div>
+        </div>
+          <!-- Diablo  -->
+         <div class="collapse collapse-arrow ">
+   <input type="radio" name="accordion" />
+       <div class="collapse-title hover:bg-[#303237] hover:text-white transition-colors flex items-center gap-1 h-14">Diablo
+      </div>
+ <div class="collapse-content p-0 text-[#ffffffb9] bg-main rounded-md">
+           <ul>
+             <li>
+ <a class="flex items-center gap-2 py-2 px-4 rounded-md hover:bg-[#272930] hover:text-white transition-colors">
+                    <img src="./src/css/images/icons/20.svg" alt="" class="w-6 h-6" />
+                       <div><span> Diablo IV</span> 
+                    <br>
+                <sub class="text-[#8E8F93] font-[notosans] text-[10px]"> Action RPG</sub>
+               </div>
+                  </a>
+             </li>
+             <li>
+<a class="flex items-center gap-2 py-2 px-4 rounded-md hover:bg-[#272930] hover:text-white transition-colors">
+                    <img src="./src/css/images/icons/r7.svg" alt="" class="w-6 h-6" />
+                  
+                  <div><span>  Diablo Immortal</span> 
+                    <br>
+                <sub class="text-[#8E8F93] font-[notosans] text-[10px]"> Action RPG</sub>
+               </div>
+                  </a>
+             </li>
+             <li>
+<a class="flex items-center gap-2 py-2 px-4 rounded-md hover:bg-[#272930] hover:text-white transition-colors">
+                    <img src="./src/css/images/icons/2.svg" alt="" class="w-6 h-6" />
+                    
+                   <div><span>Diablo II: Resurrected</span> 
+                    <br>
+                <sub class="text-[#8E8F93] font-[notosans] text-[10px]"> Action RPG</sub>
+               </div>
+                  </a>
+             </li>
+              <li>
+                   <a class="flex items-center gap-2 py-2 px-4 rounded-md hover:bg-[#272930] hover:text-white transition-colors">
+                    <img src="./src/css/images/icons/7.svg" alt="" class="w-6 h-6" />
+                   
+                    <div><span> Diablo III</span> 
+                    <br>
+                <sub class="text-[#8E8F93] font-[notosans] text-[10px]"> Action RPG</sub>
+               </div>
+                  </a>
+              </li> 
+                <li>
+ <a class="flex items-center gap-2 py-2 px-4 rounded-md hover:bg-[#272930] hover:text-white transition-colors">
+                    <img src="./src/css/images/icons/13.svg" alt="" class="w-6 h-6" />
+                    
+                  <div><span> Diablo</span> 
+                    <br>
+                <sub class="text-[#8E8F93] font-[notosans] text-[10px]"> Action RPG</sub>
+               </div>
+              </a>
+                </li>   
+                 
+              </ul>
+              </div>
+              </div>
+           <!-- Overwatch  -->
+  <div class="collapse collapse-arrow ">
+   <input type="radio" name="accordion" />
+       <div 
+       class="collapse-title hover:bg-[#303237] hover:text-white transition-colors flex items-center gap-1 h-14"> Overwatch 
+       </div>
+      
+<div class="collapse-content text-[#ffffffb9] bg-main rounded-md  p-0">
+<ul>
+                 <li> <a class="flex items-center gap-2 py-2 px-4 rounded-md hover:bg-[#272930] hover:text-white transition-colors">
+                    <img src="./src/css/images/icons/4.svg" alt="" class="w-6 h-6" />
+                   
+                     <div><span>  Overwatch 2</span> 
+                    <br>
+                <sub class="text-[#8E8F93] font-[notosans] text-[10px]">Team-Based Action Game</sub> </div>
+          
+                  </a></li>
+                  </ul>
+                  </div>
+</div>
+          <!-- Hearthstone -->
+               <div class="collapse collapse-arrow ">
+        <input type="radio" name="accordion" />
+      <div class="collapse-title hover:bg-[#303237] hover:text-white transition-colors flex items-center gap-1 h-14">Hearthstone
+      </div>
+ <div class="collapse-content text-[#ffffffb9] bg-main  rounded-md p-0">
+    <ul>        <li>      <a class="flex items-center gap-2 py-2 px-4 rounded-md hover:bg-[#272930] hover:text-white transition-colors">
+                    <img src="./src/css/images/icons/5.svg" alt="" class="w-6 h-6" />
+                       <div><span>Hearthstone</span> 
+                    <br>
+                <sub class="text-[#8E8F93] font-[notosans] text-[10px]">Strategy Card Game</sub>
+                       </div>
+                  </a></li></ul>
+      </div>  
+      </div> 
+           <!-- StarCraft  -->
+       <div class="collapse collapse-arrow ">
+        <input type="radio" name="accordion" />
+      <div class="collapse-title hover:bg-[#303237] hover:text-white transition-colors flex items-center gap-1 h-14">HStarCraft
+      </div>
+ <div class="collapse-content text-[#ffffffb9] bg-main rounded-md p-0">
+    <ul> 
+         <li><a class="flex items-center gap-2 py-2 px-4 rounded-md hover:bg-[#272930] hover:text-white transition-colors">
+                    <img src="./src/css/images/icons/9.svg" alt="" class="w-6 h-6" />
+                   
+                     <div><span> StarCraft II</span> 
+                    <br>
+                <sub class="text-[#8E8F93] font-[notosans] text-[10px]"> Real-time Strategy</sub>
+                       </div>
+                  </a></li>
+               <li>  <a class="flex items-center gap-2 py-2 px-4 rounded-md hover:bg-[#272930] hover:text-white transition-colors">
+                    <img src="./src/css/images/icons/24.svg" alt="" class="w-6 h-6" />
+                   
+                    <div><span> StarCraft</span> 
+                    <br>
+                <sub class="text-[#8E8F93] font-[notosans] text-[10px]"> Real-time Strategy</sub>
+                       </div>
+                  </a></li>
+                </ul>
+                </div>
+                </div>
+            <!-- Call of Duty -->
+           <div class="collapse collapse-arrow ">
+        <input type="radio" name="accordion" />
+      <div class="collapse-title hover:bg-[#303237] hover:text-white transition-colors flex items-center gap-1 h-14">call of Duty
+                
+      </div>
+ <div class="collapse-content text-[#ffffffb9] bg-main rounded-md p-0">
+                <ul>
+               <li>   <a class="flex items-center gap-2 py-2 px-4 rounded-md hover:bg-[#272930] hover:text-white transition-colors">
+                    <img src="./src/css/images/icons/3.svg" alt="" class="w-6 h-6" />
+                    <div><span>Black Ops 7</span> 
+                    <br>
+                <sub class="text-[#8E8F93] font-[notosans] text-[10px]"> Real-time Strategy</sub>
+                       </div>
+                  </a></li>
+                <li>  <a class="flex items-center gap-2 py-2 px-4 rounded-md hover:bg-[#272930] hover:text-white transition-colors">
+                    <img src="./src/css/images/icons/26.svg" alt="" class="w-6 h-6" />
+                   
+                      <div><span> Black Ops 6</span> 
+                    <br>
+                <sub class="text-[#8E8F93] font-[notosans] text-[10px]"> Real-time Strategy</sub>
+                       </div>
+                  </a></li>
+                  <li><a class="flex items-center gap-2 py-2 px-4 rounded-md hover:bg-[#272930] hover:text-white transition-colors">
+                    <img src="./src/css/images/icons/22.svg" alt="" class="w-6 h-6" />
+                  
+                     <div><span>   Warzone</span> 
+                    <br>
+                <sub class="text-[#8E8F93] font-[notosans] text-[10px]"> Real-time Strategy</sub>
+                       </div>
+                  </a></li>
+                  <li><a class="flex items-center gap-2 py-2 px-4 rounded-md hover:bg-[#272930] hover:text-white transition-colors">
+                    <img src="./src/css/images/icons/27.svg" alt="" class="w-6 h-6" />
+                 
+                     <div><span>   Modern Warfare III</span> 
+                    <br>
+                <sub class="text-[#8E8F93] font-[notosans] text-[10px]"> Real-time Strategy</sub>
+                       </div>
+                  </a></li>
+                   <li><a class="flex items-center gap-2 py-2 px-4 rounded-md hover:bg-[#272930] hover:text-white transition-colors">
+                    <img src="./src/css/images/icons/15.svg" alt="" class="w-6 h-6" />
+                  
+                       <div><span>   Modern Warfare II</span> 
+                    <br>
+                <sub class="text-[#8E8F93] font-[notosans] text-[10px]"> Real-time Strategy</sub>
+                       </div>
+                  </a></li>
+                  <li><a class="flex items-center gap-2 py-2 px-4 rounded-md hover:bg-[#272930] hover:text-white transition-colors">
+                    <img src="./src/css/images/icons/28.svg" alt="" class="w-6 h-6" />
+                   
+                      <div><span> Vanguard</span> 
+                    <br>
+                <sub class="text-[#8E8F93] font-[notosans] text-[10px]"> Real-time Strategy</sub>
+                       </div>
+                  </a></li>
+                   <li><a class="flex items-center gap-2 py-2 px-4 rounded-md hover:bg-[#272930] hover:text-white transition-colors">
+                    <img src="./src/css/images/icons/29.svg" alt="" class="w-6 h-6" />
+                   
+                     <div><span> Black Ops Cold War</span> 
+                    <br>
+                <sub class="text-[#8E8F93] font-[notosans] text-[10px]"> Real-time Strategy</sub>
+                       </div>
+                  </a></li>
+                   <li><a class="flex items-center gap-2 py-2 px-4 rounded-md hover:bg-[#272930] hover:text-white transition-colors">
+                    <img src="./src/css/images/icons/30.svg" alt="" class="w-6 h-6" />
+                   
+                     <div><span> Modern Warfare</span> 
+                    <br>
+                <sub class="text-[#8E8F93] font-[notosans] text-[10px]"> Real-time Strategy</sub>
+                       </div>
+                  </a></li>
+                  <li> <a class="flex items-center gap-2 py-2 px-4 rounded-md hover:bg-[#272930] hover:text-white transition-colors">
+                    <img src="./src/css/images/icons/15.svg" alt="" class="w-6 h-6" />
+                   
+                      <div><span>  Modern Warfare 2</span> 
+                    <br>
+                <sub class="text-[#8E8F93] font-[notosans] text-[10px]"> Real-time Strategy</sub>
+                       </div>
+                  </a></li>
+                 <li> <a class="flex items-center gap-2 py-2 px-4 rounded-md hover:bg-[#272930] hover:text-white transition-colors">
+                    <img src="./src/css/images/icons/16.svg" alt="" class="w-6 h-6" />
+                    
+                      <div><span> Black Ops 4</span> 
+                    <br>
+                <sub class="text-[#8E8F93] font-[notosans] text-[10px]"> Real-time Strategy</sub>
+                       </div>
+                  </a></li>
+          </ul>
+          </div>
+          </div>
+           <!-- More -->
+       <div class="collapse collapse-arrow ">
+        <input type="radio" name="accordion" />
+      <div class="collapse-title hover:bg-[#303237] hover:text-white transition-colors flex items-center gap-1 h-14">
+        More
+      </div>
+ <div class="collapse-content text-[#ffffffb9] bg-main rounded-md  p-0">    
+           <ul>
+                <li>  <a 
+                  class="flex items-center gap-2 py-2 px-4 w-[263.99px] h-[56px] rounded-md hover:bg-[#272930] hover:text-white transition-colors">
+                    <img src="./src/css/images/icons/more1.svg" alt="" class="w-7 h-7" />
+                    
+                      <div><span>Avowed</span> 
+                    <br>
+                <sub class="text-[#8E8F93] font-[notosans] text-[10px]">First-person Fantasy RPG</sub>
+                       </div>
+                  </a></li>
+                 <li> <a 
+                  class="flex items-center gap-2 py-2 px-4 w-[263.99px] h-[56px] rounded-md hover:bg-[#272930] hover:text-white transition-colors">
+                    <img src="./src/css/images/icons/12.svg" alt="" class="w-7 h-7" />
+                       <div><span> Bilzzard Arcade Collection</span> 
+                    <br>
+                <sub class="text-[#8E8F93] font-[notosans] text-[10px]"> Bundle</sub>
+                       </div>
+                  </a></li>
+                  <li><a 
+                class="flex items-center gap-2 py-2 px-4 w-[263.99px] h-[56px] rounded-md hover:bg-[#272930] hover:text-white transition-colors">
+                    <img src="./src/css/images/icons/more2.svg" alt="" class="w-7 h-7" />
+                  
+                        <div><span>  Crash Bandicoot 4</span> 
+                    <br>
+                <sub class="text-[#8E8F93] font-[notosans] text-[10px]">Platformer</sub>
+                       </div>
+                  </a></li>
+                  <li><a 
+                 class="flex items-center gap-2 py-2 px-4 w-[263.99px] h-[56px] rounded-md hover:bg-[#272930] hover:text-white transition-colors">
+                    <img src="./src/css/images/icons/more4.svg" alt="" class="w-7 h-7" />
+                   
+                    <div><span> DOOM: The dark Ages</span> 
+                    <br>
+                <sub class="text-[#8E8F93] font-[notosans] text-[10px]">Action Shooter</sub>
+                       </div>
+                  </a></li>
+                  <li><a 
+                  class="flex items-center gap-2 py-2 px-4 w-[263.99px] h-[56px] rounded-md hover:bg-[#272930] hover:text-white transition-colors">
+                    <img src="./src/css/images/icons/more5.svg" alt="" class="w-7 h-7" />
+                    
+                      <div><span>Heros of the storm</span> 
+                    <br>
+                <sub class="text-[#8E8F93] font-[notosans] text-[10px]">MOBA</sub>
+                       </div>
+                  </a></li>
+                  <li><a 
+                  class="flex items-center gap-2 py-2 px-4 w-[263.99px] h-[56px] rounded-md hover:bg-[#272930] hover:text-white transition-colors">
+                    <img src="./src/css/images/icons/more6.svg" alt="" class="w-7 h-7" />
+                    
+                      <div><span> Sea of thieves</span> 
+                    <br>
+                <sub class="text-[#8E8F93] font-[notosans] text-[10px]">Action Adventure</sub>
+                       </div>
+                  </a>     </li>  
+                  <li><a 
+                  class="flex items-center gap-2 py-2 px-4 w-[263.99px] h-[56px] rounded-md hover:bg-[#272930] hover:text-white transition-colors">
+                    <img src="./src/css/images/icons/more7.svg" alt="" class="w-7 h-7" />
+                   
+                      <div><span>The Outer Worlds 2</span> 
+                    <br>
+                <sub class="text-[#8E8F93] font-[notosans] text-[10px]">Action RPG</sub>
+                       </div>
+                  </a></li>
+                  <li><a 
+                 class="flex items-center gap-2 py-2 px-4 w-[263.99px] h-[56px] rounded-md hover:bg-[#272930] hover:text-white transition-colors">
+                    <img src="./src/css/images/icons/more8.svg" alt="" class="w-7 h-7" />
+                   
+                      <div><span>Tony Hawk’s Pro Skater 3 + 4</span> 
+                    <br>
+                <sub class="text-[#8E8F93] font-[notosans] text-[10px]">Extreme Action Sports</sub>
+                       </div>
+                  </a></li>
+          </ul>    
+          </div>
+          </div>
+         <a href="index.html" class="text-center ml-4 hover:text-white checked:text-white focus:text-white"> <svg 
+          xmlns="http://www.w3.org/2000/svg" fill="currentColor"  class="w-[147px] h-[24px] " stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" aria-labelledby="blz-icon-title-battlenet-logo" viewBox="0 0 196 32" part="icon"><title id="blz-icon-title-battlenet-logo">Battle.net</title><path fill="#148EFF" stroke="none" d="M26.193 11.848c.895-2.755 1.063-5.267.453-7.17l-.017-.054c-.037-.103-.128-.321-.243-.321-.088 0-.089.146-.084.22l.006.043c.194 1.7-.326 4.124-1.371 6.663-2.143-.973-4.717-1.75-7.573-2.208-2.566-.413-5.023-.504-7.25-.322.264-1.752.919-2.971 1.993-3.229 1.478-.353 3.09.619 4.627 2.388q.399.054.798.118 1.138.183 2.234.434c-2.803-5.272-6.562-8.227-9.421-7.136-2.176.83-3.287 3.823-3.155 7.846-2.833.603-5.093 1.713-6.436 3.193l-.037.041c-.072.084-.215.272-.157.372.043.075.17.003.233-.038l.034-.026c1.375-1.018 3.735-1.78 6.456-2.145.229 2.343.843 4.96 1.873 7.662.926 2.429 2.076 4.602 3.348 6.44-1.65.648-3.034.69-3.793-.111-1.046-1.103-1.01-2.985-.246-5.202q-.152-.372-.297-.75a35 35 0 0 1-.741-2.151c-3.165 5.063-3.844 9.796-1.47 11.727 1.806 1.47 4.955.935 8.372-1.19 1.939 2.152 4.03 3.554 5.983 3.977l.055.012c.108.02.342.05.4-.05.044-.076-.082-.15-.149-.183l-.04-.017c-1.569-.681-3.409-2.344-5.085-4.518 1.914-1.37 3.874-3.21 5.699-5.454 1.64-2.016 2.947-4.098 3.904-6.119 1.385 1.106 2.113 2.282 1.8 3.34-.433 1.458-2.08 2.368-4.382 2.814a35 35 0 0 1-1.994 2.35c5.967.21 10.405-1.57 10.89-4.59.37-2.3-1.667-4.759-5.217-6.656m-5.183 6.026c-2.104 2.587-4.727 4.789-7.06 6.062a26.4 26.4 0 0 1-2.248-4.496c-1.188-3.116-1.784-6.489-1.72-9.146a26.4 26.4 0 0 1 5.018.301c3.292.53 6.511 1.7 8.78 3.083a26.4 26.4 0 0 1-2.77 4.196"></path><path stroke="none" d="M75.328 22.603 68.972 9.915a1.86 1.86 0 0 0-1.638-1.002h-3.3c-.685 0-1.32.391-1.638 1.002l-6.307 12.688c-.123.22.048.489.293.489h2.836a.45.45 0 0 0 .415-.244l1.394-2.787h9.362l1.394 2.787c.073.17.22.244.415.244h2.836c.22 0 .367-.269.294-.489M62.42 17.249l2.64-5.304a.38.38 0 0 1 .318-.196h.66c.147 0 .269.073.318.195l2.64 5.305zm133.256-7.994v2.152a.35.35 0 0 1-.343.342h-5.72v12.859a.24.24 0 0 1-.391.195l-2.836-2.42a1 1 0 0 1-.342-.733v-9.901h-4.596a.7.7 0 0 1-.611-.391l-1.1-2.2c-.049-.123.024-.245.146-.245h15.401c.22 0 .392.171.392.342m-30.68 2.738v2.616h10.438a1.419 1.419 0 0 1 0 2.836h-10.438V19.4c0 .489.415.904.904.904h11.759a.35.35 0 0 1 .342.342V22.8a.37.37 0 0 1-.342.342h-12.712a3.625 3.625 0 0 1-3.618-3.618v-8.776c0-1.003.807-1.81 1.809-1.81h14.521a.35.35 0 0 1 .342.343v2.151a.37.37 0 0 1-.342.342h-12.443c-.147-.024-.22.074-.22.22m-6.747-2.64v12.443c0 1.492-1.736 2.323-2.909 1.345l-10.977-9.314v8.85c0 .244-.195.44-.44.44h-2.762c-.245 0-.465-.196-.465-.44v-12.42c0-1.49 1.736-2.322 2.909-1.344l10.977 9.314v-8.85c0-.244.195-.464.44-.464h2.762c.318 0 .465.22.465.44m-34.2 2.64v2.616h7.285a1.418 1.418 0 0 1 0 2.836h-7.261V19.4c0 .489.416.904.905.904h11.758a.35.35 0 0 1 .342.342V22.8a.35.35 0 0 1-.342.342h-12.712a3.626 3.626 0 0 1-3.618-3.618v-8.776c0-1.003.807-1.81 1.809-1.81h14.521a.35.35 0 0 1 .342.343v2.151a.35.35 0 0 1-.342.342h-12.443c-.147-.024-.244.074-.244.22m-5.183 8.605v2.152a.35.35 0 0 1-.342.342h-10.219a3.626 3.626 0 0 1-3.618-3.618V9.255a.35.35 0 0 1 .343-.342h3.006a.35.35 0 0 1 .343.342v10.097c0 .489.415.904.904.904h9.241c.22 0 .342.171.342.342M102.781 9.255v2.152a.35.35 0 0 1-.343.342h-5.329v12.859a.24.24 0 0 1-.391.195l-2.86-2.445a1 1 0 0 1-.343-.757v-9.876H90.02a.7.7 0 0 1-.611-.392l-1.1-2.2c-.05-.098.024-.22.17-.22h13.959a.35.35 0 0 1 .343.342m-50.604 6.6c.66-.244 2.005-.88 2.005-2.688 0-3.105-2.298-4.254-5.036-4.254h-10.56c-.148 0-.343.147-.343.342V22.75a.35.35 0 0 0 .342.342h11.881c1.736-.024 4.23-1.002 4.23-4.205.024-2.004-1.785-2.835-2.519-3.031M41.885 11.97c0-.147.098-.22.22-.22h6.503c.684 0 2.176 0 2.176 1.418s-1.516 1.418-2.176 1.418h-6.723zm7.505 8.263h-7.285c-.146 0-.22-.098-.22-.22V17.42h7.53c.733 0 1.907 0 1.907 1.418 0 1.443-1.345 1.394-1.932 1.394M86.548 9.255v2.152a.35.35 0 0 1-.342.342h-4.18v12.859a.24.24 0 0 1-.391.195l-2.86-2.445a1 1 0 0 1-.343-.733v-9.9h-4.547a.7.7 0 0 1-.61-.392l-1.1-2.2c-.025-.098.048-.22.17-.22h13.861c.147 0 .342.147.342.342"></path><path fill="#148EFF" stroke="none" d="M134.805 16.003c0-.978.782-1.785 1.784-1.785.978 0 1.785.807 1.785 1.785s-.782 1.785-1.785 1.785a1.78 1.78 0 0 1-1.784-1.785"></path><path stroke="none" d="M192.975 22.187a1.418 1.418 0 1 1-.003-2.837 1.418 1.418 0 0 1 .003 2.837m0-2.613a1.197 1.197 0 1 0-.004 2.398 1.197 1.197 0 0 0 .004-2.4zm.363 2.014-.5-.673h-.173v.673h-.283v-1.634h.586c.425 0 .611.138.611.46a.443.443 0 0 1-.437.477l.545.693zm-.141-1.376a.7.7 0 0 0-.269-.037h-.263v.542h.263c.251 0 .372-.093.372-.294a.24.24 0 0 0-.103-.212z"></path>
+        </svg></a>
+        <div class="divider"></div>
+      <div class="collapse collapse-arrow bg-main h-[300px] px-0 rounded-0">
+        <input type="radio" name="accordion" />
+        <div class="collapse-title font-[notosans] text-[16px] text-[#ffffff] rounded-0">Battle.net Balance</div>
+        <div class="collapse-content bg-main p-0 mx-1">
+            <a href="#" class="flex gap-2 rounded-sm py-4 my-2 font-[notosans] text-[14px] text-[#8B8C8F] hover:bg-[#272930]  hover:text-white transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="20" height="20" viewBox="0 0 24 24" part="icon" aria-hidden="true"><path d="M12 20a8 8 0 1 1 0-16 8 8 0 0 1 0 16m0 2c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10"></path><path d="M11.5 7a.5.5 0 0 0-.5.5V11H7.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5H11v3.5a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5V13h3.5a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5H13V7.5a.5.5 0 0 0-.5-.5z"></path></svg>
+                    <span>Add Balance</span>
+                  </a>
+                  <a href="#" class="flex gap-2 rounded-sm py-4 my-2 font-[notosans] text-[14px] text-[#8B8C8F] hover:bg-[#272930]  hover:text-white transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="20" height="20" viewBox="0 0 24 24" part="icon" aria-hidden="true"><path d="M16.066 7.245a2.75 2.75 0 0 0 1.006-3.756c-.325-.563-.803-1.1-1.489-1.34-.711-.247-1.485-.119-2.268.333-.295.17-.528.432-.708.688-.186.265-.35.574-.49.895a9 9 0 0 0-.535 1.715 9 9 0 0 0-1.557-1.494 5 5 0 0 0-.87-.53c-.285-.132-.618-.242-.958-.242-.904 0-1.638.276-2.13.846-.475.55-.62 1.254-.62 1.904 0 .659.23 1.263.616 1.736H5a2 2 0 0 0-2 2v3.53a.5.5 0 0 0 .5.5H4V19a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-4.97h.5a.5.5 0 0 0 .5-.5V10a2 2 0 0 0-2-2h-4.242zm-.293-3.006a1.25 1.25 0 0 1-.457 1.707l-2.383 1.376a4.3 4.3 0 0 1 .062-.933 7.5 7.5 0 0 1 .498-1.725 3.7 3.7 0 0 1 .342-.632c.118-.168.2-.234.23-.25.517-.299.833-.283 1.025-.216.217.076.456.28.683.673M6.947 6.264c0-.454.104-.75.255-.924.132-.153.398-.326.995-.326.034 0 .139.016.325.102.177.083.386.21.612.377.453.334.923.79 1.293 1.244.253.311.422.578.52.777h-2.75c-.69 0-1.25-.56-1.25-1.25M18 19h-5v-4.899h5zm1-6.97h-6V10h6zm-8 0H5V10h6zM11 19H6v-4.899h5z"></path>
+                    </svg>
+                    <span>Gift Balance</span>
+                  </a>
+                  <a href="#" class="flex gap-2 rounded-sm py-4 my-2 font-[notosans] text-[14px] text-[#8B8C8F] hover:bg-[#272930]  hover:text-white transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="20" height="20" viewBox="0 0 24 24" part="icon" aria-hidden="true"><path d="M5.001 12a7 7 0 1 1 2.725 5.544.53.53 0 0 0-.695.032l-.713.713a.48.48 0 0 0 .027.712A9 9 0 1 0 3.001 12H1.208a.5.5 0 0 0-.354.854l2.793 2.792a.5.5 0 0 0 .707 0l2.793-2.792A.5.5 0 0 0 6.794 12H5Z"></path><path d="M12.001 7a1 1 0 0 0-1 1v4.036a1 1 0 0 0 .5.91l3.465 2a1 1 0 0 0 1-1.732l-2.965-1.712V8a1 1 0 0 0-1-1"></path></svg>
+        <span>Balance History</span>
+         <svg
+            class="w-3 h-3 ml-auto"
+              fill="none"
+            stroke="currentColor"
+          viewBox="0 0 24 24" >
+         <path   stroke-linecap="round" stroke-linejoin="round"    stroke-width="2"
+   d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"  />
+    </svg>
+         </a>
+      <a href="#" class="flex gap-2 rounded-sm py-4 my-2 font-[notosans] text-[14px] text-[#8B8C8F] hover:bg-[#272930]  hover:text-white transition-colors">
+        <svg 
+        xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="20" height="20" viewBox="0 0 24 24" part="icon" aria-hidden="true"><path d="M11.104 8.068c-.13.046-.248.118-.527.364-.252.223-.456.591-.543 1.048-.052.27-.27.497-.546.497h-1c-.277 0-.503-.225-.474-.5.103-.955.504-1.895 1.24-2.544.323-.285.676-.57 1.179-.75.482-.171 1.018-.217 1.675-.217 1.407 0 3.022.477 3.67 2.047.624 1.509-.02 3.086-1.447 3.75-.128.06-.302.135-.454.202l-.253.112a3.3 3.3 0 0 0-.47.248.5.5 0 0 0-.15.132c-.003.005-.016.024-.016.09v.953a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-.952c0-.924.5-1.512 1.047-1.881.252-.17.524-.303.762-.411.136-.062.238-.106.335-.148.112-.049.216-.094.356-.159.463-.215.654-.66.442-1.173-.186-.451-.73-.81-1.822-.81-.594 0-.853.048-1.004.102M11 16.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5z"></path>
+          <path d="M22 12c0 5.523-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2s10 4.477 10 10m-2 0a8 8 0 1 0-16 0 8 8 0 0 0 16 0"></path>
+        </svg>
+                    <span>Balance Help</span>
+                    <svg
+                      class="w-3 h-3 ml-auto "
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                      />
+                    </svg>
+                  </a>
+        </div>
+      </div>
+</div>
+  </div>
+<!---------#region Account Dropdown --- Only Mobile:Right -->          
+<div class=" md:hidden drawer drawer-end w-6 h-6">
+  <input id="account-drawer" type="checkbox" class="drawer-toggle" />
+  <div class="drawer-content">
+    <!-- Page content here -->
+     <label  for="account-drawer" class="md:hidden hover:bg-[#23252B] rounded-lg">
+        <img  src="./src/css/images/header/account/accountmobile.svg"  class="w-6 h-6" alt="">
+      </label>
+  </div>
+ <div class="drawer-side">
+ <label for="account-drawer" aria-label="close sidebar" class="drawer-overlay"></label>  
+<ul class="menu bg-main min-h-full w-80 p-0 ml-4 text-[16px] font-[notosansbolfd]">
+<li class="flex justify-center items-center mb-4 w-10 h-10 m-2  bg-card rounded-lg ">
+ <label for="account-drawer" aria-label=" close sidebar" class="w-10 h-10 btn btn-ghos drawer-overlay text-[16px] text-[#ffffff]">✕</label>      
+</li>
+   <li class="block items-center text-center px-2"><a href="login.html"  class="block  py-2 text-center rounded-sm mb-4 h-[48px] w-[95%] font-[notosansbold] text-[14px]   bg-[#0074e0] text-white hover:bg-[#0074e0e6] hover:text-white transition-colors ">Login
+      </a></li>
+    <li class="px-2"> <a href="#" class="flex gap-2 rounded-sm py-3 px-4 mt-2 font-[notosansbold] text-[14px] text-white   hover:bg-[#23252B] transition-colors">
+ <span> Account Settings </span>
+      </a></li> 
+<li class="px-2"> <a href="#" class="flex gap-2 rounded-sm py-3 px-4 mt-2 font-[notosansbold] text-[14px] text-white   hover:bg-[#23252B] transition-colors">
+    <span>Wish List</span>
+  </a></li> 
+    <li class="px-2"> <a href="#" class="flex gap-2 rounded-sm py-3 px-4 mt-2 font-[notosansbold] text-[14px] text-white   hover:bg-[#23252B] transition-colors">
+                  <span>Redeem Code</span>
+                </a></li> 
+        <li class="px-2"> <a href="#" class="flex gap-2 rounded-sm py-3 px-4 mt-2 font-[notosansbold] text-[14px] text-white   hover:bg-[#23252B] transition-colors">
+                  <span> Change BattleTag </span>
+                 </a></li> 
+ 
+   <li> <a href="#" class="flex gap-2 rounded-sm py-3 px-4 mt-2 font-[notosansbold] text-[14px] text-white  bg-card transition-colors hover:bg-[#2F3138]">
+  <img src="./src/css/images/header/question.svg" alt="" class="w-6 h-6"> Support
+              </a> </li> 
+  <li > <a href="#" class="flex gap-2 rounded-sm py-3 px-4  font-[notosansbold] text-[14px] text-white  bg-card transition-colors hover:bg-[#2F3138]">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="grey" viewBox="0 0 24 24" part="icon" aria-hidden="true"><path d="M8 2a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2zm8 3v14H8V5z"></path></svg>
+ Battle.net Mobile App
+              </a> </li>
+                 <li > <a href="#" class="flex gap-2 rounded-sm py-3 px-4  font-[notosansbold] text-[14px] text-white  bg-card transition-colors hover:bg-[#2F3138]">
+  <img src="./src/css/images/header/account/create-account.svg" alt=""> Create Account
+              </a> </li>  
+               <li> <a href="#" class=" rounded-sm p-20 bg-card transition-colors">
+              </a> </li> 
+
+</ul>
+   </div>
+ </div>
+ 
+    <!-- Logo --------->
+      <div class="hidden md:block">
+      <img src="./src/css/images/battlenet.svg"  alt=""  class="w-[200px] h-[56px]"/>
+       </div>
+    <!-- Top Menu ------->
+      <div class="hidden md:flex items-center ">
+      <!-- Download------>
+     <a 
+     href="#" class="hidden md:flex items-center gap-2 font-[objectsansbold] text-[16px] text-[#fff] font-bold hover:bg-[#23252B] hover:text-white transition-colors h-[48px] w-[218.7px] rounded-[4px] justify-center">
+              <img src="./src/css/images/header/download.svg"  class="w-6 h-6">
+              <span>Download Battle.net</span>
+       </a>
+     <!-- Support----->
+     <a 
+     href="#" class="hidden md:flex items-center gap-2  text-[#fff] hover:bg-[#23252B] transition-colors h-[48px] w-[124.84px] rounded-[4px] justify-center font-[objectsansbold] text-[16px] font-bold">
+      <img src="./src/css/images/header/question.svg" class="w-6 h-6"> 
+      <span>Support</span>
+      </a>
+    <!-- Account Dropdown ------>
+     <div class="relative dropdown hidden md:block">
+       <button aria-label="Account Menu"
+       class="flex items-center gap-2 h-[48px] w-[143.31px] rounded-[4px] justify-center font-bold font-[objectsansbold] text-[16px] text-white hover:bg-[#23252B] transition-colors " >
+        <img src="./src/css/images/header/account/account.svg" alt="">
+                <span >Account</span>
+        <img src="./src/css/images/chevron-down.svg" alt="">        
+      </button>
+      <div  class="dropdown-menu absolute right-0 top-12 w-[294px]  border border-[#44464B]  shadow-xl rounded-[4px]  border-[#fffffe1f] z-50  hidden bg-main" >
+        <div class=" bg-main px-2 mb-1">
+      <div class="login-wrapper px-4 pt-6 font-[objectsansbold] text-[16px]">
+      <a href="login.html"  class="block  py-2 text-center rounded-sm mb-4 bg-[#0074e0] text-white hover:bg-[#0074e0e6] hover:text-white transition-colors">Login</a>
+      </div>
+      <a href="#" class="flex gap-2 rounded-sm py-3 px-4 mt-2 font-[notosans] text-[14px] text-[#8B8C8F] hover:bg-[#272930]  hover:text-white transition-colors">
+ <img src="./src/css/images/header/account/account-setings.svg" alt="">
+ <span> Account Settings </span>
+      </a>
+       <a href="#" class="flex py-3 px-4 mt-2 rounded-sm gap-2 font-[notosans] text-[14px] text-[#8B8C8F] hover:bg-[#272930] hover:text-white  transition-colors" >
+    <img src="./src/css/images/header/account/wish-list.svg" alt="">
+    <span>Wish List</span>
+  </a>
+      <a href="#" class="flex py-3 px-4 mt-2 gap-2 rounded-sm font-[notosans] text-[14px] text-[#8B8C8F] hover:bg-[#272930] hover:text-white  transition-colors">
+                  <img src="./src/css/images/header/account/Redeem-Code.svg" alt="">
+                  <span>Redeem Code</span>
+                </a>
+                <a href="#"  class="flex gap-2 rounded-sm py-3 px-4 mt-2 font-[notosans] text-[14px] text-[#8B8C8F] hover:bg-[#272930] hover:text-white  transition-colors" > <img src="./src/css/images/header/account/Change-BattleTag.svg" alt="">
+                  <span> Change BattleTag </span>
+                 </a>
+         </div>
+         <div class="bg-card py-3 px-2 ">
+         <a href="#" class="flex py-3  px-2 rounded-sm font-[notosans] text-[14px]  text-[#8B8C8F] hover:bg-[#272930] hover:text-white  transition-colors ">
+  <img src="./src/css/images/header/account/create-account.svg" alt=""> Create Account
+              </a> 
+         </div>
+      </div>
+     </div> 
+  </div>
+  </div>
+  </header>
+   <!-------#region search----- Only Mobile: center-------->
+     <div class="md:hidden mx-2 w-[95%] h-14 bg-card rounded-sm ">
+          <input type="text" placeholder="Search Shop" class="text-grey-500 hover:placeholder-white  bg-card pt-2.5 input input-sm w-full h-[54px] border-0 border-[#303237] shadow-none text-[16px] font-[notosansbold]" /> 
+         
+        </div>
+  <!-------------------- #region Bottom-Header -------------------------->‌‌
+    <header id="bottomHeader" class="hidden md:flex p-2 bg-main transition-all duration-300 z=50">
+  <div id="top" class="hidden md:sticky md:top-0 z-40 bg-menu w-full md:flex items-center justify-center h-14 transition-all duration-300 ">
+  <div  class="flex items-center justify-center md:gap-2 md:px-2 md:relative bg-main">
+    <!--control---- open search------->
+      <input type="checkbox" id="searchToggle" class="hidden peer " />
+      <!-- Menu Desktop-->
+       <ul style="font-family: notosansbold; font-size: 14px; color:#ffffffb9; " class="menu menu-horizontal hidden md:flex gap-2 peer-checked:hidden bg-card px-6 py-0 rounded-sm text-[#ffffffb9] h-14 font-[notosansbold] text-[14px] md:w-[978.36px] xl:w-[980px] 2xl:w-[1380px] exact1440">
+              <!-- Warcraft Dropdown -->
+              <li class=" dropdown">
+              <button class=" hover:bg-[#303237] hover:text-white transition-colors flex items-center gap-1 h-14"  >
+                  <span>Warcraft</span>
+                  <svg
+                    class="w-3.5 h-3.5"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+               </button>
+               <div class="dropdown-menu absolute left-0 p-2 w-68 text-[#ffffffb9] bg-main rounded-md  border border-[#272930]  z-50 hidden">
+
+                <a class="flex items-center gap-2 py-2 px-4 rounded-md hover:bg-[#272930] hover:text-white transition-colors">
+                  <img src="./src/css/images/icons/1.svg" alt="" class="w-6 h-6" /> 
+                  <div>
+                    <span>World of Warcraft</span>
+                    <br>
+                <sub class="text-[#8E8F93] font-[notosans] text-[10px]">Massively Multiplayer RPG</sub>
+               </div>
+              </a>
+               
+                  <a class="flex items-center gap-2 py-2 px-4 rounded-md hover:bg-[#272930] hover:text-white transition-colors">
+                <img src="./src/css/images/icons/10.svg" alt="" class="w-6 h-6" />
+                  <div> <span> Warcraft III: Reforged</span>
+                       <br>
+                <sub class="text-[#8E8F93] font-[notosans] text-[10px]">Massively Multiplayer RPG</sub>
+               </div>
+                </a>
+                  <a class="flex items-center gap-2 py-2 px-4 rounded-md hover:bg-[#272930] hover:text-white transition-colors">
+                <img src="./src/css/images/icons/11.svg" alt="" class="w-6 h-6" />
+                <div><span>Warcraft Rumble </span> 
+                    <br>
+                <sub class="text-[#8E8F93] font-[notosans] text-[10px]">Action Strategy</sub>
+               </div>
+                </a>
+            <a class="flex items-center gap-2 py-2 px-4 rounded-md hover:bg-[#272930] hover:text-white transition-colors">
+               <img src="./src/css/images/icons/23.svg" alt="" class="w-6 h-6"/> 
+              <div><span>  Warcraft</span> 
+                    <br>
+                <sub class="text-[#8E8F93] font-[notosans] text-[10px]">Real-time Strategy</sub>
+               </div>
+
+              </a>
+                </div>
+              </li>
+              <!-- Diablo Dropdown -->
+             <li class=" dropdown">
+              <button class=" hover:bg-[#303237] hover:text-white transition-colors flex items-center gap-1 h-14"  >
+                  <span>Diablo</span>
+                  <svg
+                    class="w-3.5 h-3.5"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                </button>
+                 <div class="dropdown-menu absolute left-0 p-2 w-68 text-[#ffffffb9] bg-main rounded-md  border border-[#272930]  z-50 hidden">
+                  <a class="flex items-center gap-2 py-2 px-4 rounded-md hover:bg-[#272930] hover:text-white transition-colors">
+                    <img src="./src/css/images/icons/20.svg" alt="" class="w-6 h-6" />
+                       <div><span> Diablo IV</span> 
+                    <br>
+                <sub class="text-[#8E8F93] font-[notosans] text-[10px]"> Action RPG</sub>
+               </div>
+                  </a>
+                   <a class="flex items-center gap-2 py-2 px-4 rounded-md hover:bg-[#272930] hover:text-white transition-colors">
+                    <img src="./src/css/images/icons/r7.svg" alt="" class="w-6 h-6" />
+                  
+                  <div><span>  Diablo Immortal</span> 
+                    <br>
+                <sub class="text-[#8E8F93] font-[notosans] text-[10px]"> Action RPG</sub>
+               </div>
+                  </a>
+                   <a class="flex items-center gap-2 py-2 px-4 rounded-md hover:bg-[#272930] hover:text-white transition-colors">
+                    <img src="./src/css/images/icons/2.svg" alt="" class="w-6 h-6" />
+                    
+                   <div><span>Diablo II: Resurrected</span> 
+                    <br>
+                <sub class="text-[#8E8F93] font-[notosans] text-[10px]"> Action RPG</sub>
+               </div>
+                  </a>
+                    <a class="flex items-center gap-2 py-2 px-4 rounded-md hover:bg-[#272930] hover:text-white transition-colors">
+                    <img src="./src/css/images/icons/7.svg" alt="" class="w-6 h-6" />
+                   
+                    <div><span> Diablo III</span> 
+                    <br>
+                <sub class="text-[#8E8F93] font-[notosans] text-[10px]"> Action RPG</sub>
+               </div>
+                  </a>
+                    <a class="flex items-center gap-2 py-2 px-4 rounded-md hover:bg-[#272930] hover:text-white transition-colors">
+                    <img src="./src/css/images/icons/13.svg" alt="" class="w-6 h-6" />
+                    
+                  <div><span> Diablo</span> 
+                    <br>
+                <sub class="text-[#8E8F93] font-[notosans] text-[10px]"> Action RPG</sub>
+               </div>
+                  </a>
+                </div>
+              </li>
+              <!-- Overwatch Dropdown -->
+              <li class=" dropdown">
+              <button class=" hover:bg-[#303237] hover:text-white transition-colors flex items-center gap-1 h-14"  >
+                  <span>Overwatch</span>
+                  <svg
+                    class="w-3.5 h-3.5"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                </button>
+                  <div class="dropdown-menu absolute left-0 p-2 w-68 text-[#ffffffb9] bg-main rounded-md  border border-[#272930]  z-50 hidden">
+                  <a class="flex items-center gap-2 py-2 px-4 rounded-md hover:bg-[#272930] hover:text-white transition-colors">
+                    <img src="./src/css/images/icons/4.svg" alt="" class="w-6 h-6" />
+                   
+                     <div><span>  Overwatch 2</span> 
+                    <br>
+                <sub class="text-[#8E8F93] font-[notosans] text-[10px]">Team-Based Action Game</sub>
+                       </div>
+                  </a>
+                </div>
+              </li>
+                <!-- Hearthstone -->
+              <li class=" dropdown">
+              <button class=" hover:bg-[#303237] hover:text-white transition-colors flex items-center gap-1 h-14"  >
+                  <span>Hearthstone</span>
+                  <svg
+                    class="w-3.5 h-3.5"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                </button>
+                 <div class="dropdown-menu absolute left-0 p-2 w-68 text-[#ffffffb9] bg-main rounded-md  border border-[#272930]  z-50 hidden">
+                  <a class="flex items-center gap-2 py-2 px-4 rounded-md hover:bg-[#272930] hover:text-white transition-colors">
+                    <img src="./src/css/images/icons/5.svg" alt="" class="w-6 h-6" />
+                       <div><span>Hearthstone</span> 
+                    <br>
+                <sub class="text-[#8E8F93] font-[notosans] text-[10px]">Strategy Card Game</sub>
+                       </div>
+                  </a>
+                </div>
+              </li>
+              <!-- StarCraft Dropdown -->
+             <li class=" dropdown">
+              <button class=" hover:bg-[#303237] hover:text-white transition-colors flex items-center gap-1 h-14"  >
+                  <span>StarCraft</span>
+                  <svg
+                    class="w-3.5 h-3.5"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                </button>
+                  <div class="dropdown-menu absolute left-0 p-2 w-68 text-[#ffffffb9] bg-main rounded-md  border border-[#272930]  z-50 hidden">
+                  <a class="flex items-center gap-2 py-2 px-4 rounded-md hover:bg-[#272930] hover:text-white transition-colors">
+                    <img src="./src/css/images/icons/9.svg" alt="" class="w-6 h-6" />
+                   
+                     <div><span> StarCraft II</span> 
+                    <br>
+                <sub class="text-[#8E8F93] font-[notosans] text-[10px]"> Real-time Strategy</sub>
+                       </div>
+                  </a>
+                 <a class="flex items-center gap-2 py-2 px-4 rounded-md hover:bg-[#272930] hover:text-white transition-colors">
+                    <img src="./src/css/images/icons/24.svg" alt="" class="w-6 h-6" />
+                   
+                    <div><span> StarCraft</span> 
+                    <br>
+                <sub class="text-[#8E8F93] font-[notosans] text-[10px]"> Real-time Strategy</sub>
+                       </div>
+                  </a>
+                </div>
+              </li>   
+                <!-- Call of Duty Dropdown -->
+         <li class=" dropdown">
+              <button class=" hover:bg-[#303237] hover:text-white transition-colors flex items-center gap-1 h-14"  >
+                  <span> call of Duty</span>
+                  <svg
+                    class="w-3.5 h-3.5"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                </button>
+                <div class="dropdown-menu absolute left-0 p-2 h-[532px] overflow-y-auto w-68 text-[#ffffffb9] bg-main rounded-md  border border-[#272930]  z-50 hidden">
+                  <a class="flex items-center gap-2 py-2 px-4 rounded-md hover:bg-[#272930] hover:text-white transition-colors">
+                    <img src="./src/css/images/icons/3.svg" alt="" class="w-6 h-6" />
+                    <div><span>Black Ops 7</span> 
+                    <br>
+                <sub class="text-[#8E8F93] font-[notosans] text-[10px]"> Real-time Strategy</sub>
+                       </div>
+                  </a>
+                  <a class="flex items-center gap-2 py-2 px-4 rounded-md hover:bg-[#272930] hover:text-white transition-colors">
+                    <img src="./src/css/images/icons/26.svg" alt="" class="w-6 h-6" />
+                   
+                      <div><span> Black Ops 6</span> 
+                    <br>
+                <sub class="text-[#8E8F93] font-[notosans] text-[10px]"> Real-time Strategy</sub>
+                       </div>
+                  </a>
+                  <a class="flex items-center gap-2 py-2 px-4 rounded-md hover:bg-[#272930] hover:text-white transition-colors">
+                    <img src="./src/css/images/icons/22.svg" alt="" class="w-6 h-6" />
+                  
+                     <div><span>   Warzone</span> 
+                    <br>
+                <sub class="text-[#8E8F93] font-[notosans] text-[10px]"> Real-time Strategy</sub>
+                       </div>
+                  </a>
+                  <a class="flex items-center gap-2 py-2 px-4 rounded-md hover:bg-[#272930] hover:text-white transition-colors">
+                    <img src="./src/css/images/icons/27.svg" alt="" class="w-6 h-6" />
+                 
+                     <div><span>   Modern Warfare III</span> 
+                    <br>
+                <sub class="text-[#8E8F93] font-[notosans] text-[10px]"> Real-time Strategy</sub>
+                       </div>
+                  </a>
+                   <a class="flex items-center gap-2 py-2 px-4 rounded-md hover:bg-[#272930] hover:text-white transition-colors">
+                    <img src="./src/css/images/icons/15.svg" alt="" class="w-6 h-6" />
+                  
+                       <div><span>   Modern Warfare II</span> 
+                    <br>
+                <sub class="text-[#8E8F93] font-[notosans] text-[10px]"> Real-time Strategy</sub>
+                       </div>
+                  </a>
+                  <a class="flex items-center gap-2 py-2 px-4 rounded-md hover:bg-[#272930] hover:text-white transition-colors">
+                    <img src="./src/css/images/icons/28.svg" alt="" class="w-6 h-6" />
+                   
+                      <div><span> Vanguard</span> 
+                    <br>
+                <sub class="text-[#8E8F93] font-[notosans] text-[10px]"> Real-time Strategy</sub>
+                       </div>
+                  </a>
+                   <a class="flex items-center gap-2 py-2 px-4 rounded-md hover:bg-[#272930] hover:text-white transition-colors">
+                    <img src="./src/css/images/icons/29.svg" alt="" class="w-6 h-6" />
+                   
+                     <div><span> Black Ops Cold War</span> 
+                    <br>
+                <sub class="text-[#8E8F93] font-[notosans] text-[10px]"> Real-time Strategy</sub>
+                       </div>
+                  </a>
+                   <a class="flex items-center gap-2 py-2 px-4 rounded-md hover:bg-[#272930] hover:text-white transition-colors">
+                    <img src="./src/css/images/icons/30.svg" alt="" class="w-6 h-6" />
+                   
+                     <div><span> Modern Warfare</span> 
+                    <br>
+                <sub class="text-[#8E8F93] font-[notosans] text-[10px]"> Real-time Strategy</sub>
+                       </div>
+                  </a>
+                   <a class="flex items-center gap-2 py-2 px-4 rounded-md hover:bg-[#272930] hover:text-white transition-colors">
+                    <img src="./src/css/images/icons/15.svg" alt="" class="w-6 h-6" />
+                   
+                      <div><span>  Modern Warfare 2</span> 
+                    <br>
+                <sub class="text-[#8E8F93] font-[notosans] text-[10px]"> Real-time Strategy</sub>
+                       </div>
+                  </a>
+                  <a class="flex items-center gap-2 py-2 px-4 rounded-md hover:bg-[#272930] hover:text-white transition-colors">
+                    <img src="./src/css/images/icons/16.svg" alt="" class="w-6 h-6" />
+                    
+                      <div><span> Black Ops 4</span> 
+                    <br>
+                <sub class="text-[#8E8F93] font-[notosans] text-[10px]"> Real-time Strategy</sub>
+                       </div>
+                  </a>
+                </div>
+              </li>
+              <!-- More Dropdown -->
+            <li class=" dropdown">
+              <button class=" hover:bg-[#303237] hover:text-white transition-colors flex items-center gap-1 h-14 "  >  <span>More</span>
+                  <svg
+                    class="w-3.5 h-3.5"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                </button>
+                <div class="dropdown-menu absolute left-0 p-2 w-[527.99px] h-[359.95px] text-[#ffffffb9] bg-main rounded-md  border border-[#272930]  z-50 hidden ">
+      <div class="md:flex">
+           <div class="w-[263.99px] h-[359.95px]">
+                  <a 
+                  class="flex items-center gap-2 py-2 px-4 w-[263.99px] h-[56px] rounded-md hover:bg-[#272930] hover:text-white transition-colors">
+                    <img src="./src/css/images/icons/more1.svg" alt="" class="w-7 h-7" />
+                    
+                      <div><span>Avowed</span> 
+                    <br>
+                <sub class="text-[#8E8F93] font-[notosans] text-[10px]">First-person Fantasy RPG</sub>
+                       </div>
+                  </a>
+                  <a 
+                  class="flex items-center gap-2 py-2 px-4 w-[263.99px] h-[56px] rounded-md hover:bg-[#272930] hover:text-white transition-colors">
+                    <img src="./src/css/images/icons/12.svg" alt="" class="w-7 h-7" />
+                       <div><span> Bilzzard Arcade Collection</span> 
+                    <br>
+                <sub class="text-[#8E8F93] font-[notosans] text-[10px]"> Bundle</sub>
+                       </div>
+                  </a>
+                  <a 
+                class="flex items-center gap-2 py-2 px-4 w-[263.99px] h-[56px] rounded-md hover:bg-[#272930] hover:text-white transition-colors">
+                    <img src="./src/css/images/icons/more2.svg" alt="" class="w-7 h-7" />
+                  
+                        <div><span>  Crash Bandicoot 4</span> 
+                    <br>
+                <sub class="text-[#8E8F93] font-[notosans] text-[10px]">Platformer</sub>
+                       </div>
+                  </a>
+                  <a 
+                 class="flex items-center gap-2 py-2 px-4 w-[263.99px] h-[56px] rounded-md hover:bg-[#272930] hover:text-white transition-colors">
+                    <img src="./src/css/images/icons/more4.svg" alt="" class="w-7 h-7" />
+                   
+                    <div><span> DOOM: The dark Ages</span> 
+                    <br>
+                <sub class="text-[#8E8F93] font-[notosans] text-[10px]">Action Shooter</sub>
+                       </div>
+                  </a>
+                  <a 
+                  class="flex items-center gap-2 py-2 px-4 w-[263.99px] h-[56px] rounded-md hover:bg-[#272930] hover:text-white transition-colors">
+                    <img src="./src/css/images/icons/more5.svg" alt="" class="w-7 h-7" />
+                    
+                      <div><span>Heros of the storm</span> 
+                    <br>
+                <sub class="text-[#8E8F93] font-[notosans] text-[10px]">MOBA</sub>
+                       </div>
+                  </a>
+                  <a 
+                  class="flex items-center gap-2 py-2 px-4 w-[263.99px] h-[56px] rounded-md hover:bg-[#272930] hover:text-white transition-colors">
+                    <img src="./src/css/images/icons/more6.svg" alt="" class="w-7 h-7" />
+                    
+                      <div><span> Sea of thieves</span> 
+                    <br>
+                <sub class="text-[#8E8F93] font-[notosans] text-[10px]">Action Adventure</sub>
+                       </div>
+                  </a>
+          </div>
+          <div class="w-[263.99px] ">        
+                  <a 
+                  class="flex items-center gap-2 py-2 px-4 w-[263.99px] h-[56px] rounded-md hover:bg-[#272930] hover:text-white transition-colors">
+                    <img src="./src/css/images/icons/more7.svg" alt="" class="w-7 h-7" />
+                   
+                      <div><span>The Outer Worlds 2</span> 
+                    <br>
+                <sub class="text-[#8E8F93] font-[notosans] text-[10px]">Action RPG</sub>
+                       </div>
+                  </a>
+                  <a 
+                 class="flex items-center gap-2 py-2 px-4 w-[263.99px] h-[56px] rounded-md hover:bg-[#272930] hover:text-white transition-colors">
+                    <img src="./src/css/images/icons/more8.svg" alt="" class="w-7 h-7" />
+                   
+                      <div><span>Tony Hawk’s Pro Skater 3 + 4</span> 
+                    <br>
+                <sub class="text-[#8E8F93] font-[notosans] text-[10px]">Extreme Action Sports</sub>
+                       </div>
+                  </a>
+          </div>    
+
+      </div> 
+             </div>
+            </li>
+          </ul>
+    <!-- search icon-->
+  <label for="searchToggle" style=" font-family: notosansbold; font-size: 14px; color:#ffffffb9; " class="hidden md:flex md:w-14 h-14 2xl:w-[200px] bg-card text-[#ffffffb9] font-[notosansbold] text-[14px] rounded-sm peer-checked:hidden hover:bg-[#303237] hover:text-white transition-colors">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+             viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+             class="w-6 h-6 m-auto">
+          <path stroke-linecap="round" stroke-linejoin="round"
+                d="M21 21l-4.35-4.35M10.5 18a7.5 7.5 0 1 0 0-15 7.5 7.5 0 0 0 0 15z" />
+        </svg>
+      </label>
+
+      <!-- search icon------checkbox----->
+  <div class="hidden peer-checked:flex md:right-4 flex  md:w-[1050px] xl:w-[1000px] 2xl:w-[1380px] exact1440 h-14 items-center rounded-sm py-4 px-12 md:px-4 md:gap-2 bg-card transition-all font-[notosansbold] hover:bg-[#303237] hover:text-white transition-colors ">
+  <input type="text" placeholder="Search Shop"
+  class="md:w-full border-0 focus:outline-none placeholder-[#ffffffb9] font-[notosansbold] text-[14px]" />
+  <label for="searchToggle" class="md:flex font-[notosansbold] cursor-pointer text-xl text-[#ffffffb9] hover:text-white">✕</label>
+      </div>
+      </div>
+   <!-- Battle.net Balance Dropdown -->
+      <div class="hidden md:block w-[181px] dropdown text-[#ffffffb9] h-14 font-[notosansbold] text-[14px] ">
+                <button class="flex items-center gap-2 p-2 font-[notosansbold] text-[14px] bg-card text-[#ffffffb9] rounded-sm hover:bg-[#303237] hover:text-white transition-colors h-14 " >
+                  <span>Battle.net Balance</span>
+                  <svg
+                    class="w-3 h-3"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                </button>
+                <div  class="dropdown-menu absolute right-0 top-13 w-[294px] bg-main text-[#ffffffb9] rounded-md  border border-[#272930]  z-50  hidden" >
+                 <a href="#" class="flex gap-2 rounded-sm p-4 m-2 font-[notosans] text-[14px] text-[#8B8C8F] hover:bg-[#272930]  hover:text-white transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="20" height="20" viewBox="0 0 24 24" part="icon" aria-hidden="true"><path d="M12 20a8 8 0 1 1 0-16 8 8 0 0 1 0 16m0 2c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10"></path><path d="M11.5 7a.5.5 0 0 0-.5.5V11H7.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5H11v3.5a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5V13h3.5a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5H13V7.5a.5.5 0 0 0-.5-.5z"></path></svg>
+                    <span>Add Balance</span>
+                  </a>
+                  <a href="#" class="flex gap-2 rounded-sm p-4 m-2 font-[notosans] text-[14px] text-[#8B8C8F] hover:bg-[#272930]  hover:text-white transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="20" height="20" viewBox="0 0 24 24" part="icon" aria-hidden="true"><path d="M16.066 7.245a2.75 2.75 0 0 0 1.006-3.756c-.325-.563-.803-1.1-1.489-1.34-.711-.247-1.485-.119-2.268.333-.295.17-.528.432-.708.688-.186.265-.35.574-.49.895a9 9 0 0 0-.535 1.715 9 9 0 0 0-1.557-1.494 5 5 0 0 0-.87-.53c-.285-.132-.618-.242-.958-.242-.904 0-1.638.276-2.13.846-.475.55-.62 1.254-.62 1.904 0 .659.23 1.263.616 1.736H5a2 2 0 0 0-2 2v3.53a.5.5 0 0 0 .5.5H4V19a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-4.97h.5a.5.5 0 0 0 .5-.5V10a2 2 0 0 0-2-2h-4.242zm-.293-3.006a1.25 1.25 0 0 1-.457 1.707l-2.383 1.376a4.3 4.3 0 0 1 .062-.933 7.5 7.5 0 0 1 .498-1.725 3.7 3.7 0 0 1 .342-.632c.118-.168.2-.234.23-.25.517-.299.833-.283 1.025-.216.217.076.456.28.683.673M6.947 6.264c0-.454.104-.75.255-.924.132-.153.398-.326.995-.326.034 0 .139.016.325.102.177.083.386.21.612.377.453.334.923.79 1.293 1.244.253.311.422.578.52.777h-2.75c-.69 0-1.25-.56-1.25-1.25M18 19h-5v-4.899h5zm1-6.97h-6V10h6zm-8 0H5V10h6zM11 19H6v-4.899h5z"></path>
+                    </svg>
+                    <span>Gift Balance</span>
+                  </a>
+                  <a href="#" class="flex gap-2 rounded-sm p-4 m-2 font-[notosans] text-[14px] text-[#8B8C8F] hover:bg-[#272930]  hover:text-white transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="20" height="20" viewBox="0 0 24 24" part="icon" aria-hidden="true"><path d="M5.001 12a7 7 0 1 1 2.725 5.544.53.53 0 0 0-.695.032l-.713.713a.48.48 0 0 0 .027.712A9 9 0 1 0 3.001 12H1.208a.5.5 0 0 0-.354.854l2.793 2.792a.5.5 0 0 0 .707 0l2.793-2.792A.5.5 0 0 0 6.794 12H5Z"></path><path d="M12.001 7a1 1 0 0 0-1 1v4.036a1 1 0 0 0 .5.91l3.465 2a1 1 0 0 0 1-1.732l-2.965-1.712V8a1 1 0 0 0-1-1"></path></svg>
+        <span>Balance History</span>
+         <svg
+            class="w-3 h-3 ml-auto"
+              fill="none"
+            stroke="currentColor"
+          viewBox="0 0 24 24" >
+         <path   stroke-linecap="round" stroke-linejoin="round"    stroke-width="2"
+   d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"  />
+    </svg>
+         </a>
+      <a href="#" class="flex gap-2 rounded-sm p-4 m-2 font-[notosans] text-[14px] text-[#8B8C8F] hover:bg-[#272930]  hover:text-white transition-colors">
+        <svg 
+        xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="20" height="20" viewBox="0 0 24 24" part="icon" aria-hidden="true"><path d="M11.104 8.068c-.13.046-.248.118-.527.364-.252.223-.456.591-.543 1.048-.052.27-.27.497-.546.497h-1c-.277 0-.503-.225-.474-.5.103-.955.504-1.895 1.24-2.544.323-.285.676-.57 1.179-.75.482-.171 1.018-.217 1.675-.217 1.407 0 3.022.477 3.67 2.047.624 1.509-.02 3.086-1.447 3.75-.128.06-.302.135-.454.202l-.253.112a3.3 3.3 0 0 0-.47.248.5.5 0 0 0-.15.132c-.003.005-.016.024-.016.09v.953a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-.952c0-.924.5-1.512 1.047-1.881.252-.17.524-.303.762-.411.136-.062.238-.106.335-.148.112-.049.216-.094.356-.159.463-.215.654-.66.442-1.173-.186-.451-.73-.81-1.822-.81-.594 0-.853.048-1.004.102M11 16.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5z"></path>
+          <path d="M22 12c0 5.523-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2s10 4.477 10 10m-2 0a8 8 0 1 0-16 0 8 8 0 0 0 16 0"></path>
+        </svg>
+                    <span>Balance Help</span>
+                    <svg
+                      class="w-3 h-3 ml-auto "
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                      />
+                    </svg>
+                  </a>
+                </div>
+      </div>   
+  </div>
+  </header>
+   
+<!---------------#region Banner (swiper)------------->
+  <div class="swiper mySwiper mt-2 md:mt-8 h-[440px] md:h-[400px] w-[358px] md:w-[95%] bg-main">
+    <div class="swiper-wrapper">
+<!--slide1 -->      
+     <div class="swiper-slide bg-[url(/src/css/images/baner/image2-mobile.png)]  md:bg-[url(/src/css/images/baner/image2.png)] bg-center bg-cover md:border-b-[40px] border-[#15171E] relative">
+      <div class="md:h-[360px] md:w-[270px] md:mx-[100px] flex flex-col justify-end md:justify-center items-center  gap-2 md:gap-3 mt-[100px] md:mt-0  ">
+      <!-- Logo -->
+       <div>
+        <img src="./src/css/images/baner/image2-i.png" class="h-[150px]"  alt=""></div>
+     <!-- Heading -->
+      <h2 class="text-white text-[16px] md:text-[20px] font-[objectsansbold] text-center leading-6">Last Chance! Control your fate with the Mega Bundle</h2>
+     <!-- Button -->
+  <button class=" w-[280px] h-[56px] bg-[#0074E0] text-[16px] md:text-[20px] font-[objectsansbold] text-white text-center px-8 py-1 rounded-sm transition-colors shadow-sm border-[3px] border-[#0074E0] hover:border-[#47A6FF]" >
+  Buy Now 
+  </button>
+       </div>
+     </div>
+<!--slide2 -->    
+      <div class="swiper-slide bg-[url(/src/css/images/baner/image1-mobile.png)]  md:bg-[url(/src/css/images/baner/image1.png)] bg-center bg-cover md:border-b-[40px] border-[#15171E] relative">
+      <div class="md:h-[360px] md:w-[270px] md:mx-[100px] flex flex-col gap-2 md:gap-3 justify-center items-center mt-[100px] md:mt-0">
+ <!-- Logo -->
+<div>
+ <img src="./src/css/images/baner/image1-i.png" class="h-[150px]"  alt="">
+  </div>
+ <!-- Heading -->
+      <h2 class="text-white text-[16px] md:text-[20px] font-[objectsansbold] text-center leading-6">
+       The Universe needs a hero, but you’ll have to do
+      </h2>
+     <!-- Button -->
+  <button class=" w-[280px] h-[56px] bg-[#0074E0] text-[16px] md:text-[20px] font-[objectsansbold] text-white text-center px-8 py-2  rounded-sm transition-colors shadow-sm border-[3px] border-[#0074E0] hover:border-[#47A6FF]" >
+  Buy Now 
+  </button>
+       </div>
+     </div>
+<!--slide3 -->         
+      <div class="swiper-slide bg-[url(/src/css/images/baner/image3-mobile.png)]  md:bg-[url(/src/css/images/baner/image3.png)] bg-center bg-cover md:border-b-[40px] border-[#15171E] relative">
+      <div class="md:h-[360px] md:w-[288px] md:mx-[100px] flex flex-col gap-2 md:gap-3 justify-center items-center mt-[100px] md:mt-0">
+      <!-- Logo -->
+       <div >
+                   <img src="./src/css/images/baner/image3-i.png" class="h-[150px]"  alt="">
+                  </div>
+     <!-- Heading -->
+      <h2 class="text-white text-[16px] md:text-[20px] font-[objectsansbold] text-center leading-6">
+      Grab the Epic Edition and unlock the Beta November 11
+      </h2>
+     <!-- Button -->
+  <button class=" w-[280px] h-[56px] bg-[#0074E0] text-[16px] md:text-[20px] font-[objectsansbold] text-white text-center px-8 py-2 rounded-sm transition-colors shadow-sm border-[3px] border-[#0074E0] hover:border-[#47A6FF]" >
+  Pre-purchase
+  </button>
+       </div>
+     </div>
+<!--slide4 -->    
+     <div class="swiper-slide bg-[url(/src/css/images/baner/image4-mobile.png)]  md:bg-[url(/src/css/images/baner/image4.png)] bg-center bg-cover md:border-b-[40px] border-[#15171E] relative">
+      <div class="md:h-[360px] md:w-[260px] md:mx-[100px] flex flex-col gap-2 md:gap-3 justify-center items-center mt-[130px] md:mt-0">
+      <!-- Logo -->
+       <div >
+                   <img src="./src/css/images/baner/image4-i.png" class="h-[150px]"  alt="">
+                  </div>
+     <!-- Heading -->
+      <h2 class="text-white text-[16px] md:text-[20px] font-[objectsansbold] text-center leading-6">
+      Get the Reznov Challenge Pack and more
+      </h2>
+     <!-- Button -->
+  <button class=" w-[280px] h-[56px] bg-[#0074E0] text-[16px] md:text-[20px] font-[objectsansbold] text-white text-center px-8 py-2 rounded-sm transition-colors shadow-sm border-[3px] border-[#0074E0] hover:border-[#47A6FF]" >
+  Pre-purchase Now
+  </button>
+       </div>
+     </div>
+<!--slide5 -->    
+      <div class="swiper-slide bg-[url(/src/css/images/baner/image5-mobile.png)]  md:bg-[url(/src/css/images/baner/image5.png)] bg-center bg-cover md:border-b-[40px] border-[#15171E] relative">
+      <div class="md:h-[360px] md:w-[260px] md:mx-[100px] flex flex-col gap-2 md:gap-3 justify-center items-center mt-[120px] md:mt-0">
+      <!-- Logo -->
+       <div>
+                   <img src="./src/css/images/baner/image5-i.png" class="h-[150px]"  alt="">
+                  </div>
+     <!-- Heading -->
+      <h2 class="text-white text-[16px] md:text-[20px] font-[objectsansbold] text-center leading-6">
+     Unleash chaos in the new season, now live
+      </h2>
+     <!-- Button -->
+  <button class=" w-[280px] h-[80px] bg-[#0074E0] text-[16px] md:text-[20px] font-[objectsansbold] text-white text-center px-8 py-2 rounded-sm transition-colors shadow-sm border-[3px] border-[#0074E0] hover:border-[#47A6FF]" >
+  Purchase Battle
+  <br>
+   Pass Now
+  </button>
+       </div>
+     </div>
+<!--slide6 -->    
+      <div class="swiper-slide bg-[url(/src/css/images/baner/image6-mobile.png)]  md:bg-[url(/src/css/images/baner/image6.png)] bg-center bg-cover md:border-b-[40px] border-[#15171E] relative">
+      <div class="md:h-[360px] md:w-[320px] md:mx-[100px] flex flex-col gap-2 md:gap-3 justify-center items-center mt-[200px] md:mt-0">
+      <!-- Logo -->
+       <div >
+                   <img src="./src/css/images/baner/image6-i.png" class="w-[320px] h-[53.8px]"  alt="">
+                  </div>
+     <!-- Heading -->
+      <h2 class="text-white text-[16px] md:w-[260px] md:text-[20px] font-[objectsansbold] text-center leading-6">
+      Season 06 is live. Get the new BlackCell Pack.
+      </h2>
+     <!-- Button -->
+  <button class=" w-[280px] h-[56px] bg-[#0074E0] text-[16px] md:text-[20px] font-[objectsansbold] text-white text-center px-8 py-2 rounded-sm transition-colors shadow-sm border-[3px] border-[#0074E0] hover:border-[#47A6FF]" >
+  Pre-purchase
+  </button>
+       </div>
+     </div>
+<!--slide7 -->    
+     <div class="swiper-slide bg-[url(/src/css/images/baner/image7-mobile.png)]  md:bg-[url(/src/css/images/baner/image7.png)] bg-center bg-cover md:border-b-[40px] border-[#15171E] relative">
+      <div class="md:h-[360px] md:w-[270px] md:mx-[100px] flex flex-col gap-2 md:gap-3 justify-center items-center mt-[130px] md:mt-0">
+      <!-- Logo -->
+       <div >
+        <img src="./src/css/images/baner/image7-i.png" class="h-[150px]"  alt="">
+                  </div>
+     <!-- Heading -->
+      <h2 class="text-white text-[16px] md:text-[20px] font-[objectsansbold] text-center leading-6">
+     Trick or treat with the Premium Battle Pass
+      </h2>
+     <!-- Button -->
+  <button class=" w-[280px] h-[56px] bg-[#0074E0] text-[16px] md:text-[20px] font-[objectsansbold] text-white text-center px-8 py-2 rounded-sm transition-colors shadow-sm border-[3px] border-[#0074E0] hover:border-[#47A6FF]" > Buy Now</button>
+       </div>
+     </div>    
+     </div>
+<!-- Navigation -->    
+ <!-- دکمه‌های آیکون‌دار سفارشی -->
+<div class="swiper-button-prev !flex !items-center !justify-center !w-10 !h-20 !bg-[#15171E] !border-1 !p-2 rounded-sm !shadow-md !border-[#696B6F] hover:!border-3 !text-white transition">
+<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" part="icon" aria-hidden="true"><path d="M14.646 5.353a.5.5 0 0 1 .707 0l.704.704a.5.5 0 0 1 0 .706L10.83 12l5.227 5.236a.5.5 0 0 1 0 .707l-.703.703a.5.5 0 0 1-.708 0l-6.293-6.293a.5.5 0 0 1 0-.707z"></path></svg>
+</div>
+
+<div class="swiper-button-next !flex !items-center !justify-center !w-10 !h-20 !bg-[#15171E] !border-1 !p-2 rounded-sm !shadow-md !border-[#696B6F] hover:!border-3 !text-white transition">
+ <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" part="icon" aria-hidden="true"><path d="M9.354 5.354a.5.5 0 0 0-.707 0l-.704.703a.5.5 0 0 0 0 .707L13.17 12l-5.227 5.236a.5.5 0 0 0 0 .707l.704.703a.5.5 0 0 0 .707 0l6.293-6.292a.5.5 0 0 0 0-.707L9.354 5.353Z"></path></svg>
+</div> 
+  <!-- Pagination -- Button -->
+      <div class="absolute bottom-0 pt-3 right-[28%] left-[22%] md:left-[35%]  md:right-[15%] flex items-center md:gap-3 z-20">
+        <button id="toggleBtn"
+          class="text-[#85868A] btn btn-sm btn-ghost btn-neutral  flex items-center justify-center relative shadow-none bg-none border-none outline-none focus:shadow-none focus:bg-transparent ">
+
+          <!-- Pause icon -->
+          <svg  id="pauseIcon" width="24px" height="24px" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M7 1H2V15H7V1Z" fill="#85868A"></path> <path d="M14 1H9V15H14V1Z" fill="#85868A"></path> </g></svg>
+
+          <!-- Play icon (مخفی در شروع) -->
+          <svg id="playIcon" class="hidden" fill="#85868A" width="24px" height="24px" viewBox="0 0 34 34" version="1.1" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>play</title> <path d="M5.92 24.096q0 1.088 0.928 1.728 0.512 0.288 1.088 0.288 0.448 0 0.896-0.224l16.16-8.064q0.48-0.256 0.8-0.736t0.288-1.088-0.288-1.056-0.8-0.736l-16.16-8.064q-0.448-0.224-0.896-0.224-0.544 0-1.088 0.288-0.928 0.608-0.928 1.728v16.16z"></path> </g></svg>
+        </button>
+        <div class="swiper-pagination !static !flex !items-center md:gap-px"></div>
+        
+      </div>
+    </div>
+
+<!--#region Recommended--------------------------------->    
+  <div class="font-[objectsansbold] text-[24px] leading-[28px] text-[#ffffff] ml-6 pt-16"> Recommended</div>
+<!-- Cards Recommended -->
+<div style="min-height: 829.288px;" class="md:w-full grid p-6 gap-6 grid-cols-1 md:grid-cols-5 bg-main box-border">
+<!---------Card1---------->
+<div class="w-full  rounded-sm shadow-md flex flex-col bg-card hover:bg-[#313339] transition-colors ">
+<!--Image Card-->
+  <img src="./src/css/images/card/recommended/card-1.png" class="w-full object-cover h-[201px] md:h-[163.27px] transition-opacity ">
+<!--Caption Card-->
+ <div class=" px-6 pt-6 relative transform transition-transform duration-300 hover:-translate-y-1">
+   <!--Line 1 Card -->
+  <div class="flex flex-wrap items-center">
+ <img src="./src/css/images/icons/1.svg" alt="" class=" w-6 h-6 ">
+      <!--Only desktop -->
+  <div class="uppercase font-[objectsansbold] text-[#C6C6C8] text-[12px] hidden md:block my-auto"> World of Warcraft</div>
+  </div>
+   <!--Line 2 Card-->
+  <div
+   class="text-[16px] text-[#C6C6C8] font-[objectsansbold] md:text-[18px] hover:text-white ">World of Warcrafts<sup class="text-[10px]">®</sup>: Midnight
+  </div>
+   <!--Line 3 Card--> 
+  <div class="font-[notosans] mt-[4px] text-[#ffb400] text-[12px] md:text-[14px]">
+    Coming 2026. Pre-purchase the Epic Edition now and dive into Beta on November 11!
+  </div>
+   <!--Line 4 Card-->
+  <div class="font-[notosans] mt-[4px] text-[12px] text-[#C6C6C8]">Massively Multiplayer RPG</div>
+   <!--Price Card-->
+  <div class="font-[objectsansbold] text-[16px] text-[#C6C6C8] pt-6 md:pt-2 ">From €49.99</div>
+</div>
+ </div>
+<!---------Card2----------> 
+<div class="w-full  rounded-sm shadow-md flex flex-col bg-card hover:bg-[#313339] transition-colors ">
+<!--Image Card-->
+  <img src="./src/css/images/card/recommended/card-2.png" class="w-full h-[201px] md:h-[163.27px] transition-opacity ">
+<!--Caption Card-->
+ <div class="px-6 pt-6 relative transform transition-transform duration-300 hover:-translate-y-1">
+   <!--Line 1 Card -->
+  <div class="flex flex-wrap items-center">
+ <img src="./src/css/images/icons/2.svg" alt="" class=" w-6 h-6 ">
+      <!--Only desktop -->
+  <div class="uppercase font-[objectsansbold] text-[#C6C6C8] text-[12px] hidden md:block my-auto">  Diablo IV </div>
+  </div>
+   <!--Line 2 Card-->
+  <div class="text-[16px] text-[#C6C6C8] font-[objectsansbold] md:text-[18px] hover:text-white ">Diablo<sup class="text-[10px]">®</sup> IV Expansion Bundle</div>
+   <!--Line 4 Card-->
+  <div class="font-[notosans] mt-[4px] text-[12px] text-[#C6C6C8]">Action RPG</div>
+
+   <!--Price Card-->
+  <div class="font-[objectsansbold] text-[16px] text-[#C6C6C8] pt-8 md:pt-6">€69.99</div>
+</div>
+
+ </div> 
+<!---------Card3---------->
+<div class="w-full  rounded-sm shadow-md flex flex-col bg-card hover:bg-[#313339] transition-colors ">
+<!--Image Card-->
+  <img src="./src/css/images/card/recommended/card-3.png" class="w-full h-[201px] md:h-[163.27px] transition-opacity ">
+<!--Caption Card-->
+ <div class="relative transform transition-transform duration-300 hover:-translate-y-1 px-6 pt-6">
+   <!--Line 1 Card -->
+  <div class="flex flex-wrap items-center ">
+ <img src="./src/css/images/icons/3.svg" alt="" class=" w-6 h-6 mr-1 ">
+      <!--Only desktop -->
+  <div class="uppercase font-[objectsansbold] text-[#C6C6C8] text-[12px] hidden md:block my-auto">Call of Duty Black Ops 7</div>
+  </div>
+   <!--Line 2 Card-->
+  <div class="text-[16px] text-[#C6C6C8] font-[objectsansbold] md:text-[18px] hover:text-white ">Call of Duty<sup class="text-[10px]">®</sup>: Black Ops 7 - Vault Edition</div>
+   <!--Line 3 Card--> 
+  <div class="font-[notosans] mt-[4px] text-[#ffb400] text-[12px] md:text-[14px]">Available November 14th - Pre-Purchase Now!</div>
+   <!--Line 4 Card-->
+  <div class="font-[notosans] mt-[4px] text-[12px] text-[#C6C6C8]">Action Shooter</div>
+   <!--Price Card-->
+  <div class="font-[objectsansbold] text-[16px] text-[#C6C6C8] pt-3 md:pt-6 ">€109.99</div>
+</div>
+ </div>
+ <!---------Card4---------->
+<div class="w-full  rounded-sm shadow-md flex flex-col bg-card hover:bg-[#313339] transition-colors ">
+<!--Image Card-->
+  <img src="./src/css/images/card/recommended/card-4.png" class="w-full h-[201px] md:h-[163.27px] transition-opacity ">
+<!--Caption Card-->
+ <div class="px-6 pt-6 relative transform transition-transform duration-300 hover:-translate-y-1">
+   <!--Line 1 Card -->
+  <div class="flex flex-wrap items-center ">
+ <img src="./src/css/images/icons/4.svg" alt="" class=" w-6 h-6 mr-1 ">
+      <!--Only desktop -->
+  <div class="uppercase font-[objectsansbold] text-[#C6C6C8] text-[12px] hidden md:block my-auto"> Overwatch 2 </div>
+  </div>
+   <!--Line 2 Card-->
+  <div class="text-[16px] text-[#C6C6C8] font-[objectsansbold] md:text-[18px] hover:text-white ">Overwatch<sup class="text-[10px]">®</sup>2</div>
+   <!--Line 4 Card-->
+  <div class="font-[notosans] mt-[4px] text-[12px] text-[#C6C6C8]">Team-Based Action Game</div>
+   <!--Price Card-->
+  <div class="font-[objectsansbold] text-[16px] text-[#C6C6C8] pt-[50px] md:pt-6 ">Play For Free</div>
+</div>
+</div>
+ <!---------Card5---------->
+<div class="w-full  rounded-sm shadow-md flex flex-col bg-card hover:bg-[#313339] transition-colors ">
+<!--Image Card-->
+  <img src="./src/css/images/card/recommended/card-5.png" class="w-full h-[201px] md:h-[163.27px] transition-opacity ">
+<!--Caption Card-->
+ <div class="px-6 pt-6 relative transform transition-transform duration-300 hover:-translate-y-1">
+   <!--Line 1 Card -->
+  <div class="flex flex-wrap items-center mt-2 ">
+ <img src="./src/css/images/icons/5.svg" alt="" class=" w-6 h-6 mr-1 ">
+      <!--Only desktop -->
+  <div class="uppercase font-[objectsansbold] text-[#C6C6C8] text-[12px] hidden md:block mt-2 my-auto">Hearthstone</div>
+  </div>
+   <!--Line 2 Card-->
+  <div class="text-[16px] text-[#C6C6C8] font-[objectsansbold] mt-2 md:text-[18px] hover:text-white ">Hearthstone<sup class="text-[10px]">®</sup></div>
+   <!--Line 4 Card-->
+  <div class="font-[notosans] mt-[4px] text-[12px] text-[#C6C6C8]">Strategy Card Game</div>
+   <!--Price Card-->
+  <div class="font-[objectsansbold] text-[16px] text-[#C6C6C8] pt-8 md:pt-6 ">Play For Free</div>
+</div>
+</div>
+ <!---------Card6---------->
+<div class="w-full  rounded-sm shadow-md flex flex-col bg-card hover:bg-[#313339] transition-colors ">
+<!--Image Card-->
+  <img src="./src/css/images/card/recommended/card-6.png" class="w-full h-[201px] md:h-[163.27px] transition-opacity ">
+<!--Caption Card-->
+ <div class="pt-6 px-6 relative transform transition-transform duration-300 hover:-translate-y-1">
+   <!--Line 1 Card -->
+  <div class="flex flex-wrap items-center ">
+ <img src="./src/css/images/icons/r6.svg" alt="" class=" w-6 h-6 mr-1 ">
+      <!--Only desktop -->
+  <div class="uppercase font-[objectsansbold] text-[#C6C6C8] text-[12px] hidden md:block my-auto">Call of Duty: Warzone</div>
+  </div>
+   <!--Line 2 Card-->
+  <div class="text-[16px] text-[#C6C6C8] font-[objectsansbold] mt-2 md:text-[18px] hover:text-white ">Call of Duty<sup class="text-[10px]">®</sup>: Warzone</div>
+   <!--Line 3 Card--> 
+  <div class="font-[notosans] mt-[4px] text-[#ffb400] text-[12px] md:text-[14px]">Free for everyone</div>
+   <!--Line 4 Card-->
+  <div class="font-[notosans] mt-[4px] text-[12px] text-[#C6C6C8]">Action Shooter</div>
+   <!--Price Card-->
+  <div class="font-[objectsansbold] text-[16px] text-[#C6C6C8] pt-6 md:pt-4 ">Play For Free</div>
+</div>
+</div>
+ <!---------Card7---------->
+<div class="w-full  rounded-sm shadow-md flex flex-col bg-card hover:bg-[#313339] transition-colors ">
+<!--Image Card-->
+  <img src="./src/css/images/card/recommended/card-7.png" class="w-full h-[201px]  md:h-[163.27px] transition-opacity ">
+<!--Caption Card-->
+ <div class="px-6 pt-6 pb-1 relative transform transition-transform duration-300 hover:-translate-y-1">
+   <!--Line 1 Card -->
+  <div class="flex flex-wrap items-center mt-1">
+ <img src="./src/css/images/icons/r7.svg" alt="" class=" w-6 h-6 mr-1 ">
+      <!--Only desktop -->
+  <div class="uppercase font-[objectsansbold] text-[#C6C6C8] text-[12px] hidden md:block my-auto">Diablo Immortal</div>
+  </div>
+   <!--Line 2 Card-->
+  <div class="text-[16px] text-[#C6C6C8] font-[objectsansbold] mt-2 md:text-[18px] hover:text-white ">Diablo Immortal<sup class="text-[10px]">™</sup></div>
+   <!--Line 4 Card-->
+  <div class="font-[notosans] mt-[4px] text-[12px] text-[#C6C6C8]">Action RPG</div>
+   <!--Price Card-->
+  <div class="font-[objectsansbold] text-[16px] text-[#C6C6C8] pt-8 md:pt-6 ">Play For Free</div>
+</div>
+</div>
+ <!---------Card8---------->
+<div class="w-full  rounded-sm shadow-md flex flex-col bg-card hover:bg-[#313339] transition-colors ">
+<!--Image Card-->
+  <img src="./src/css/images/card/recommended/card-8.jpg" class="object-center w-full h-[201px]  md:h-[163.27px] transition-opacity ">
+<!--Caption Card-->
+ <div class="px-6 pt-6 relative transform transition-transform duration-300 hover:-translate-y-1">
+   <!--Line 1 Card -->
+  <div class="flex flex-wrap items-center mt-1">
+ <img src="./src/css/images/icons/r8.svg" alt="" class=" w-6 h-6 mr-1 ">
+      <!--Only desktop -->
+  <div class="uppercase font-[objectsansbold] text-[#C6C6C8] text-[12px] hidden md:block my-auto">Diablo II: Resurrected</div>
+  </div>
+   <!--Line 2 Card-->
+  <div class="text-[16px] text-[#C6C6C8] font-[objectsansbold] mt-2 md:text-[18px] hover:text-white ">Diablo II: Resurrected<sup class="text-[10px]">™</sup></div>
+   <!--Line 3 Card--> 
+  <div class="font-[notosans] mt-[4px] text-[#ffb400] text-[12px] md:text-[14px]">  Evil is Resurrected</div>
+   <!--Line 4 Card-->
+  <div class="font-[notosans] mt-[4px] text-[12px] text-[#C6C6C8]">Action RPG</div>
+   <!--Price Card-->
+  <div class="font-[objectsansbold] text-[16px] text-[#C6C6C8] pt-8 pb-2 md:pt-4 ">€39.99</div>
+</div>
+</div>
+ <!---------Card9---------->
+<div class="w-full  rounded-sm shadow-md flex flex-col bg-card hover:bg-[#313339] transition-colors ">
+<!--Image Card-->
+  <img src="./src/css/images/card/recommended/card-9.webp" class="object-top text-top  h-[201px] w-full md:h-[163.27px] transition-opacity ">
+<!--Caption Card-->
+ <div class="px-6 pt-6 relative transform transition-transform duration-300 hover:-translate-y-1">
+   <!--Line 1 Card -->
+  <div class="flex flex-wrap items-center mt-1">
+ <img src="./src/css/images/icons/r9.svg" alt="" class=" w-6 h-6 mr-1 ">
+      <!--Only desktop -->
+  <div class="uppercase font-[objectsansbold] text-[#C6C6C8] text-[12px] hidden md:block my-auto"> Warcraft III </div>
+  </div>
+   <!--Line 2 Card-->
+  <div class="text-[16px] text-[#C6C6C8] font-[objectsansbold] mt-2 md:text-[18px] hover:text-white ">Warcraft<sup class="text-[10px]">®</sup> III: Reforged</div>
+   <!--Line 3 Card--> 
+  <div class="font-[notosans] mt-[4px] text-[#ffb400] text-[12px] md:text-[14px]">A major new update is live with graphical improvements, improved functionality, UI features, and more! </div>
+   <!--Line 4 Card-->
+  <div class="font-[notosans] mt-[4px] text-[12px] text-[#C6C6C8]">Real-time Strategy</div>
+   <!--Price Card-->
+  <div class="font-[objectsansbold] text-[16px] text-[#C6C6C8] pt-8 md:pt-6">€29.99</div>
+</div>
+</div>
+ <!---------Card10---------->
+<div class="w-full  rounded-sm shadow-md flex flex-col bg-card hover:bg-[#313339] transition-colors ">
+<!--Image Card-->
+  <img src="./src/css/images/card/recommended/card-10.jpg" class="object-cover absolute top-[50%] w-full  h-[201px]  md:h-[163.27px] transition-opacity ">
+<!--Caption Card-->
+ <div class="relative transform transition-transform duration-300 hover:-translate-y-1 px-6 pt-6 ">
+   <!--Line 1 Card -->
+  <div class="flex flex-wrap items-center mt-1">
+ <img src="./src/css/images/icons/r10.svg" alt="" class=" w-6 h-6 mr-1 ">
+      <!--Only desktop -->
+  <div class="uppercase font-[objectsansbold] text-[#C6C6C8] text-[12px] hidden md:block my-auto"> StarCraft II </div>
+  </div>
+   <!--Line 2 Card-->
+  <div class="text-[16px] text-[#C6C6C8] font-[objectsansbold] mt-2 md:text-[18px] hover:text-white "> StarCraft II <sup class="text-[10px]">®</sup> II: Campaign Collection</div>
+   <!--Line 3 Card--> 
+  <div class="font-[notosans] mt-[4px] text-[#ffb400] text-[12px] md:text-[14px]">Evil is Resurrected</div>
+   <!--Line 4 Card-->
+  <div class="font-[notosans] mt-[4px] text-[12px] text-[#C6C6C8]">Action RPG</div>
+   <!--Price Card-->
+  <div class="font-[objectsansbold] text-[16px] text-[#C6C6C8] pb-2 pt-8 md:pt-6 ">€39.99</div>
+</div>
+  </div>
+</div>
+<!--#region Just Released-------------------------------->
+<div  class="font-[objectsansbold] text-[24px] leading-[28px] text-[#ffffff] ml-6 pt-[64px]">Just Released</div>
+<!-- Just Released swiper-->
+<div style="max-width:95%;; min-height:540px; margin:auto;" class="w-full md:h-[540px] container py-10 ">
+      <!-- 🔹 تب‌ها (خارج از swiper) -->
+      <div class="tabsSwiper-tabs mb-2 font-[objectsansbold] text-[16px] leading-4" id="tabsSwiperTabs">
+        <span class="tab-item active px-4" data-index="0">Premium Edition Bonuses</span>
+          <span class="tab-item px-4" data-index="1">Exploration</span>
+           <span class="tab-item px-4" data-index="2">Customization</span>
+        <span class="tab-item  px-4" data-index="3">Companions</span>
+      </div>
+      <!-- 🔹 Swiper اصلی -->
+      <div class="swiper tabsSwiper w-full p-6 m-auto">
+        <div class="swiper-wrapper">
+          <!-- Slide 1 -->
+          <div class="swiper-slide w-full min-h-[540px]">
+            <div class="flex flex-col md:flex-row bg-[#1a1c23]">
+              <!-- Image -->
+              <div class="md:w-1/2 w-full md:h-[540px] relative order-1">
+                <img src="./src/css/images/slide/slide1.jpg" class="w-full h-full object-cover" />
+                <div class="absolute inset-0 fade-overlay"></div>
+              </div>
+              <!-- Text -->
+              <div class="md:w-1/2 md:mx-12 flex flex-col justify-center p-2 md:p-10 tabsSwiper-text order-2">
+                <h2 class="text-[18px] text-white font-[objectsansbold] mb-3 flex">
+                  <img src="./src/css/images/slide/icon_arkansas.svg" alt="" class="w-6 h-6 mr-2">
+                  The Universe needs a hero, but you’ll have to do</h2>
+                <div class="text-[14px] text-[#BFC0C2] font-[notosans] mx-6">
+                  The Outer Worlds 2 is the eagerly-awaited sequel to the award-winning first-person sci-fi RPG from Obsidian Entertainment (just look at the exciting number of dashes in this sentence!). Time to clear your calendar – get ready for an action-packed adventure with a new crew, new weapons, and new enemies in a new colony! So much newness!
+                </div>
+               <div class="text-[14px] text-[#BFC0C2] font-[notosans] pb-3 md:pb-16 pt-1 md:pt-3 mx-6">
+                  The Premium Edition includes the full base game, a DLC Pass for two future story expansions, Moon Man’s Corporate Appreciation Premium Prize Pack, the Digital Artbook, and the Original Soundtrack.
+                </div>
+                <button class="w-[136px] h-[40px] bg-[#36383E] text-[16px] font-[objectsansbold] text-white text-center px-4 py-2 rounded-sm transition-colors shadow-sm border-[2px] border-[#36383E] hover:border-[#5A5C61] mb-6">Buy Now
+                </button>
+
+
+                <div class="tabsSwiper-prev swiper-button-prev"></div>
+                <div class="tabsSwiper-next swiper-button-next"></div>
+              </div>
+            </div>
+          </div>
+          <!-- Slide 2 -->
+          <div class="swiper-slide w-full min-h-[540px]">
+            <div class="flex flex-col md:flex-row bg-[#1a1c23]  ">
+              <!-- Image -->
+              <div class="md:w-1/2 w-full  md:h-[540px] relative order-1">
+                <img src="./src/css/images/slide/slide2.jpg" class="w-full h-full object-cover" />
+                <div class="absolute inset-0 fade-overlay"></div>
+              </div>
+              <!-- Text -->
+              <div class="md:w-1/2 md:mx-12 flex flex-col justify-center pb-12 md:pb-1 p-4 md:p-10 tabsSwiper-text order-2">
+                <h2 class="text-[18px] text-white font-[objectsansbold] mb-3 flex">
+                  <img src="./src/css/images/slide/icon_arkansas.svg" alt="" class="w-6 h-6 mr-2">
+                  Explore a New Frontier</h2>
+                <div class="text-[14px] text-[#BFC0C2] font-[notosans] mx-6 pb-20">
+                 The Arcadia colony is engulfed in a factional war, as the Protectorate’s so-called benevolent rule is challenged by the rebellion of their religious order and a corporate invasion. As destructive rifts spread across the colony, each faction fights to control or close them for their own ends. Navigate diverse zones, uncover hidden lore, and shape the fate of a system on the brink!
+                </div>
+                <button
+                 class="w-[136px] h-[40px] bg-[#36383E] text-[16px] font-[objectsansbold] text-white text-center px-4 py-2 rounded-sm transition-colors shadow-sm border-[2px] border-[#36383E] hover:border-[#5A5C61]">Buy Now
+                </button>
+                <div class="tabsSwiper-prev swiper-button-prev"></div>
+                <div class="tabsSwiper-next swiper-button-next"></div>
+              </div>
+            </div>
+          </div>
+          <!-- Slide 3 -->
+           <div class="swiper-slide w-full min-h-[540px]">
+            <div class="flex flex-col md:flex-row bg-[#1a1c23]">
+              <!-- Image -->
+              <div class="md:w-1/2 w-full md:h-[540px] relative order-1">
+                <img src="./src/css/images/slide/slide3.jpg" class="w-full h-full object-cover" />
+                <div class="absolute inset-0 fade-overlay"></div>
+              </div>
+              <!-- Text -->
+              <div class="md:w-1/2 md:mx-12 flex flex-col justify-center pb-14 md:pb-1  p-6 md:p-10 tabsSwiper-text order-2">
+                <h2
+                 class="text-[18px] text-white font-[objectsansbold] mb-3 flex">
+                  <img src="./src/css/images/slide/icon_arkansas.svg" alt="" class="w-6 h-6 mr-2">
+                  Your Commander, Your Way</h2>
+                <div
+                 class="text-[14px] text-[#BFC0C2] font-[notosans] mx-6 pb-30 md:pb-10">
+                  Build your character with the abilities and choices that reflect your playstyle. The colony reacts to your every move, crafting a narrative that’s yours to own—whether you’re a disciple of diplomacy, an astute strategist, a crusader for chaos, or something different altogether.
+                </div>
+            
+                <button
+                 class="w-[136px] h-[40px] bg-[#36383E] text-[16px] font-[objectsansbold] text-white text-center px-4 py-2 rounded-sm transition-colors shadow-sm border-[2px] border-[#36383E] hover:border-[#5A5C61]">Buy Now
+                </button>
+               <div class="tabsSwiper-prev swiper-button-prev"></div>
+                <div class="tabsSwiper-next swiper-button-next"></div>
+              </div>
+            </div>
+          </div>
+          <!-- Slide 4 -->
+             <div class="swiper-slide w-full min-h-[540px]">
+            <div class="flex flex-col md:flex-row bg-[#1a1c23]">
+              <!-- Image -->
+              <div class="md:w-1/2 w-full md:h-[540px] relative order-1">
+                <img src="./src/css/images/slide/slide4.jpg" class="w-full h-full object-cover" />
+                <div class="absolute inset-0 fade-overlay"></div>
+              </div>
+              <!-- Text -->
+              <div class="md:w-1/2 md:mx-12 flex flex-col justify-center pb-12 md:pb-1 p-4 md:p-10 tabsSwiper-text order-2">
+                <h2 class="text-[18px] text-white font-[objectsansbold] mb-3 flex">
+                  <img src="./src/css/images/slide/icon_arkansas.svg" alt="" class="w-6 h-6 mr-2">
+                  Enlist Your Companions</h2>
+                <div class="text-[14px] text-[#BFC0C2] font-[notosans] mx-6 pb-30">
+                 Recruit companions with unique traits, backgrounds and goals. Whether you choose to help them achieve their ambitions or steer them toward your own objectives, your influence shapes their growth (or death), making them an integral part of the immersive story you create together.
+                </div>
+                <button class="w-[136px] h-[40px] bg-[#36383E] text-[16px] font-[objectsansbold] text-white text-center px-4 py-2 rounded-sm transition-colors shadow-sm border-[2px] border-[#36383E] hover:border-[#5A5C61]">Buy Now
+                </button>
+
+
+                <div class="tabsSwiper-prev swiper-button-prev"></div>
+                <div class="tabsSwiper-next swiper-button-next"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Pagination پایین موبایل -->
+        <div class="swiper-pagination tabsSwiper-pagination md:hidden"></div>
+      </div>
+    </div>
+<!--#region Featured------------------------------------>    
+  <div style=" margin-top:80px; padding:24px;" class="font-[objectsansbold] text-[24px] leading-7 text-[#ffffff]">  Featured</div>
+<!-- Cards Featured -->
+<div style="min-height: 829.288px;" class="md:w-full grid p-6 gap-6 grid-cols-1 md:grid-cols-5 bg-main box-border pb-16">
+<!---------Card1---------->
+  <div class="w-full h-[379.25px] md:h-[418.7px] rounded-sm shadow-md flex flex-col bg-card transition-colors ">
+<!--Image Card-->
+  <img src="./src/css/images/card/recommended/card-1.png" class="w-full object-cover h-[201px] md:h-[163.27px] transition-opacity ">
+<!--Caption Card-->
+ <div class=" px-6 pt-6 relative transform transition-transform duration-300 hover:-translate-y-1">
+   <!--Line 1 Card -->
+  <div class="flex flex-wrap items-center">
+ <img src="./src/css/images/icons/1.svg" alt="" class=" w-6 h-6 ">
+      <!--Only desktop -->
+  <div class="uppercase font-[objectsansbold] text-[#C6C6C8] text-[12px] hidden md:block my-auto"> World of Warcraft</div>
+  </div>
+   <!--Line 2 Card-->
+  <div
+   class="text-[16px] text-[#C6C6C8] font-[objectsansbold] md:text-[18px] hover:text-white ">World of Warcrafts<sup class="text-[10px]">®</sup>: Midnight
+  </div>
+   <!--Line 3 Card--> 
+  <div class="font-[notosans] mt-[4px] text-[#ffb400] text-[12px] md:text-[14px]">
+    Coming 2026. Pre-purchase the Epic Edition now and dive into Beta on November 11!
+  </div>
+   <!--Line 4 Card-->
+  <div class="font-[notosans] mt-[4px] text-[12px] text-[#C6C6C8]">Massively Multiplayer RPG</div>
+   <!--Price Card-->
+  <div class="font-[objectsansbold] text-[16px] text-[#C6C6C8] pt-6 md:pt-2 ">From €49.99</div>
+</div>
+ </div>
+<!---------Card2----------> 
+ <div class="w-full h-[379.25px] md:h-[418.7px] rounded-sm shadow-md flex flex-col bg-card hover:bg-[#313339] transition-colors ">
+<!--Image Card-->
+  <img src="./src/css/images/card/recommended/card-3.png" class="w-full h-[201px] md:h-[163.27px] transition-opacity ">
+<!--Caption Card-->
+ <div class="relative transform transition-transform duration-300 hover:-translate-y-1 px-6 pt-6">
+   <!--Line 1 Card -->
+  <div class="flex flex-wrap items-center ">
+ <img src="./src/css/images/icons/3.svg" alt="" class=" w-6 h-6 mr-1 ">
+      <!--Only desktop -->
+  <div class="uppercase font-[objectsansbold] text-[#C6C6C8] text-[12px] hidden md:block my-auto">Call of Duty Black Ops 7</div>
+  </div>
+   <!--Line 2 Card-->
+  <div class="text-[16px] text-[#C6C6C8] font-[objectsansbold] md:text-[18px] hover:text-white ">Call of Duty<sup class="text-[10px]">®</sup>: Black Ops 7 - Vault Edition</div>
+   <!--Line 3 Card--> 
+  <div class="font-[notosans] mt-[4px] text-[#ffb400] text-[12px] md:text-[14px]">Available November 14th - Pre-Purchase Now!</div>
+   <!--Line 4 Card-->
+  <div class="font-[notosans] mt-[4px] text-[12px] text-[#C6C6C8]">Action Shooter</div>
+   <!--Price Card-->
+  <div class="font-[objectsansbold] text-[16px] text-[#C6C6C8] pt-3 md:pt-4 ">€109.99</div>
+</div>
+ </div> 
+<!---------Card3---------->
+ <div class="w-full h-[379.25px] md:h-[418.7px] rounded-sm shadow-md flex flex-col bg-card hover:bg-[#313339] transition-colors ">
+<!--Image Card-->
+  <img src="./src/css/images/card/featured/card-3.png" class="w-full h-[201px] md:h-[163.27px] transition-opacity ">
+<!--Caption Card-->
+ <div class="relative transform transition-transform duration-300 hover:-translate-y-1 px-6 pt-6">
+   <!--Line 1 Card -->
+  <div class="flex flex-wrap items-center ">
+ <img src="./src/css/images/icons/3.svg" alt="" class=" w-6 h-6 mr-1 ">
+      <!--Only desktop -->
+  <div class="uppercase font-[objectsansbold] text-[#C6C6C8] text-[12px] hidden md:block my-auto"> The Outer Worlds 2 </div>
+  </div>
+   <!--Line 2 Card-->
+  <div class="text-[16px] text-[#C6C6C8] font-[objectsansbold] md:text-[18px] hover:text-white ">The Outer Worlds 2 Premium Edition</div>
+   <!--Line 3 Card--> 
+  <div class="font-[notosans] mt-[4px] text-[#ffb400] text-[12px] md:text-[14px]">Buy on Battle.net or Xbox, play on both</div>
+   <!--Line 4 Card-->
+  <div class="font-[notosans] mt-[4px] text-[12px] text-[#C6C6C8]">Action RPG</div>
+   <!--Price Card-->
+  <div class="font-[objectsansbold] text-[16px] text-[#C6C6C8] pt-4 md:pt-4">€99.99</div>
+</div>
+ </div>
+ <!---------Card4---------->
+ <div class="w-full h-[379.25px] md:h-[418.7px] rounded-sm shadow-md flex flex-col bg-card hover:bg-[#313339] transition-colors ">
+<!--Image Card-->
+  <img src="./src/css/images/card/recommended/card-2.png" class="w-full h-[201px] md:h-[163.27px] transition-opacity ">
+<!--Caption Card-->
+ <div class="px-6 pt-6 relative transform transition-transform duration-300 hover:-translate-y-1">
+   <!--Line 1 Card -->
+  <div class="flex flex-wrap items-center">
+ <img src="./src/css/images/icons/2.svg" alt="" class=" w-6 h-6 ">
+      <!--Only desktop -->
+  <div class="uppercase font-[objectsansbold] text-[#C6C6C8] text-[12px] hidden md:block my-auto">  Diablo IV </div>
+  </div>
+   <!--Line 2 Card-->
+  <div class="text-[16px] text-[#C6C6C8] font-[objectsansbold] md:text-[18px] hover:text-white ">Diablo<sup class="text-[10px]">®</sup> IV Expansion Bundle</div>
+   <!--Line 4 Card-->
+  <div class="font-[notosans] mt-[4px] text-[12px] text-[#C6C6C8]">Action RPG</div>
+   <!--Price Card-->
+  <div class="font-[objectsansbold] text-[16px] text-[#C6C6C8] pt-8 md:pt-4 ">€69.99</div>
+</div>
+ </div> 
+ <!---------Card5---------->
+<div class="w-full h-[379.25px] md:h-[418.7px] rounded-sm shadow-md flex flex-col bg-card hover:bg-[#313339] transition-colors ">
+<!--Image Card-->
+  <img src="./src/css/images/card/featured/card-5.png" class="w-full h-[201px] md:h-[163.27px] transition-opacity ">
+<!--Caption Card-->
+ <div class="px-6 pt-6 relative transform transition-transform duration-300 hover:-translate-y-1">
+   <!--Line 1 Card -->
+  <div class="flex flex-wrap items-center mt-2 ">
+ <img src="./src/css/images/icons/10.svg" alt="" class=" w-6 h-6 mr-1 ">
+      <!--Only desktop -->
+  <div class="uppercase font-[objectsansbold] text-[#C6C6C8] text-[12px] hidden md:block mt-2 my-auto">World of Warcraft Mists of Pandaria Classic</div>
+  </div>
+   <!--Line 2 Card-->
+  <div class="text-[16px] text-[#C6C6C8] font-[objectsansbold] mt-2 md:text-[18px] hover:text-white ">World of Warcraft<sup class="text-[10px]">®</sup>: Special Subscription Offer</div>
+   <!--Line 4 Card-->
+  <div class="font-[notosans] mt-[4px] text-[12px] text-[#C6C6C8]">Subscriptions</div>
+   <!--Price Card-->
+  <div class="font-[objectsansbold] text-[16px] text-[#C6C6C8] pt-4 md:pt-4  ">Learn More</div>
+</div>
+</div>
+ <!---------Card6---------->
+<div class="w-full h-[379.25px] md:h-[418.7px] rounded-sm shadow-md flex flex-col bg-card hover:bg-[#313339] transition-colors ">
+<!--Image Card-->
+  <img src="./src/css/images/card/featured/card-6.png" class="w-full h-[201px]  md:h-[163.27px] transition-opacity ">
+<!--Caption Card-->
+ <div class="pt-6 px-6 relative transform transition-transform duration-300 hover:-translate-y-1">
+   <!--Line 1 Card -->
+  <div class="flex flex-wrap items-center ">
+ <img src="./src/css/images/icons/2.svg" alt="" class=" w-6 h-6 mr-1 ">
+      <!--Only desktop -->
+  <div class="uppercase font-[objectsansbold] text-[#C6C6C8] text-[12px] hidden md:block my-auto">Diablo IV</div>
+  </div>
+   <!--Line 2 Card-->
+  <div class="text-[16px] text-[#C6C6C8] font-[objectsansbold] mt-2 md:text-[18px] hover:text-white ">Premium Battle Pass Bundle - Season of Infernal Chaos</div>
+   <!--Line 3 Card--> 
+  <div class="font-[notosans] mt-[4px] text-[#ffb400] text-[12px] md:text-[14px]">Unlocks Reliquaries for one low price.</div>
+   <!--Line 4 Card-->
+  <div class="font-[notosans] mt-[4px] text-[12px] text-[#C6C6C8]">In-Game Content</div>
+   <!--Price Card-->
+  <div class="flex flex-wrap items-center font-[objectsansbold] text-[16px] text-[#C6C6C8] pt-4 md:pt-2 ">
+    <img src="./src/css/images/icons/price6.png" class="w-6 h-6 mr-1 "  alt="">1,000 Platinum</div>
+</div>
+</div>
+
+ <!---------Card7---------->
+<div class="w-full h-[379.25px] md:h-[418.7px] rounded-sm shadow-md flex flex-col bg-card hover:bg-[#313339] transition-colors ">
+<!--Image Card-->
+  <img src="./src/css/images/card/featured/card-7.png" class="w-full h-[201px] md:h-[163.27px] transition-opacity ">
+<!--Caption Card-->
+ <div class="px-4 md:pt-6 relative transform transition-transform duration-300 hover:-translate-y-1">
+   <!--Line 1 Card -->
+  <div class="flex flex-wrap items-center mt-1">
+ <img src="./src/css/images/icons/4.svg" alt="" class=" w-6 h-6 mr-1 ">
+      <!--Only desktop -->
+  <div class="uppercase font-[objectsansbold] text-[#C6C6C8] text-[12px] hidden md:block my-auto">Overwatch 2</div>
+  </div>
+   <!--Line 2 Card-->
+  <div class="text-[16px] text-[#C6C6C8] font-[objectsansbold] mt-2 md:text-[18px] hover:text-white ">Overwatch<sup class="text-[10px]">®</sup> 2 – Ultimate Battle Pass Bundle: Season 19</div>
+   <!--Line 3 Card--> 
+  <div class="font-[notosans] mt-[4px] text-[#ffb400] text-[12px] md:text-[14px]">Get the Overwatch 2: Season 19 Premium Battle Pass + 20 Tier Skips*.</div>
+   <!--Line 4 Card-->
+  <div class="font-[notosans] mt-[4px] text-[12px] text-[#C6C6C8]">Seasonal Packs</div>
+   <!--Price Card-->
+  <div class="font-[objectsansbold] text-[16px] text-[#C6C6C8] pt-4 md:pt-2 ">€39.99</div>
+</div>
+</div>
+ <!---------Card8---------->
+<div class="w-full h-[379.25px] md:h-[418.7px] rounded-sm shadow-md flex flex-col bg-card hover:bg-[#313339] transition-colors ">
+<!--Image Card-->
+  <img src="./src/css/images/card/featured/card-8.png" class="object-center w-full h-[201px]  md:h-[163.27px] transition-opacity ">
+<!--Caption Card-->
+ <div class="px-6 md:pt-6  relative transform transition-transform duration-300 hover:-translate-y-1">
+   <!--Line 1 Card -->
+  <div class="flex flex-wrap items-center mt-1">
+ <img src="./src/css/images/icons/5.svg" alt="" class=" w-6 h-6 mr-1 ">
+      <!--Only desktop -->
+  <div class="uppercase font-[objectsansbold] text-[#C6C6C8] text-[12px] hidden md:block my-auto">Hearthstone</div>
+  </div>
+   <!--Line 2 Card-->
+  <div class="text-[16px] text-[#C6C6C8] font-[objectsansbold] mt-2 md:text-[18px] hover:text-white ">Hearthstone<sup class="text-[10px]">®</sup>: Across the Timeways Pre-Purchase Mega</div>
+   <!--Line 3 Card--> 
+  <div class="font-[notosans] mt-[4px] text-[#ffb400] text-[12px] md:text-[14px]"> Available through November 4, 2025</div>
+   <!--Line 4 Card-->
+  <div class="font-[notosans] mt-[4px] text-[12px] text-[#C6C6C8]">Limited Time Bundles</div>
+   <!--Price Card-->
+  <div class="font-[objectsansbold] text-[16px] text-[#C6C6C8] pt-4 md:pt-2 ">€79.99</div>
+</div>
+</div>
+ <!---------Card9---------->
+<div class="w-full h-[379.25px] md:h-[418.7px] rounded-sm shadow-md flex flex-col bg-card hover:bg-[#313339] transition-colors ">
+<!--Image Card-->
+  <img src="./src/css/images/card/featured/card-9.png" class="object-top text-top w-full h-[201px] md:h-[163.27px] transition-opacity ">
+<!--Caption Card-->
+ <div class="px-6 pt-6 relative transform transition-transform duration-300 hover:-translate-y-1">
+   <!--Line 1 Card -->
+  <div class="flex flex-wrap items-center mt-1">
+ <img src="./src/css/images/icons/3.svg" alt="" class=" w-6 h-6 mr-1 ">
+      <!--Only desktop -->
+  <div class="uppercase font-[objectsansbold] text-[#C6C6C8] text-[12px] hidden md:block my-auto"> Call of Duty Black Ops 6</div>
+  </div>
+   <!--Line 2 Card-->
+  <div class="text-[16px] text-[#C6C6C8] font-[objectsansbold] mt-2 md:text-[18px] hover:text-white ">Call of Duty<sup class="text-[10px]">®</sup>: Black Ops 6 - BlackCell (Season 6)</div>
+   <!--Line 4 Card-->
+  <div class="font-[notosans] mt-[4px] text-[12px] text-[#C6C6C8]">In-game content</div>
+   <!--Price Card-->
+  <div class="font-[objectsansbold] text-[16px] text-[#C6C6C8] pt-4 md:pt-4 ">€29.99</div>
+</div>
+</div>
+ <!---------Card10---------->
+<div class="w-full h-[379.25px] md:h-[418.7px] rounded-sm shadow-md flex flex-col bg-card hover:bg-[#313339] transition-colors ">
+<!--Image Card-->
+  <img src="./src/css/images/card/featured/card-10.png" class="object-cover absolute top-[50%] w-full h-[201px]  md:h-[163.27px] transition-opacity ">
+<!--Caption Card-->
+ <div class="relative transform transition-transform duration-300 hover:-translate-y-1 px-6 pt-4 ">
+   <!--Line 1 Card -->
+  <div class="flex flex-wrap items-center mt-1">
+ <img src="./src/css/images/icons/6.svg" alt="" class=" w-6 h-6 mr-1 ">
+      <!--Only desktop -->
+  <div class="uppercase font-[objectsansbold] text-[#C6C6C8] text-[12px] hidden md:block my-auto"> Diablo Immortal </div>
+  </div>
+   <!--Line 2 Card-->
+  <div class="text-[16px] text-[#C6C6C8] font-[objectsansbold] mt-2 md:text-[18px] hover:text-white "> Eternal Orbs</div>
+   <!--Line 3 Card--> 
+  <div class="font-[notosans] mt-[4px] text-[#ffb400] text-[12px] md:text-[14px]">Use Eternal Orbs to purchase Cosmetics, Eternal Legendary Crests, and more!</div>
+   <!--Line 4 Card-->
+  <div class="font-[notosans] mt-[4px] text-[12px] text-[#C6C6C8]">In-Game Content</div>
+   <!--Price Card-->
+  <div class="font-[objectsansbold] text-[16px] text-[#C6C6C8] pt-2 md:pt-4 ">€0.99</div>
+</div>
+  </div>
+</div>
+<!--#region Trending Now--------------------------------->    
+  <div class="font-[objectsansbold] text-[24px] leading-[28px] text-[#ffffff] px-6">Trending Now</div>
+<!-- Cards Trending Now-->
+<div  style="min-height: 829.288px;" class="md:w-full grid p-6 gap-6 grid-cols-1 md:grid-cols-5 bg-main box-border pb-16">
+<!---------Card1---------->
+  <div class="w-full  rounded-sm shadow-md flex flex-col bg-card hover:bg-[#313339] transition-colors ">
+<!--Image Card-->
+  <img src="./src/css/images/card/trending/card-4.png" class="w-full h-[201px] md:h-[163.27px] transition-opacity ">
+<!--Caption Card-->
+ <div class="px-6 pt-6 relative transform transition-transform duration-300 hover:-translate-y-1">
+   <!--Line 1 Card -->
+  <div class="flex flex-wrap items-center">
+ <img src="./src/css/images/icons/favicon-192x192.png" alt="" class=" w-6 h-6 mr-2">
+      <!--Only desktop -->
+  <div class="uppercase font-[objectsansbold] text-[#C6C6C8] text-[12px] hidden md:block my-auto">Battle.net Services</div>
+  </div>
+   <!--Line 2 Card-->
+  <div class="text-[16px] text-[#C6C6C8] font-[objectsansbold] md:text-[18px] hover:text-white ">Battle.net<sup class="text-[10px]">®</sup> Balance</div>
+   <!--Line 4 Card-->
+  <div class="font-[notosans] mt-[4px] text-[12px] text-[#C6C6C8]">Game Services</div>
+   <!--Price Card-->
+  <div class="font-[objectsansbold] text-[16px] text-[#C6C6C8] pt-16 md:pt-6">Learn More</div>
+</div>
+ </div>
+<!---------Card2----------> 
+ <div class="w-full rounded-sm shadow-md flex flex-col bg-card hover:bg-[#313339] transition-colors ">
+<!--Image Card-->
+  <img src="./src/css/images/card/recommended/card-1.png" class="w-full h-[201px] md:h-[163.27px] transition-opacity ">
+<!--Caption Card-->
+ <div class="px-6 pt-6 relative transform transition-transform duration-300 hover:-translate-y-1">
+   <!--Line 1 Card -->
+  <div class="flex flex-wrap items-center">
+ <img src="./src/css/images/icons/1.svg" alt="" class=" w-6 h-6 ">
+      <!--Only desktop -->
+  <div class="uppercase font-[objectsansbold] text-[#C6C6C8] text-[12px] hidden md:block my-auto"> World of Warcraft</div>
+  </div>
+   <!--Line 2 Card-->
+  <div class="text-[16px] text-[#C6C6C8] font-[objectsansbold] md:text-[18px] hover:text-white ">World of Warcrafts<sup class="text-[10px]">®</sup>: Midnight</div>
+   <!--Line 3 Card--> 
+  <div class="font-[notosans] mt-[4px] text-[#ffb400] text-[12px] md:text-[14px]">Coming 2026. Pre-purchase the Epic Edition now and dive into Beta on November 11!</div>
+   <!--Line 4 Card-->
+  <div class="font-[notosans] mt-[4px] text-[12px] text-[#C6C6C8]">Massively Multiplayer RPG</div>
+   <!--Price Card-->
+  <div class="font-[objectsansbold] text-[16px] text-[#C6C6C8] pt-14 md:pt-4 ">From €49.99</div>
+</div>
+ </div>
+<!---------Card3---------->
+ <div class="w-full md:w-[259.4px] rounded-sm shadow-md flex flex-col bg-card hover:bg-[#313339] transition-colors ">
+<!--Image Card-->
+  <img src="./src/css/images/card/trending/card-1.png" class="w-full h-[201px] md:h-[163.27px] transition-opacity ">
+<!--Caption Card-->
+ <div class="relative transform transition-transform duration-300 hover:-translate-y-1 px-6 pt-6">
+   <!--Line 1 Card -->
+  <div class="flex flex-wrap items-center ">
+ <img src="./src/css/images/icons/4.svg" alt="" class=" w-6 h-6 mr-1 ">
+      <!--Only desktop -->
+  <div class="uppercase font-[objectsansbold] text-[#C6C6C8] text-[12px] hidden md:block my-auto">Overwatch 2</div>
+  </div>
+   <!--Line 2 Card-->
+ <div class="text-[16px] text-[#C6C6C8] font-[objectsansbold] md:text-[18px] hover:text-white ">Overwatch<sup class="text-[10px]">®</sup> 2 – Overwatch Coins</div>
+   <!--Line 3 Card--> 
+  <div class="font-[notosans] mt-[4px] text-[#ffb400] text-[12px] md:text-[14px]">Use Overwatch Coins to Get the Premium Battle Pass and More!</div>
+   <!--Line 4 Card-->
+  <div class="font-[notosans] mt-[4px] text-[12px] text-[#C6C6C8]">Prisms and Coins</div>
+   <!--Price Card-->
+  <div class="font-[objectsansbold] text-[16px] text-[#C6C6C8] pt-12 md:pt-6 ">From
+€4.99</div>
+</div>
+ </div>
+ <!---------Card4---------->
+  <div class="w-full rounded-sm shadow-md flex flex-col bg-card hover:bg-[#313339] transition-colors ">
+<!--Image Card-->
+  <img src="./src/css/images/card/trending/t4.png" class="w-full h-[201px] md:h-[163.27px] transition-opacity ">
+<!--Caption Card-->
+ <div class="px-6 pt-6 relative transform transition-transform duration-300 hover:-translate-y-1">
+   <!--Line 1 Card -->
+  <div class="flex flex-wrap items-center">
+ <img src="./src/css/images/icons/favicon-192x192.png" alt="" class=" w-6 h-6 mr-2">
+      <!--Only desktop -->
+  <div class="uppercase font-[objectsansbold] text-[#C6C6C8] text-[12px] hidden md:block my-auto">Battle.net Services</div>
+  </div>
+   <!--Line 2 Card-->
+  <div class="text-[16px] text-[#C6C6C8] font-[objectsansbold] md:text-[18px] hover:text-white ">BattleTag Change</div>
+   <!--Line 4 Card-->
+  <div class="font-[notosans] mt-[4px] text-[12px] text-[#C6C6C8]">Game Services</div>
+   <!--Price Card-->
+  <div class="font-[objectsansbold] text-[16px] text-[#C6C6C8] pt-16 md:pt-6 ">€10.00</div>
+</div>
+ </div>
+ <!---------Card5---------->
+ <div class="w-full rounded-sm shadow-md flex flex-col bg-card hover:bg-[#313339] transition-colors ">
+<!--Image Card-->
+  <img src="./src/css/images/card/trending/t5.png" class="w-full h-[201px] md:h-[163.27px] transition-opacity ">
+<!--Caption Card-->
+ <div class="px-6 pt-6 relative transform transition-transform duration-300 hover:-translate-y-1">
+   <!--Line 1 Card -->
+  <div class="flex flex-wrap items-center">
+ <img src="./src/css/images/icons/1.svg" alt="" class=" w-6 h-6 ">
+      <!--Only desktop -->
+  <div class="uppercase font-[objectsansbold] text-[#C6C6C8] text-[12px] hidden md:block my-auto"> World of Warcraft<sup>™</sup> </div>
+  </div>
+   <!--Line 2 Card-->
+  <div class="text-[16px] text-[#C6C6C8] font-[objectsansbold] md:text-[18px] hover:text-white ">World of Warcrafts<sup class="text-[10px]">®</sup>: The War Within</div>
+   <!--Line 4 Card-->
+  <div class="font-[notosans] mt-[4px] text-[12px] text-[#C6C6C8]">Massively Multiplayer RPG</div>
+   <!--Price Card-->
+  <div class="font-[objectsansbold] text-[16px] text-[#C6C6C8] pt-16 md:pt-6 ">€29.99</div>
+</div>
+ </div>
+ <!---------Card6---------->
+<div class="w-full md:w-[259.4px] rounded-sm shadow-md flex flex-col bg-card hover:bg-[#313339] transition-colors ">
+<!--Image Card-->
+  <img src="./src/css/images/card/trending/t6.png" class="object-cover w-full h-[201px] md:h-[163.27px] transition-opacity ">
+<!--Caption Card-->
+ <div class="pt-6 px-6 relative transform transition-transform duration-300 hover:-translate-y-1">
+   <!--Line 1 Card -->
+  <div class="flex flex-wrap items-center ">
+ <img src="./src/css/images/icons/2.svg" alt="" class=" w-6 h-6 mr-1 ">
+      <!--Only desktop -->
+  <div class="uppercase font-[objectsansbold] text-[#C6C6C8] text-[12px] hidden md:block my-auto">Diablo III</div>
+  </div>
+   <!--Line 2 Card-->
+  <div class="text-[16px] text-[#C6C6C8] font-[objectsansbold] mt-2 md:text-[18px] hover:text-white ">Diablo<sup>®</sup> III: Eternal Collection</div>
+   <!--Line 4 Card-->
+  <div class="font-[notosans] mt-[4px] text-[12px] text-[#C6C6C8]">Action RPG</div>
+   <!--Price Card-->
+  <div class="flex flex-wrap items-center font-[objectsansbold] text-[16px] text-[#C6C6C8] pt-14 md:pt-6 ">
+  €39.99</div>
+</div>
+</div>
+ <!---------Card7---------->
+<div class="w-full rounded-sm shadow-md flex flex-col bg-card hover:bg-[#313339] transition-colors ">
+<!--Image Card-->
+  <img src="./src/css/images/card/recommended/card-8.jpg" class="object-center w-full h-[201px] md:h-[163.27px] transition-opacity ">
+<!--Caption Card-->
+ <div class="px-6 pt-6 relative transform transition-transform duration-300 hover:-translate-y-1">
+   <!--Line 1 Card -->
+  <div class="flex flex-wrap items-center mt-1">
+ <img src="./src/css/images/icons/r8.svg" alt="" class=" w-6 h-6 mr-1 ">
+      <!--Only desktop -->
+  <div class="uppercase font-[objectsansbold] text-[#C6C6C8] text-[12px] hidden md:block my-auto">Diablo II: Resurrected</div>
+  </div>
+   <!--Line 2 Card-->
+  <div class="text-[16px] text-[#C6C6C8] font-[objectsansbold] mt-2 md:text-[18px] hover:text-white ">Diablo II: Resurrected<sup class="text-[10px]">™</sup></div>
+   <!--Line 3 Card--> 
+  <div class="font-[notosans] mt-[4px] text-[#ffb400] text-[12px] md:text-[14px]">  Evil is Resurrected</div>
+   <!--Line 4 Card-->
+  <div class="font-[notosans] mt-[4px] text-[12px] text-[#C6C6C8]">Action RPG</div>
+   <!--Price Card-->
+  <div class="font-[objectsansbold] text-[16px] text-[#C6C6C8] pt-16 md:pt-6 ">€39.99</div>
+</div>
+</div>
+ <!---------Card8---------->
+<div class="w-full md:w-[259.4px] rounded-sm shadow-md flex flex-col bg-card hover:bg-[#313339] transition-colors ">
+<!--Image Card-->
+  <img src="./src/css/images/card/trending/t8.png" class="object-center w-full h-[201px] md:h-[163.27px] transition-opacity ">
+<!--Caption Card-->
+ <div class="px-6 pt-6 relative transform transition-transform duration-300 hover:-translate-y-1">
+   <!--Line 1 Card -->
+  <div class="flex flex-wrap items-center mt-1">
+ <img src="./src/css/images/icons/3.svg" alt="" class=" w-6 h-6 mr-1 ">
+      <!--Only desktop -->
+  <div class="uppercase font-[objectsansbold] text-[#C6C6C8] text-[12px] hidden md:block my-auto">Call of Duty Black Ops 6</div>
+  </div>
+   <!--Line 2 Card-->
+  <div class="text-[16px] text-[#C6C6C8] font-[objectsansbold] mt-2 md:text-[18px] hover:text-white ">Call of Duty<sup class="text-[10px]">®</sup>: Black Ops 6 or Call of Duty®: Warzone Points (CP)</div>
+   <!--Line 3 Card--> 
+  <div class="font-[notosans] mt-[4px] text-[#ffb400] text-[12px] md:text-[14px]">Use CP to get the Battle Pass!</div>
+   <!--Line 4 Card-->
+  <div class="font-[notosans] mt-[4px] text-[12px] text-[#C6C6C8]">In-game content</div>
+   <!--Price Card-->
+  <div class="font-[objectsansbold] text-[16px] text-[#C6C6C8] pt-10 md:pt-4 ">From
+€1.99</div>
+</div>
+</div>
+ <!---------Card9---------->
+<div class="w-full md:w-[259.4px] rounded-sm shadow-md flex flex-col bg-card hover:bg-[#313339] transition-colors ">
+<!--Image Card-->
+  <img src="./src/css/images/card/trending/t9.png" class="w-full h-[201px] md:h-[163.27px] transition-opacity ">
+<!--Caption Card-->
+ <div class="px-6 pt-6 relative transform transition-transform duration-300 hover:-translate-y-1">
+   <!--Line 1 Card -->
+  <div class="flex flex-wrap items-center">
+ <img src="./src/css/images/icons/2.svg" alt="" class=" w-6 h-6 ">
+      <!--Only desktop -->
+  <div class="uppercase font-[objectsansbold] text-[#C6C6C8] text-[12px] hidden md:block my-auto">  Diablo IV </div>
+  </div>
+   <!--Line 2 Card-->
+  <div class="text-[16px] text-[#C6C6C8] font-[objectsansbold] md:text-[18px] hover:text-white ">Diablo<sup class="text-[10px]">®</sup> IV: Vessel of Hatred - Standard Edition</div>
+   <!--Line 4 Card-->
+  <div class="font-[notosans] mt-[4px] text-[12px] text-[#C6C6C8]">Action RPG</div>
+   <!--Price Card-->
+  <div class="font-[objectsansbold] text-[16px] text-[#C6C6C8] pt-24 md:pt-4 ">€39.99</div>
+</div>
+ </div> 
+ <!---------Card10---------->
+<div class="w-full md:w-[259.4px] rounded-sm shadow-md flex flex-col bg-card hover:bg-[#313339] transition-colors ">
+<!--Image Card-->
+  <img src="./src/css/images/card/trending/t10.png" class="w-full h-[201px] md:h-[163.27px] transition-opacity ">
+<!--Caption Card-->
+ <div class="relative transform transition-transform duration-300 hover:-translate-y-1 px-6 pt-6">
+   <!--Line 1 Card -->
+  <div class="flex flex-wrap items-center ">
+ <img src="./src/css/images/icons/4.svg" alt="" class=" w-6 h-6 mr-1 ">
+      <!--Only desktop -->
+  <div class="uppercase font-[objectsansbold] text-[#C6C6C8] text-[12px] hidden md:block my-auto">Overwatch 2</div>
+  </div>
+   <!--Line 2 Card-->
+ <div class="text-[16px] text-[#C6C6C8] font-[objectsansbold] md:text-[18px] hover:text-white ">Overwatch<sup class="text-[10px]">®</sup> 2 Starter Pack: Season 19</div>
+   <!--Line 3 Card--> 
+  <div class="font-[notosans] mt-[4px] text-[#ffb400] text-[12px] md:text-[14px]">Get a head start to the season with 1000 Overwatch Coins and Cursed Mummy Venture</div>
+   <!--Line 4 Card-->
+  <div class="font-[notosans] mt-[4px] text-[12px] text-[#C6C6C8]">Seasonal Packs</div>
+   <!--Price Card-->
+  <div class="font-[objectsansbold] text-[16px] text-[#C6C6C8] pt-14 md:pt-6 ">
+€9.99</div>
+</div>
+ </div>
+</div>
+<!--#region Most Gifted------------------------------------>    
+  <div class="font-[objectsansbold] text-[24px] leading-[28px] text-[#ffffff] px-6"> Most Gifted</div>
+<!-- Cards Most Gifted-->
+<div  style="min-height: 829.288px;" class="md:w-full grid p-6 gap-6 grid-cols-1 md:grid-cols-5 bg-main box-border">
+<!---------Card1---------->
+  <div class="w-full rounded-sm shadow-md flex flex-col bg-card hover:bg-[#313339] transition-colors ">
+<!--Image Card-->
+  <img src="./src/css/images/card/recommended/card-1.png" class="w-full h-[201px] md:h-[163.27px] transition-opacity ">
+<!--Caption Card-->
+ <div class="px-6 pt-6 relative transform transition-transform duration-300 hover:-translate-y-1">
+   <!--Line 1 Card -->
+  <div class="flex flex-wrap items-center">
+ <img src="./src/css/images/icons/1.svg" alt="" class=" w-6 h-6 ">
+      <!--Only desktop -->
+  <div class="uppercase font-[objectsansbold] text-[#C6C6C8] text-[12px] hidden md:block my-auto"> World of Warcraft</div>
+  </div>
+   <!--Line 2 Card-->
+  <div class="text-[16px] text-[#C6C6C8] font-[objectsansbold] md:text-[18px] hover:text-white ">World of Warcrafts<sup class="text-[10px]">®</sup>: Midnight</div>
+   <!--Line 3 Card--> 
+  <div class="font-[notosans] mt-[4px] text-[#ffb400] text-[12px] md:text-[14px]">Coming 2026. Pre-purchase the Epic Edition now and dive into Beta on November 11!</div>
+   <!--Line 4 Card-->
+  <div class="font-[notosans] mt-[4px] text-[12px] text-[#C6C6C8]">Massively Multiplayer RPG</div>
+   <!--Price Card-->
+  <div class="font-[objectsansbold] text-[16px] text-[#C6C6C8] pt-14 md:pt-6 ">From €49.99</div>
+</div>
+ </div>
+<!---------Card2----------> 
+  <div class="w-full rounded-sm shadow-md flex flex-col bg-card hover:bg-[#313339] transition-colors ">
+<!--Image Card-->
+  <img src="./src/css/images/card/trending/card-4.png" class="w-full h-[201px] md:h-[163.27px] transition-opacity ">
+<!--Caption Card-->
+ <div class="px-6 pt-6 relative transform transition-transform duration-300 hover:-translate-y-1">
+   <!--Line 1 Card -->
+  <div class="flex flex-wrap items-center">
+ <img src="./src/css/images/icons/favicon-192x192.png" alt="" class=" w-6 h-6 mr-2">
+      <!--Only desktop -->
+  <div class="uppercase font-[objectsansbold] text-[#C6C6C8] text-[12px] hidden md:block my-auto">Battle.net Services</div>
+  </div>
+   <!--Line 2 Card-->
+  <div class="text-[16px] text-[#C6C6C8] font-[objectsansbold] md:text-[18px] hover:text-white ">Battle.net<sup class="text-[10px]">®</sup> Balance</div>
+   <!--Line 4 Card-->
+  <div class="font-[notosans] mt-[4px] text-[12px] text-[#C6C6C8]">Game Services</div>
+   <!--Price Card-->
+  <div class="font-[objectsansbold] text-[16px] text-[#C6C6C8] pt-16 md:pt-6">Learn More</div>
+</div>
+ </div> 
+<!---------Card3---------->
+ <div class="w-full md:w-[259.4px] rounded-sm shadow-md flex flex-col bg-card hover:bg-[#313339] transition-colors ">
+<!--Image Card-->
+  <img src="./src/css/images/card/trending/card-1.png" class="w-full h-[201px] md:h-[163.27px] transition-opacity ">
+<!--Caption Card-->
+ <div class="relative transform transition-transform duration-300 hover:-translate-y-1 px-6 pt-6">
+   <!--Line 1 Card -->
+  <div class="flex flex-wrap items-center ">
+ <img src="./src/css/images/icons/4.svg" alt="" class=" w-6 h-6 mr-1 ">
+      <!--Only desktop -->
+  <div class="uppercase font-[objectsansbold] text-[#C6C6C8] text-[12px] hidden md:block my-auto">Overwatch 2</div>
+  </div>
+   <!--Line 2 Card-->
+ <div class="text-[16px] text-[#C6C6C8] font-[objectsansbold] md:text-[18px] hover:text-white ">Overwatch<sup class="text-[10px]">®</sup> 2 – Overwatch Coins</div>
+   <!--Line 3 Card--> 
+  <div class="font-[notosans] mt-[4px] text-[#ffb400] text-[12px] md:text-[14px]">Use Overwatch Coins to Get the Premium Battle Pass and More!</div>
+   <!--Line 4 Card-->
+  <div class="font-[notosans] mt-[4px] text-[12px] text-[#C6C6C8]">Prisms and Coins</div>
+   <!--Price Card-->
+  <div class="font-[objectsansbold] text-[16px] text-[#C6C6C8] pt-12 md:pt-4 ">From
+€4.99</div>
+</div>
+ </div>
+ <!---------Card4---------->
+<div class="w-full rounded-sm shadow-md flex flex-col bg-card hover:bg-[#313339] transition-colors ">
+<!--Image Card-->
+  <img src="./src/css/images/card/recommended/card-8.jpg" class="object-center w-full h-[201px] md:h-[163.27px] transition-opacity ">
+<!--Caption Card-->
+ <div class="px-6 pt-6 relative transform transition-transform duration-300 hover:-translate-y-1">
+   <!--Line 1 Card -->
+  <div class="flex flex-wrap items-center mt-1">
+ <img src="./src/css/images/icons/r8.svg" alt="" class=" w-6 h-6 mr-1 ">
+      <!--Only desktop -->
+  <div class="uppercase font-[objectsansbold] text-[#C6C6C8] text-[12px] hidden md:block my-auto">Diablo II: Resurrected</div>
+  </div>
+   <!--Line 2 Card-->
+  <div class="text-[16px] text-[#C6C6C8] font-[objectsansbold] mt-2 md:text-[18px] hover:text-white ">Diablo II: Resurrected<sup class="text-[10px]">™</sup></div>
+   <!--Line 3 Card--> 
+  <div class="font-[notosans] mt-[4px] text-[#ffb400] text-[12px] md:text-[14px]">  Evil is Resurrected</div>
+   <!--Line 4 Card-->
+  <div class="font-[notosans] mt-[4px] text-[12px] text-[#C6C6C8]">Action RPG</div>
+   <!--Price Card-->
+  <div class="font-[objectsansbold] text-[16px] text-[#C6C6C8] pt-16 md:pt-4 ">€39.99</div>
+</div>
+</div>
+ <!---------Card5---------->
+  <div class="w-full rounded-sm shadow-md flex flex-col bg-card hover:bg-[#313339] transition-colors ">
+<!--Image Card-->
+  <img src="./src/css/images/card/trending/t5.png" class="w-full h-[201px] md:h-[163.27px] transition-opacity ">
+<!--Caption Card-->
+ <div class="px-6 pt-6 relative transform transition-transform duration-300 hover:-translate-y-1">
+   <!--Line 1 Card -->
+  <div class="flex flex-wrap items-center">
+ <img src="./src/css/images/icons/1.svg" alt="" class=" w-6 h-6 ">
+      <!--Only desktop -->
+  <div class="uppercase font-[objectsansbold] text-[#C6C6C8] text-[12px] hidden md:block my-auto"> World of Warcraft<sup>™</sup> </div>
+  </div>
+   <!--Line 2 Card-->
+  <div class="text-[16px] text-[#C6C6C8] font-[objectsansbold] md:text-[18px] hover:text-white ">World of Warcrafts<sup class="text-[10px]">®</sup>: The War Within</div>
+   <!--Line 4 Card-->
+  <div class="font-[notosans] mt-[4px] text-[12px] text-[#C6C6C8]">Massively Multiplayer RPG</div>
+   <!--Price Card-->
+  <div class="font-[objectsansbold] text-[16px] text-[#C6C6C8] pt-16 md:pt-4 ">€29.99</div>
+</div>
+ </div>
+ <!---------Card6---------->
+<div class="w-full md:w-[259.4px] rounded-sm shadow-md flex flex-col bg-card hover:bg-[#313339] transition-colors ">
+<!--Image Card-->
+  <img src="./src/css/images/card/most gifted/m6.png" class="w-full h-[201px] md:h-[163.27px] transition-opacity ">
+<!--Caption Card-->
+ <div class="pt-6 px-6 relative transform transition-transform duration-300 hover:-translate-y-1">
+   <!--Line 1 Card -->
+  <div class="flex flex-wrap items-center ">
+ <img src="./src/css/images/icons/1.svg" alt="" class=" w-6 h-6 mr-1 ">
+      <!--Only desktop -->
+  <div class="uppercase font-[objectsansbold] text-[#C6C6C8] text-[12px] hidden md:block my-auto">World of Warcraft</div>
+  </div>
+   <!--Line 2 Card-->
+  <div class="text-[16px] text-[#C6C6C8] font-[objectsansbold] mt-2 md:text-[18px] hover:text-white ">Crimson Court Pack</div>
+   <!--Line 3 Card--> 
+  <div class="font-[notosans] mt-[4px] text-[#ffb400] text-[12px] md:text-[14px]">Crimson clothes and a mount to match–offer available for a limited time!</div>
+   <!--Line 4 Card-->
+  <div class="font-[notosans] mt-[4px] text-[12px] text-[#C6C6C8]">Bundles</div>
+   <!--Price Card-->
+  <div class="flex flex-wrap items-center font-[objectsansbold] text-[16px] text-[#C6C6C8] pt-12 md:pt-4 "> €35.00</div>
+</div>
+</div>
+ <!---------Card7---------->
+<div class="w-full md:w-[259.4px] rounded-sm shadow-md flex flex-col bg-card hover:bg-[#313339] transition-colors ">
+<!--Image Card-->
+  <img src="./src/css/images/card/trending/t10.png" class="w-full h-[201px] md:h-[163.27px] transition-opacity ">
+<!--Caption Card-->
+ <div class="relative transform transition-transform duration-300 hover:-translate-y-1 px-6 pt-6">
+   <!--Line 1 Card -->
+  <div class="flex flex-wrap items-center ">
+ <img src="./src/css/images/icons/4.svg" alt="" class=" w-6 h-6 mr-1 ">
+      <!--Only desktop -->
+  <div class="uppercase font-[objectsansbold] text-[#C6C6C8] text-[12px] hidden md:block my-auto">Overwatch 2</div>
+  </div>
+   <!--Line 2 Card-->
+ <div class="text-[16px] text-[#C6C6C8] font-[objectsansbold] md:text-[18px] hover:text-white ">Overwatch<sup class="text-[10px]">®</sup> 2 Starter Pack: Season 19</div>
+   <!--Line 3 Card--> 
+  <div class="font-[notosans] mt-[4px] text-[#ffb400] text-[12px] md:text-[14px]">Get a head start to the season with 1000 Overwatch Coins and Cursed Mummy Venture</div>
+   <!--Line 4 Card-->
+  <div class="font-[notosans] mt-[4px] text-[12px] text-[#C6C6C8]">Seasonal Packs</div>
+   <!--Price Card-->
+  <div class="font-[objectsansbold] text-[16px] text-[#C6C6C8] pt-14 md:pt-4 ">
+€9.99</div>
+</div>
+ </div>
+ <!---------Card8---------->
+<div class="w-full md:w-[259.4px] rounded-sm shadow-md flex flex-col bg-card hover:bg-[#313339] transition-colors ">
+<!--Image Card-->
+  <img src="./src/css/images/card/most gifted/m8.png" class="w-full h-[201px] md:h-[163.27px] transition-opacity ">
+<!--Caption Card-->
+ <div class="pt-6 px-6 relative transform transition-transform duration-300 hover:-translate-y-1">
+   <!--Line 1 Card -->
+  <div class="flex flex-wrap items-center ">
+ <img src="./src/css/images/icons/1.svg" alt="" class=" w-6 h-6 mr-1 ">
+      <!--Only desktop -->
+  <div class="uppercase font-[objectsansbold] text-[#C6C6C8] text-[12px] hidden md:block my-auto">World of Warcraft</div>
+  </div>
+   <!--Line 2 Card-->
+  <div class="text-[16px] text-[#C6C6C8] font-[objectsansbold] mt-2 md:text-[18px] hover:text-white ">Sunwarmed Furline</div>
+   <!--Line 3 Card--> 
+  <div class="font-[notosans] mt-[4px] text-[#ffb400] text-[12px] md:text-[14px]">Meet the fuzziest mount Azeroth has ever seen!</div>
+   <!--Line 4 Card-->
+  <div class="font-[notosans] mt-[4px] text-[12px] text-[#C6C6C8]">Mounts</div>
+   <!--Price Card-->
+  <div class="flex flex-wrap items-center font-[objectsansbold] text-[16px] text-[#C6C6C8] pt-12 md:pt-4 "> €25.00</div>
+</div>
+</div>
+ <!---------Card9---------->
+ <div class="w-full md:w-[259.4px] rounded-sm shadow-md flex flex-col bg-card hover:bg-[#313339] transition-colors ">
+<!--Image Card-->
+  <img src="./src/css/images/card/recommended/card-3.png" class="w-full h-[201px] md:h-[163.27px] transition-opacity ">
+<!--Caption Card-->
+ <div class="relative transform transition-transform duration-300 hover:-translate-y-1 px-6 pt-6">
+   <!--Line 1 Card -->
+  <div class="flex flex-wrap items-center ">
+ <img src="./src/css/images/icons/3.svg" alt="" class=" w-6 h-6 mr-1 ">
+      <!--Only desktop -->
+  <div class="uppercase font-[objectsansbold] text-[#C6C6C8] text-[12px] hidden md:block my-auto">Call of Duty Black Ops 7</div>
+  </div>
+   <!--Line 2 Card-->
+  <div class="text-[16px] text-[#C6C6C8] font-[objectsansbold] md:text-[18px] hover:text-white ">Call of Duty<sup class="text-[10px]">®</sup>: Black Ops 7 - Vault Edition</div>
+   <!--Line 3 Card--> 
+  <div class="font-[notosans] mt-[4px] text-[#ffb400] text-[12px] md:text-[14px]">Available November 14th - Pre-Purchase Now!</div>
+   <!--Line 4 Card-->
+  <div class="font-[notosans] mt-[4px] text-[12px] text-[#C6C6C8]">Action Shooter</div>
+   <!--Price Card-->
+  <div class="font-[objectsansbold] text-[16px] text-[#C6C6C8] pt-[60px] md:pt-6 ">€109.99</div>
+</div>
+ </div> 
+ <!---------Card10---------->
+<div class="w-full md:w-[259.4px] rounded-sm shadow-md flex flex-col bg-card hover:bg-[#313339] transition-colors ">
+<!--Image Card-->
+  <img src="./src/css/images/card/most gifted/m10.png" class="w-full h-[201px] md:h-[163.27px] transition-opacity ">
+<!--Caption Card-->
+ <div class="relative transform transition-transform duration-300 hover:-translate-y-1 px-6 pt-6">
+   <!--Line 1 Card -->
+  <div class="flex flex-wrap items-center ">
+ <img src="./src/css/images/icons/4.svg" alt="" class=" w-6 h-6 mr-1 ">
+      <!--Only desktop -->
+  <div class="uppercase font-[objectsansbold] text-[#C6C6C8] text-[12px] hidden md:block my-auto">Overwatch 2</div>
+  </div>
+   <!--Line 2 Card-->
+ <div class="text-[16px] text-[#C6C6C8] font-[objectsansbold] md:text-[18px] hover:text-white ">Overwatch<sup class="text-[10px]">®</sup> 2 Premium Battle Pass: Season 19</div>
+   <!--Line 4 Card-->
+  <div class="font-[notosans] mt-[4px] text-[12px] text-[#C6C6C8]">Seasonal Packs</div>
+   <!--Price Card-->
+  <div class="font-[objectsansbold] text-[16px] text-[#C6C6C8] pt-[60px] md:pt-4 ">
+Learn More </div>
+</div>
+ </div>
+</div>
+<!--#region Downloadapp------------------------------------>   
+<div class=" bg-[url(/src/css/images/download-app/section-bg-lg.png)] flex flex-row justify-center items-center content-center p-4 md:h-[568.23px] w-full bg-no-repeat bg-cover">
+
+<div class="md:w-[95%] md:h-[568.23px] flex flex-wrap flex-row md:flex-col  justify-center items-center">
+
+<div style="width:50%;" class="hidden md:flex justify-center items-center mx-auto ">
+  <img src="./src/css/images/download-app/desktopApp.png" class="md:w-[811.2px] md:h-[433.99px] mt-8 p-4">
+</div>
+<div class="md:w-[50%] h-[433.994px] flex flex-wrap flex-col justify-center items-center gap-6 md:gap-0 p-2 mx-auto" > 
+  <div class="text-[36px] md:text-[48px] font-[objectsansbold] text-white text-center">Dive into adventure</div>
+  <div class="text-[16px] md:text-[20px] font-[notosans] text-[#BCBEC5] mx-auto text-center md:py-6">Download Battle.net and join a community of millions.</div>
+  <div class="flex flex-col md:flex-row md:mx-auto">
+<button class="w-[241px] object-center font-[objectsansbold] text-[16px] btn border-2 bg-[#0074E0] shadow-none text-white border-[#0074E0] hover:border-[#5CA6EB] my-2 md:my-0  mx-auto md:mx-1">
+<svg
+ fill="#fff" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20px" height="20px" viewBox="0 0 512 512" xml:space="preserve" stroke="#fff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g id="7935ec95c421cee6d86eb22ecd114eed">
+<path style="display: inline;" d="M248.644,123.476c-5.45-29.71,8.598-60.285,25.516-80.89 c18.645-22.735,50.642-40.17,77.986-42.086c4.619,31.149-8.093,61.498-24.826,82.965 C309.37,106.527,278.508,124.411,248.644,123.476z M409.034,231.131c8.461-23.606,25.223-44.845,51.227-59.175 c-26.278-32.792-63.173-51.83-97.99-51.83c-46.065,0-65.542,21.947-97.538,21.947c-32.96,0-57.965-21.947-97.866-21.947 c-39.127,0-80.776,23.848-107.19,64.577c-9.712,15.055-16.291,33.758-19.879,54.59c-9.956,58.439,4.916,134.557,49.279,202.144 c21.57,32.796,50.321,69.737,87.881,70.059c33.459,0.327,42.951-21.392,88.246-21.616c45.362-0.258,53.959,21.841,87.372,21.522 c37.571-0.317,67.906-41.199,89.476-73.991c15.359-23.532,21.167-35.418,33.11-62.023 C414.435,352.487,389.459,285.571,409.034,231.131z"> </path></g> </g>
+</svg>Download for Mac
+</button>
+<button class="md:w-[155px] w-[241px] object-center font-[objectsansbold] text-[16px] btn bg-[#2A3147] shadow-none text-white border-[#2A3147] border-2 hover:border-[#777B89] my-2 md:my-0  mx-auto md:mx-1">
+Learn More
+</button>
+  </div>
+  <div 
+  class="text-[16px] md:text-[20px] font-[notosans] text-[#BCBEC5] mx-auto md:pt-4">Also available for <a class="underline text-white hover:text-[#47A6FF] font-[notosansbold]" href="">Windows</a> and <a href="" class="underline font-[notosansbold] text-white hover:text-[#47A6FF]">mobile</a>
+  </div>
+</div>
+<div class="md:hidden w-full md:h-[433.994px]">
+  <img src="./src/css/images/download-app/desktopApp.png" class="md:hidden mt-8 p-4 ">
+</div>
+  </div>
+</div>
+
+  <!-- #region Footer -->
+    <footer 
+    class="bg-main pt-12 w-full mt-80 md:mt-0 md:pb-30 font-[objectsansbold] text-[14px] font-bold ">
+      <div class=" mx-auto md:px-12">
+        <!--#region Footer Menu-->
+        <div class="flex flex-col-reverse md:flex-row justify-between items-center  md:rounded-b-none md:border-b md:border-y-gray-600 h-12 w-full ">
+          <!-- Menu-Links-->
+            <div class="flex flex-wrap items-center justify-center md:justify-start gap-2 py-6 text-[#FFFFFF] text-sm">
+              <a
+                href="#"
+                class=" hover:bg-[#202229]  rounded-[8px] px-4 py-2 transition-colors "
+                >Careers</a
+              >
+              <a
+                href="#"
+                class=" hover:bg-[#202229] rounded-[8px] px-4 py-2 transition-colors "
+                >About</a
+              >
+              <a
+                href="#"
+                class=" hover:bg-[#202229]  rounded-[8px] px-4 py-2 transition-colors"
+                >Support</a
+              >
+              <a
+                href="#"
+                class=" hover:bg-[#202229] rounded-[8px] px-4 py-2 transition-colors "
+                >Contact Us</a
+              >
+              <a
+                href="#"
+                class=" hover:bg-[#202229] rounded-[8px] px-4 py-2 transition-colors "
+                >Press</a
+              >
+              <a
+                href="#"
+                class=" hover:bg-[#202229] rounded-[8px] px-4 py-2 transition-colors "
+                >API</a
+              >
+            </div>
+          <!-- Menu-language-->
+        <div class="relative ">
+    <button id="langBtn" class="btn btn-ghost text-white shadow-none border-none border-transparent  hover:bg-[#202229] transition-colors px-4 py-2 rounded-lg">
+       <svg
+                  class="w-6 h-6"
+                  fill="none"
+                  stroke="#909194"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"
+                  />
+                </svg>
+                <span class="text-sm ">English (US)</span>
+                <svg
+                  class="w-3 h-3"
+                  fill="none"
+                  stroke="#909194"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
+
+    </button>  
+      <!-- Dropdown Language -->
+    <div id="langDropdown" class="hidden absolute bottom-full right-0 mb-2 h-[183px] w-[470px] overflow-y-auto scrollbar rounded-[12px] grid gap-2 bg-card  duration-300 sm:grid-cols-1 md:grid-cols-2 my-scroll box-content ">
+
+  <a class="text-[#FFFFFF] font-[notosans] text-[16px] text-center  leading-[24px] rounded-lg hover:bg-[#202229] transition-colors px-2 py-3">English (US)</a>
+      <a class="text-[#FFFFFF] font-[notosans] text-[16px] text-center leading-[24px] rounded-lg hover:bg-[#202229] transition-colors px-2 py-[12px]">Español (Latino)</a>
+      <a class="text-[#FFFFFF] font-[notosans] text-[16px] text-center leading-[24px] rounded-lg hover:bg-[#202229] transition-colors px-2 py-[12px]">Português (Brasil)</a>
+      <a class="text-[#FFFFFF] font-[notosans] text-[16px] text-center leading-[24px] rounded-lg hover:bg-[#202229] transition-colors px-2 py-[12px]">Português (EU)</a>
+      <a class="text-[#FFFFFF] font-[notosans] text-[16px] text-center leading-[24px] rounded-lg hover:bg-[#202229] transition-colors px-2 py-[12px]">English (EU)</a>
+      <a class="text-[#FFFFFF] font-[notosans] text-[16px] text-center leading-[24px] rounded-lg hover:bg-[#202229] transition-colors px-2 py-[12px]">ภาษาไทย</a>
+      <a class="text-[#FFFFFF] font-[notosans] text-[16px] text-center leading-[24px] rounded-lg hover:bg-[#202229] transition-colors px-2 py-[12px]">日本語</a>
+      <a class="text-[#FFFFFF] font-[notosans] text-[16px] text-center leading-[24px] rounded-lg hover:bg-[#202229] transition-colors px-2 py-[12px]">Deutsch</a>
+     <a class="text-[#FFFFFF] font-[notosans] text-[16px] text-center leading-[24px] rounded-lg hover:bg-[#202229] transition-colors px-2 py-[12px]">Polski</a>
+      <a class="text-[#FFFFFF] font-[notosans] text-[16px] text-center leading-[24px] rounded-lg hover:bg-[#202229] transition-colors px-2 py-[12px]">Русский</a>
+      <a class="text-[#FFFFFF] font-[notosans] text-[16px] text-center leading-[24px] rounded-lg hover:bg-[#202229] transition-colors px-2 py-[12px]">Türkçe</a>
+        <a class="text-[#FFFFFF] font-[notosans] text-[16px] text-center leading-[24px] rounded-lg hover:bg-[#202229] transition-colors px-2 py-[12px]">Русский</a>
+         <a class="text-[#FFFFFF] font-[notosans] text-[16px] text-center leading-[24px] rounded-lg hover:bg-[#202229] transition-colors px-2 py-[12px]">简体中文</a>
+          <a class="text-[#FFFFFF] font-[notosans] text-[16px] text-center leading-[24px] rounded-lg hover:bg-[#202229] transition-colors px-2 py-[12px]">繁體中文</a>
+    </div>
+           </div>
+        </div>
+        <!-- Bottom Footer -->
+        <div class="py-8">
+          <div class="flex flex-col md:flex-row items-center justify-between gap-6" >
+          <div class="flex flex-col md:flex-row items-center md:gap-[25px]">
+            <a href="index.html">
+              <img src="./src/css/images/battlenet.svg" alt="logo" class="w-[210px] pb-6" />
+            </a>
+              <!-- Social Media Icons - mobiles -->
+              <div class="flex md:hidden items-center gap-4 ">
+                <a  href="#" class="text-[#FFFFFF] hover:bg-[#2D2F35] bg-[#ffffff0d] transition-colors  p-3 rounded-full" aria-label="Twitter">
+                  <svg class="w-5 h-5" fill="white" viewBox="0 0 24 24">
+                    <path
+                      d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
+                    />
+                  </svg>
+                </a>
+                <a  href="#"  class="text-[#FFFFFF] hover:bg-[#2D2F35] transition-colors bg-[#ffffff0d] p-3 rounded-full"
+                  aria-label="Facebook"
+                >
+                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                    <path
+                      d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"
+                    />
+                  </svg>
+                </a>
+                <a  href="#"  class="text-[#FFFFFF] hover:bg-[#2D2F35] transition-colors bg-[#ffffff0d] p-3 rounded-full"
+                  aria-label="Instagram"
+                >
+                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                    <path
+                      d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+                    />
+                  </svg>
+                </a>
+              </div>
+             <!--Copyright -->
+              <div class="text-center md:text-left">
+                <p class="text-[#ffffff80] font-[notosans] text-[12px] mb-2">
+                  ©2025 Blizzard Entertainment, Inc.
+                </p>
+                <p class="text-[#ffffff80] font-[notosans] text-[12px] mb-3">
+                  All
+                  <a href="#" class="text-[#ffffff80] font-[notosans] text-[12px] hover:text-white underline"
+                    >trademarks</a
+                  >
+                  referenced herein are the properties of their respective
+                  owners.
+                </p>
+
+                <div  class="flex flex-wrap items-center justify-center md:justify-start gap-3 text-[#ffffff80] font-[notosans] text-[12px]" >
+                   <a  href="#"  class="text-[#ffffff80] font-[notosans] text-[12px] hover:text-white transition-colors" >Privacy</a >  
+                    <a  href="#" class="text-[#ffffff80] font-[notosans] text-[12px] hover:text-white transition-colors"  >Legal</a >
+                  <a  href="#"  class="text-[#ffffff80] font-[notosans] text-[12px] hover:text-white transition-colors" >Terms</a >  
+                    <a  href="#"  class="text-[#ffffff80] font-[notosans] text-[12px] hover:text-white transition-colors">Cookie Policy</a  >
+                  <a class="text-[#ffffff80] font-[notosans] text-[12px] hover:text-gray-300 transition-colors" >  Cookie Settings  </a>
+                </div>
+              </div>
+          </div>
+            <!-- Social Media Icons - desktop -->
+            <div class="hidden md:flex items-center gap-4">
+              <a
+                href="#"
+                class="text-[#FFFFFF] hover:bg-[#2D2F35] transition-colors bg-[#ffffff0d] p-3 rounded-full"
+                aria-label="Twitter"
+              >
+                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="#"
+                class="text-[#FFFFFF] hover:bg-[#2D2F35] transition-colors bg-[#ffffff0d] p-3 rounded-full"
+                aria-label="Facebook"
+              >
+                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="#"
+                class="text-[#FFFFFF] hover:bg-[#2D2F35] transition-colors bg-[#ffffff0d] p-3 rounded-full"
+                aria-label="Instagram"
+              >
+                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  <!-- #region Dark Mode -->
+     <button id="theme-btn" class="btn btn-ghost bg-transparent focus:bg-white md:right-[32rem] right-[48px] md:top-[1rem] top-[2px] " >
+  <svg width="30px" height="30px" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>dark-mode</title> <g id="Layer_2" data-name="Layer 2"> <g id="Icons"> <g> <rect width="48" height="48" fill="none"></rect> <g> <path d="M14,24A10,10,0,0,0,24,34V14A10,10,0,0,0,14,24Z"></path> <path d="M24,2A22,22,0,1,0,46,24,21.9,21.9,0,0,0,24,2ZM6,24A18.1,18.1,0,0,1,24,6v8a10,10,0,0,1,0,20v8A18.1,18.1,0,0,1,6,24Z"></path> </g> </g> </g> </g> </g></svg>
+  </button>
+   <!-- #region end project -->
+<!--#region script swiper -->
+<script 
+src="./swiper/swiper-bundle.min.js">
+</script>
+<script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      centeredSlides: true,
+      loop: true,
+      autoplay: {
+        delay: 2700,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+</script>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const toggleBtn = document.getElementById("toggleBtn");
+      const playIcon = document.getElementById("playIcon");
+      const pauseIcon = document.getElementById("pauseIcon");
+
+      let isPlaying = true;
+
+      toggleBtn.addEventListener("click", () => {
+        if (isPlaying) {
+          swiper.autoplay.stop();
+          playIcon.classList.remove("hidden");
+          pauseIcon.classList.add("hidden");
+          toggleBtn.classList.remove("btn-neutral");
+          toggleBtn.classList.add("btn-success");
+        } else {
+          swiper.autoplay.start();
+          playIcon.classList.add("hidden");
+          pauseIcon.classList.remove("hidden");
+          toggleBtn.classList.remove("btn-success");
+          toggleBtn.classList.add("btn-neutral");
+        }
+        isPlaying = !isPlaying;
+      });
+
+    });
+</script>
+<!--#region script Change Language-->
+<script>
+    const button = document.getElementById('langBtn');
+    const dropdown = document.getElementById('langDropdown');
+
+    button.addEventListener('click', () => {
+      dropdown.classList.toggle('hidden');
+    });
+
+    // Hide dropdown on click outside
+    document.addEventListener('click', (e) => {
+      if (!button.contains(e.target) && !dropdown.contains(e.target)) {
+        dropdown.classList.add('hidden');
+      }
+    });
+  </script>
+ <script>
+      const tabsSwiper = new Swiper(".tabsSwiper", {
+        loop: true,
+        slidesPerView: 1,
+        navigation: {
+          nextEl: ".tabsSwiper-next",
+          prevEl: ".tabsSwiper-prev",
+        },
+        pagination: {
+          el: ".tabsSwiper-pagination",
+          clickable: true,
+        },
+      });
+
+      // کنترل تب‌ها
+      const tabs = document.querySelectorAll("#tabsSwiperTabs .tab-item");
+      tabs.forEach((tab, index) => {
+        tab.addEventListener("click", () => {
+          tabsSwiper.slideTo(index);
+        });
+      });
+
+      tabsSwiper.on("slideChange", () => {
+        tabs.forEach((tab, i) => {
+          tab.classList.toggle("active", i === tabsSwiper.activeIndex);
+        });
+      });
+    </script>
+<!--#region script search btn-->    
+    <script>
+   const searchBtn = document.getElementById("search-btn");
+const searchBox = document.getElementById("search-box");
+const closeSearch = document.getElementById("close-search");
+const searchInput = document.getElementById("search-input");
+const mainMenu = document.getElementById("main-menu");
+
+searchBtn.addEventListener("click", () => {
+  mainMenu.classList.add("hidden"); // منو مخفی
+  searchBox.classList.add("show");  // سرچ باز
+  setTimeout(() => searchInput.focus(), 200);
+});
+
+closeSearch.addEventListener("click", () => {
+  searchBox.classList.remove("show");
+  mainMenu.classList.remove("hidden");
+});
+
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape") {
+    searchBox.classList.remove("show");
+    mainMenu.classList.remove("hidden");
+  }
+});
+  </script>
+<!--#region script fix menu-->    
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const topHeader = document.getElementById('topHeader');
+      const bottomHeader = document.getElementById('bottomHeader');
+      const topHeight = topHeader.offsetHeight;
+
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > topHeight) {
+          bottomHeader.classList.add('fixed', 'top-0', 'left-0', 'right-0', 'shadow-md', 'z-50');
+        } else {
+          bottomHeader.classList.remove('fixed', 'top-0', 'left-0', 'right-0', 'shadow-md', 'z-50');
+        }
+      });
+    });
+  </script>
+<!--#region script change theme-->    
+  <script>
+    const themes = ["light","dark"];
+    let i = 0;
+    const btn = document.getElementById("theme-btn");
+
+    btn.onclick = () => {
+      i = (i + 1) % themes.length;
+      document.documentElement.setAttribute("data-theme", themes[i]);
+    };
+  </script>
+
 </body>
 </html>

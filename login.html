@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Battle.net Login</title>
+    <link rel="icon" href="./src/css/images/favicon.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="./src/css/output.css" />
+  </head>
+ <body>
+  <!--#region Start Project--> 
+  <div class="bg-main min-w-screen min-h-screen flex flex-col items-center justify-start overflow-x-hidden">
+  <!--#region Login Page-->  
+   <div class="w-full max-w-[416px] max-h-[640px] px-4 mt-6 py-6 ">
+    <!-- Logo -->
+        <div class=" flex justify-center mb-10 ">
+          <a href="./index.html" class="rounded-sm">
+            <img
+              src="./src/css/images/battlenet.svg"
+              alt="Battle.net"
+              class="w-[240px] h-10"
+            />
+          </a>
+        </div>
+    <!-- Login Header -->
+        <div class="text-center mb-[20px]">
+          <h1 class="text-[32px] text-white font-sans font-bold mb-4">
+            Log in
+          </h1>
+          <h2 class="text-[#D9DADB] text-base font-sans">
+            <span>New to Battle.net?</span>
+            <a
+              href="#"
+              class="text-[#148EFF] hover:text-[#47A6FF] font-bold ml-1 underline focus:outline-none focus:ring-1 focus:ring-[#148EFF] rounded-sm"
+              >Sign up</a
+            >
+          </h2>
+        </div>
+    <!-- Login Form -->
+        <form action="" method="POST" class="w-full">
+          <div class="space-y-4">
+    <!-- Input Email-->
+            <div class="space-y-1">
+              <div class="relative">
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="w-full h-10 px-3 bg-transparent border border-[#3D3E42] rounded text-white text-base placeholder-[#72757A] focus:border-white focus:ring-0 transition-colors hover:border-white"
+                  placeholder="Email or Phone"
+                  autocomplete="username"
+                />
+              </div>
+              <div class="flex justify-start">
+                <a  href="#"
+                  class="text-[#148EFF] hover:text-[#47A6FF] text-sm font-medium p-1 rounded-sm focus:outline-none focus:ring-2 focus:ring-[#148EFF]">
+                  Forgot Email?</a
+                >
+              </div>
+            </div>
+     <!-- Button Continue-->
+            <button
+              type="submit"
+              class="w-full h-[40px] border-2 border-[#0074E0] bg-[#0074E0] hover:border-[#47A6FF] text-white font-medium rounded px-6 py-2 text-base transition-colors duration-200"  >
+              Continue
+            </button>
+     <!-- Privacy Policy--> 
+     <div 
+     class="w-[416px] h-[20px] flex m-auto text-center text-[#A1A2A5] text-[14px] mt-[16px]  leading-[20px]">
+      <p class="font-[notosans]">By continuing, you acknowledge our
+      <a href="#" class="font-[notosansbold] hover:underline">Privacy Policy</a></p>
+       <img src="./src/css/images/login/privacy.svg" class="ml-[2px]" alt=""> .
+      </div>
+        </form>
+      <!-- Divider-->
+        <div class="mt-[40px] mb-[28px] w-[416px] h-[21px]">
+              <div class="relative">
+                <div class="absolute inset-0 flex items-center">
+                  <div class="w-full border-t border-[#3D3E42]"></div>
+                </div>
+                <div class="relative flex justify-center">
+                  <span class="px-[20px] text-[notosansbold] text-[14px] font-bold text-[#72757A] bg-[#15171E]"
+                    >OR</span
+                  >
+                </div>
+              </div>
+         </div>
+   </div>
+  <!-- #region Links -->
+   <div 
+class="flex justify-center w-[335.99px] h-[71.99px] mx-[40px]">
+   <button 
+class="btn shadow-none w-[48px] h-[48px] p-[13px] m-[12px] hover:bg-[#CECECE]">
+ <img src="./src/css/images/login/google.svg"  class="w-[17px] h-[18px]" alt="">
+     </button>
+   <button 
+class="btn shadow-none border-none w-[48px] h-[48px] p-[13px] m-[12px] bg-[#1877F2] hover:bg-[#1860B7]">
+<img src="./src/css/images/login/facebook.svg"  class="w-[17px] h-[18px]" alt="">
+     </button>
+   <button 
+class="btn shadow-none w-[48px] h-[48px] p-[13px] m-[12px] hover:bg-[#CECECE]">
+<img src="./src/css/images/login/apple.svg"  class="w-[17px] h-[18px]" alt="">
+     </button>
+   </div>
+   <div 
+class="flex justify-center w-[335.99px] h-[71.99px] mx-[40px] ">
+<button 
+class="btn shadow-none border-none w-[48px] h-[48px] p-[13px] m-[12px] bg-[#107c10] hover:bg-[#0A4F0A]">
+ <img src="./src/css/images/login/xbox-logo.svg"  class="w-[17px] h-[18px]" alt="">
+   </button>
+<button 
+class="btn shadow-none border-none w-[48px] h-[48px] p-[13px] m-[12px] bg-[#0070CC] hover:bg-[#00439C]">
+ <img src="./src/css/images/login/playstation-logo.svg"  class="w-[17px] h-[18px]" alt="">
+   </button>
+<button 
+class="btn shadow-none border-none w-[48px] h-[48px] p-[13px] m-[12px] bg-[#e60012] hover:bg-[#B3000E]">
+ <img src="./src/css/images/login/switch-logo.svg"  class="w-[17px] h-[18px]" alt="">
+   </button>
+<button 
+class="btn shadow-none w-[48px] h-[48px] p-[13px] m-[12px] hover:bg-[#CECECE]">
+ <img src="./src/css/images/login/steam-logo.svg"  class="w-[17px] h-[18px]" alt="">
+   </button>
+   </div>
+  </div>
+  <!-- #region end project -->
+  <!-- #region Footer -->
+    <footer 
+    class="bg-main pt-12 w-full mt-80 md:mt-10 md:pb-30 font-[objectsansbold] text-[14px] font-bold ">
+      <div class=" mx-auto md:px-12">
+        <!--#region Footer Menu-->
+        <div class="flex flex-col-reverse md:flex-row justify-between items-center  md:rounded-b-none md:border-b md:border-y-gray-600 h-12 w-full ">
+          <!-- Menu-Links-->
+            <div class="flex flex-wrap items-center justify-center md:justify-start gap-2 py-6 text-[#FFFFFF] text-sm">
+              <a
+                href="#"
+                class=" hover:bg-[#202229]  rounded-[8px] px-4 py-2 transition-colors "
+                >Careers</a
+              >
+              <a
+                href="#"
+                class=" hover:bg-[#202229] rounded-[8px] px-4 py-2 transition-colors "
+                >About</a
+              >
+              <a
+                href="#"
+                class=" hover:bg-[#202229]  rounded-[8px] px-4 py-2 transition-colors"
+                >Support</a
+              >
+              <a
+                href="#"
+                class=" hover:bg-[#202229] rounded-[8px] px-4 py-2 transition-colors "
+                >Contact Us</a
+              >
+              <a
+                href="#"
+                class=" hover:bg-[#202229] rounded-[8px] px-4 py-2 transition-colors "
+                >Press</a
+              >
+              <a
+                href="#"
+                class=" hover:bg-[#202229] rounded-[8px] px-4 py-2 transition-colors "
+                >API</a
+              >
+            </div>
+          <!-- Menu-language-->
+        <div class="relative ">
+    <button id="langBtn" class="btn btn-ghost text-[#FFFFFF] shadow-none border-none border-transparent  hover:bg-[#202229] transition-colors px-4 py-2 rounded-lg">
+       <svg
+                  class="w-6 h-6"
+                  fill="none"
+                  stroke="#909194"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"
+                  />
+                </svg>
+                <span class="text-sm ">English (US)</span>
+                <svg
+                  class="w-3 h-3"
+                  fill="none"
+                  stroke="#909194"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
+
+    </button>  
+      <!-- Dropdown Language -->
+    <div id="langDropdown" class="hidden absolute bottom-full right-0 mb-2 h-[183px] w-[470px] overflow-y-auto scrollbar rounded-[12px] grid gap-2 bg-card  duration-300 sm:grid-cols-1 md:grid-cols-2 my-scroll box-content">
+
+  <a class="text-[#FFFFFF] font-[notosans] text-[16px] text-center  leading-[24px] rounded-lg hover:bg-[#202229] transition-colors px-2 py-3">English (US)</a>
+      <a class="text-[#FFFFFF] font-[notosans] text-[16px] text-center leading-[24px] rounded-lg hover:bg-[#202229] transition-colors px-2 py-[12px]">Español (Latino)</a>
+      <a class="text-[#FFFFFF] font-[notosans] text-[16px] text-center leading-[24px] rounded-lg hover:bg-[#202229] transition-colors px-2 py-[12px]">Português (Brasil)</a>
+      <a class="text-[#FFFFFF] font-[notosans] text-[16px] text-center leading-[24px] rounded-lg hover:bg-[#202229] transition-colors px-2 py-[12px]">Português (EU)</a>
+      <a class="text-[#FFFFFF] font-[notosans] text-[16px] text-center leading-[24px] rounded-lg hover:bg-[#202229] transition-colors px-2 py-[12px]">English (EU)</a>
+      <a class="text-[#FFFFFF] font-[notosans] text-[16px] text-center leading-[24px] rounded-lg hover:bg-[#202229] transition-colors px-2 py-[12px]">ภาษาไทย</a>
+      <a class="text-[#FFFFFF] font-[notosans] text-[16px] text-center leading-[24px] rounded-lg hover:bg-[#202229] transition-colors px-2 py-[12px]">日本語</a>
+      <a class="text-[#FFFFFF] font-[notosans] text-[16px] text-center leading-[24px] rounded-lg hover:bg-[#202229] transition-colors px-2 py-[12px]">Deutsch</a>
+     <a class="text-[#FFFFFF] font-[notosans] text-[16px] text-center leading-[24px] rounded-lg hover:bg-[#202229] transition-colors px-2 py-[12px]">Polski</a>
+      <a class="text-[#FFFFFF] font-[notosans] text-[16px] text-center leading-[24px] rounded-lg hover:bg-[#202229] transition-colors px-2 py-[12px]">Русский</a>
+      <a class="text-[#FFFFFF] font-[notosans] text-[16px] text-center leading-[24px] rounded-lg hover:bg-[#202229] transition-colors px-2 py-[12px]">Türkçe</a>
+        <a class="text-[#FFFFFF] font-[notosans] text-[16px] text-center leading-[24px] rounded-lg hover:bg-[#202229] transition-colors px-2 py-[12px]">Русский</a>
+         <a class="text-[#FFFFFF] font-[notosans] text-[16px] text-center leading-[24px] rounded-lg hover:bg-[#202229] transition-colors px-2 py-[12px]">简体中文</a>
+          <a class="text-[#FFFFFF] font-[notosans] text-[16px] text-center leading-[24px] rounded-lg hover:bg-[#202229] transition-colors px-2 py-[12px]">繁體中文</a>
+    </div>
+           </div>
+        </div>
+        <!-- Bottom Footer -->
+        <div class="py-8">
+          <div class="flex flex-col md:flex-row items-center justify-between gap-6" >
+          <div class="flex flex-col md:flex-row items-center md:gap-[25px]">
+            <a href="index.html">
+              <img src="./src/css/images/battlenet.svg" alt="logo" class="w-[210px] pb-6" />
+            </a>
+              <!-- Social Media Icons - mobiles -->
+              <div class="flex md:hidden items-center gap-4 ">
+                <a  href="#" class="text-[#FFFFFF] hover:bg-[#2D2F35] bg-[#ffffff0d] transition-colors  p-3 rounded-full" aria-label="Twitter">
+                  <svg class="w-5 h-5" fill="white" viewBox="0 0 24 24">
+                    <path
+                      d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
+                    />
+                  </svg>
+                </a>
+                <a  href="#"  class="text-[#FFFFFF] hover:bg-[#2D2F35] transition-colors bg-[#ffffff0d] p-3 rounded-full"
+                  aria-label="Facebook"
+                >
+                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                    <path
+                      d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"
+                    />
+                  </svg>
+                </a>
+                <a  href="#"  class="text-[#FFFFFF] hover:bg-[#2D2F35] transition-colors bg-[#ffffff0d] p-3 rounded-full"
+                  aria-label="Instagram"
+                >
+                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                    <path
+                      d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+                    />
+                  </svg>
+                </a>
+              </div>
+             <!--Copyright -->
+              <div class="text-center md:text-left">
+                <p class="text-[#ffffff80] font-[notosans] text-[12px] mb-2">
+                  ©2025 Blizzard Entertainment, Inc.
+                </p>
+                <p class="text-[#ffffff80] font-[notosans] text-[12px] mb-3">
+                  All
+                  <a href="#" class="text-[#ffffff80] font-[notosans] text-[12px] hover:text-white underline"
+                    >trademarks</a
+                  >
+                  referenced herein are the properties of their respective
+                  owners.
+                </p>
+
+                <div  class="flex flex-wrap items-center justify-center md:justify-start gap-3 text-[#ffffff80] font-[notosans] text-[12px]" >
+                   <a  href="#"  class="text-[#ffffff80] font-[notosans] text-[12px] hover:text-white transition-colors" >Privacy</a >  
+                    <a  href="#" class="text-[#ffffff80] font-[notosans] text-[12px] hover:text-white transition-colors"  >Legal</a >
+                  <a  href="#"  class="text-[#ffffff80] font-[notosans] text-[12px] hover:text-white transition-colors" >Terms</a >  
+                    <a  href="#"  class="text-[#ffffff80] font-[notosans] text-[12px] hover:text-white transition-colors">Cookie Policy</a  >
+                  <a class="text-[#ffffff80] font-[notosans] text-[12px] hover:text-gray-300 transition-colors" >  Cookie Settings  </a>
+                </div>
+              </div>
+          </div>
+            <!-- Social Media Icons - desktop -->
+            <div class="hidden md:flex items-center gap-4">
+              <a
+                href="#"
+                class="text-[#FFFFFF] hover:bg-[#2D2F35] transition-colors bg-[#ffffff0d] p-3 rounded-full"
+                aria-label="Twitter"
+              >
+                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="#"
+                class="text-[#FFFFFF] hover:bg-[#2D2F35] transition-colors bg-[#ffffff0d] p-3 rounded-full"
+                aria-label="Facebook"
+              >
+                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="#"
+                class="text-[#FFFFFF] hover:bg-[#2D2F35] transition-colors bg-[#ffffff0d] p-3 rounded-full"
+                aria-label="Instagram"
+              >
+                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+ <!-- #region Dark Mode -->
+     <button id="theme-btn" class="btn btn-ghost bg-transparent focus:bg-white md:right-[32rem] right-[48px] md:top-[1rem] top-[2px] " >
+  <svg width="30px" height="30px" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>dark-mode</title> <g id="Layer_2" data-name="Layer 2"> <g id="Icons"> <g> <rect width="48" height="48" fill="none"></rect> <g> <path d="M14,24A10,10,0,0,0,24,34V14A10,10,0,0,0,14,24Z"></path> <path d="M24,2A22,22,0,1,0,46,24,21.9,21.9,0,0,0,24,2ZM6,24A18.1,18.1,0,0,1,24,6v8a10,10,0,0,1,0,20v8A18.1,18.1,0,0,1,6,24Z"></path> </g> </g> </g> </g> </g></svg>
+  </button>
+
+      </div>
+    </footer>
+<!--#region script Change Language-->
+<script>
+    const button = document.getElementById('langBtn');
+    const dropdown = document.getElementById('langDropdown');
+
+    button.addEventListener('click', () => {
+      dropdown.classList.toggle('hidden');
+    });
+
+    // Hide dropdown on click outside
+    document.addEventListener('click', (e) => {
+      if (!button.contains(e.target) && !dropdown.contains(e.target)) {
+        dropdown.classList.add('hidden');
+      }
+    });
+  </script>
+<!--#region script change theme-->    
+  <script>
+    const themes = ["light","dark"];
+    let i = 0;
+    const btn = document.getElementById("theme-btn");
+
+    btn.onclick = () => {
+      i = (i + 1) % themes.length;
+      document.documentElement.setAttribute("data-theme", themes[i]);
+    };
+  </script>
+ </body>
+</html>
