@@ -2477,9 +2477,6 @@
   .bg-\[url\(\/src\/css\/images\/baner\/image7-mobile\.png\)\] {
     background-image: url(/src/css/images/baner/image7-mobile.png);
   }
-  .bg-\[url\(\/src\/css\/images\/download-app\/section-bg-lg\.png\)\] {
-    background-image: url(/src/css/images/download-app/section-bg-lg.png);
-  }
   .bg-cover {
     background-size: cover;
   }
@@ -3887,12 +3884,12 @@ body {
   display: block;
 }
 :root {
-  --color-bg: #B9B28A;
-  --color-grey: #504B38;
-}
-[data-theme="dark"] {
   --color-bg: #15171e;
   --color-grey: #23252B;
+}
+[data-theme="theme1"] {
+  --color-bg: #B9B28A;
+  --color-grey: #504B38;
 }
 .bg-main {
   background-color: var(--color-bg);
@@ -3910,6 +3907,8 @@ body {
   border-radius: 9999px;
   position: fixed;
   z-index: 1000;
+  background-color: white;
+  padding: 1px;
 }
 @layer base {
   :where(:root),:root:has(input.theme-controller[value=light]:checked),[data-theme=light] {

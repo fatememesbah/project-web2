@@ -38,7 +38,6 @@ body{
    cursor: pointer;
 
 }
-
     /* استایل نقطه‌ها */
   .swiper-pagination-bullet {
    width: 40px;
@@ -145,6 +144,7 @@ body{
     opacity: 0 !important;
     pointer-events: none !important;
   }
+
 }
   @media (max-width:1440px) {
     .exact1440{
@@ -156,14 +156,13 @@ body{
   display: block;
 }
   :root {
-      --color-bg: #B9B28A;
-      --color-grey: #504B38;
-    }
-
-    /* فقط تم dark تغییر می‌کند */
-    [data-theme="dark"] {
       --color-bg: #15171e;
   --color-grey: #23252B ;
+     
+    }   
+    [data-theme="theme1"] {
+     --color-bg: #B9B28A;
+      --color-grey: #504B38;
 
 
     }
@@ -182,4 +181,6 @@ body{
       border-radius: 9999px;
       position: fixed;
       z-index: 1000;
+      background-color: white;
+      padding: 1px;
     }
